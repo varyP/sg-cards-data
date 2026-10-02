@@ -1,0 +1,139 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: uob-prvi-miles
+issuer: UOB
+name: UOB PRVI Miles Card
+type: miles
+network: Visa/Mastercard/AMEX
+status: active
+product_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR aged 55 and below (S$15,000 if 56+; foreigners S$40,000)
+    source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+    quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 261.6
+      unit: sgd_incl_gst
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: Fees Principal card S$261.60 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: Fees Principal card S$261.60 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated on the product page.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+      quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: local
+    rate:
+      value: 1.4
+      unit: mpd
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: Earn 1.4 miles per S$1 local spend
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_fcy
+    rate:
+      value: 2.4
+      unit: mpd
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: 2.4 miles per S$1 1 on all other overseas spend
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_my_id_th_vn
+    rate:
+      value: 3
+      unit: mpd
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: 3 miles per S$1 spend 1 in Malaysia, Indonesia, Thailand and Vietnam
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
+    value: no_rewards
+    mccs:
+    - '4829'
+    - '4900'
+    - '5199'
+    - '5960'
+    - '5965'
+    - '5993'
+    - '6012'
+    - '6050'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '6540'
+    - '7349'
+    - '7511'
+    - '7523'
+    - '7995'
+    - '8062'
+    - '8211'
+    - '8220'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
+    quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
+    source_type: issuer
+    last_verified: *id001
+    note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
+  conversion:
+    ratio:
+      value: UNI$1 = 2 miles
+      source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
+      quote: 'current conversion rate: UNI$1 = 2 miles'
+      source_type: issuer
+      last_verified: *id001
+    fee_sgd:
+      value: 27
+      unit: sgd_per_conversion
+      note: Clause in UOB Rewards+ T&C; exceptions listed for UOB Reserve / Visa Infinite / Privilege Banking cardmembers.
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
+      source_type: issuer
+      last_verified: *id001
+pending_changes: []
+notes: []

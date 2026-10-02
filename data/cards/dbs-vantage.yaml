@@ -1,0 +1,152 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: dbs-vantage
+issuer: DBS
+name: DBS Vantage Visa Infinite Card
+type: hybrid
+network: Visa
+status: active
+product_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+facts:
+  min_income_sgd:
+    value: 120000
+    unit: sgd_per_year
+    source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+    quote: Minimum income S$120,000 p.a.
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 599.5
+      unit: sgd_incl_gst
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: 'Annual fee Principal Card: S$599.50 Supplementary Card: Free'
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: not_waived
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: 'First year: Cannot be waived.'
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: ceased
+      effective_date: 2026-08-01
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: With effect from 1 Aug 2026, the annual fee waiver eligibility upon meeting the retail spend of S$60,000 in the previous card year will be ceased.
+      source_type: issuer
+      last_verified: *id001
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      note: Cap on total FX charges for DBS Visa/Mastercard credit cards ('up to 2.65%' admin + 1% conversion factor).
+      source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
+      quote: Total administrative fees and fees for conversion factor shall not exceed 3.25%.
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: local
+    rate:
+      value: 1.5
+      unit: mpd
+      note: Or 1.5% cashback (user switches monthly). Drops to 1.4 on 2026-11-02, see pending_changes.
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: Local spend (in SGD) 1.5 miles for every S$1 spent, or 1.5% cashback
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_fcy
+    rate:
+      value: 2.2
+      unit: mpd
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: Overseas spend 2.2 miles for every S$1 equivalent spent, or 2.2% cashback
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: insurance
+    value: no_rewards
+    mccs:
+    - '6300'
+    - '6381'
+    - '6399'
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
+    quote: 6300 Insurance Sales, Underwriting, and Premiums 6381 Insurance Premiums 6399 Insurance, Not Elsewhere Classified
+    source_type: issuer
+    last_verified: *id001
+  - category: tolls, money transfer, utilities, cash
+    value: no_rewards
+    mccs:
+    - '4784'
+    - '4829'
+    - '4900'
+    - '6010'
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
+    quote: Table 1 MCC Description 4784 Toll and Bridge Fees 4829 Money Transfer 4900 Utilities - Electric, Gas, Water, Sanitary 6010 Financial Institutions - Manual Cash Disbursements
+    source_type: issuer
+    last_verified: *id001
+  - category: education
+    value: no_rewards
+    mccs:
+    - '8211'
+    - '8220'
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
+    quote: 8211 Elementary and Secondary Schools 8220 Colleges, Universities, Professional Schools, and Junior Colleges
+    source_type: issuer
+    last_verified: *id001
+  - category: hospitals
+    value: no_rewards
+    mccs:
+    - '8062'
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
+    quote: 8062 Hospitals
+    source_type: issuer
+    last_verified: *id001
+  - category: bill payments, AXS/SAM, fees
+    value: no_rewards
+    mccs: []
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
+    quote: AXS payments, SAM online bill payments, bill payments via internet banking, and all fees charged by DBS
+    source_type: issuer
+    last_verified: *id001
+  conversion:
+    ratio:
+      value: null
+      null_reason: Ratio not extracted from the Vantage T&C yet.
+    fee_sgd:
+      value: 27.25
+      unit: sgd_per_conversion
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
+      quote: An administrative fee of S$27.25 (inclusive of GST) applies to each miles conversion and will be charged to DBS Credit Card.
+      source_type: issuer
+      last_verified: *id001
+pending_changes:
+- field: facts.earn[local].rate
+  old_value: 1.5
+  new_value: 1.4
+  unit: mpd
+  announced_date: 2026-09-29
+  effective_date: 2026-11-02
+  source_url: https://www.dbs.com.sg/personal/cards/cards-news-announcements.page
+  quote: 'Updates to DBS Vantage Card: From 2 Nov 2026, the local earn rate will be adjusted to 1.4 miles for every S$1 spent (or 1.4% cashback).'
+  source_type: issuer
+  last_verified: *id001
+  announced_date_source:
+    source_url: https://milelion.com/2026/09/29/dbs-vantage-card-cuts-local-earn-rates-to-1-4-mpd-adds-free-limo-rides-and-annual-fee-waiver/
+    quote: DBS has announced some upcoming changes to the DBS Vantage Card, which will take effect from 2 November 2026.
+    source_type: third_party
+    last_verified: *id001
+    note: Issuer notice is undated; 2026-09-29 is the date MileLion and Mainly Miles both reported it (two independent Tier 2 signals).
+notes:
+- MileLion (2026-09-29) also reports airport limo rides for DBS Treasures customers and an annual fee waiver for 'AI status' holders. Not found on the issuer page fetched 2026-10-03, so not recorded as fact.

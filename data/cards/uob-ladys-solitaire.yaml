@@ -1,0 +1,144 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: uob-ladys-solitaire
+issuer: UOB
+name: UOB Lady's Solitaire Card
+type: miles
+network: Mastercard
+status: active
+product_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+facts:
+  min_income_sgd:
+    value: 120000
+    unit: sgd_per_year
+    source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+    quote: 'Minimum Income: Singaporeans/PR/Foreigners: S$120,000 p.a.'
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 414.2
+      unit: sgd_incl_gst
+      source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+      quote: 'Principal card: S$414.20 ^ yearly First year card fee waiver'
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+      quote: 'Principal card: S$414.20 ^ yearly First year card fee waiver'
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+      quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: two_chosen_bonus_categories
+    rate:
+      value: 4
+      unit: mpd
+      note: 2 categories chosen from 7, changeable each quarter. 'Up to 10 mpd' needs Lady's Savings Account balance.
+      source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+      quote: 10X UNI$ per S$5 spent ( 4 miles per S$1 ) with no min. spend on UOB Lady's Credit Card
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 1500
+      unit: sgd_spend
+      period: calendar_month
+      note: S$750 per category x 2 = S$1,500 total. NOT S$2,000 on one category (that was the pre-1 Aug 2025 cap).
+      source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+      quote: if you hold a Lady's Solitaire Card, 2,700 UNI$ (which is equivalent to S$1,500 spent), with each Preferred Rewards Category capped at 1,350 UNI$ (which is equivalent to S$750 spent).
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: none
+      source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+      quote: 10X UNI$ per S$5 spent ( 4 miles per S$1 ) with no min. spend on UOB Lady's Credit Card
+      source_type: issuer
+      last_verified: *id001
+  - category: other
+    rate:
+      value: 0.4
+      unit: mpd
+      source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+      quote: UNI$1 per S$5 spent ( 0.4 miles per S$1 ) on other purchases
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
+    value: no_rewards
+    mccs:
+    - '4829'
+    - '4900'
+    - '5199'
+    - '5960'
+    - '5965'
+    - '5993'
+    - '6012'
+    - '6050'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '6540'
+    - '7349'
+    - '7511'
+    - '7523'
+    - '7995'
+    - '8062'
+    - '8211'
+    - '8220'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
+    quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
+    source_type: issuer
+    last_verified: *id001
+    note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
+  - category: 'category definitions are MCC-based (example: Dining)'
+    value: bonus_category_mcc_whitelist
+    mccs:
+    - '5811'
+    - '5812'
+    - '5814'
+    - '5499'
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: Dining 5811, 5812, 5814, 5499 Caterers, Eating places and Restaurants, Fast food restaurants and food deliveries
+    source_type: issuer
+    last_verified: *id001
+    note: 'Not an exclusion: this is the MCC whitelist for the Dining bonus category. Other categories: Beauty & Wellness, Entertainment, Family, Fashion, Transport, Travel.'
+  conversion:
+    ratio:
+      value: null
+      null_reason: See UOB Rewards+ T&C.
+    fee_sgd:
+      value: 27
+      unit: sgd_per_conversion
+      note: Clause in UOB Rewards+ T&C; exceptions listed for UOB Reserve / Visa Infinite / Privilege Banking cardmembers.
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
+      source_type: issuer
+      last_verified: *id001
+pending_changes: []
+notes:
+- 'Cap history: S$2,000/month (3,600 UNI$) until 31 Jul 2025, then 2 x S$750 from 1 Aug 2025 (issuer T&C).'

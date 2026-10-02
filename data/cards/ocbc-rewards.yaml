@@ -1,0 +1,115 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: ocbc-rewards
+issuer: OCBC
+name: OCBC Rewards Card
+type: miles
+network: Mastercard
+status: active
+product_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+    quote: At least S$30,000 for Singaporeans and Singapore PRs aged between 21 and 55
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+      quote: Principal card S$196.20 (including GST), waived for the first two years
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived_2_years
+      source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+      quote: Principal card S$196.20 (including GST), waived for the first two years
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: Spend-based auto-waiver exists per page; threshold not extracted.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_foreign_amount
+      derived: true
+      note: 3.25 = 1% network charge + 2.25% OCBC admin fee, both in the quote.
+      source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/cards-fee-charge.pdf
+      quote: all foreign currency transactions are subjected to a currency conversion charge imposed by the respective card associations (1%) and a bank administrative fee (2.25%) of the foreign transaction amount.
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: selected_shopping_instore_online
+    rate:
+      value: 4
+      unit: mpd
+      note: Selected merchant categories only; see page list.
+      source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+      quote: Get 10X OCBC$ (4 Miles) on in-store and online shopping spend
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 10000
+      unit: bonus_ocbc_dollars
+      period: month
+      note: Calendar vs statement month not stated on page.
+      source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+      quote: on top of the 10,000 bonus OCBC$ you can usually earn per month!
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: promo_watsons_lazada_shopee_taobao_tiktok
+    rate:
+      value: 6
+      unit: mpd
+      effective_to: 2027-03-31
+      source_url: https://www.ocbc.com/personal-banking/cards/rewards-card
+      quote: Bonus 15X OCBC$ (6 Miles) at Watsons, Lazada, Shopee, Taobao and TikTok Shop from now until 31 March 2027
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: OCBC general rewards exclusion MCCs (insurance 6300, utilities 4900, money transfer 4829, etc.)
+    value: no_rewards
+    mccs:
+    - '4784'
+    - '4829'
+    - '4900'
+    - '5047'
+    - '5199'
+    - '5960'
+    - '5993'
+    - '6010'
+    - '6012'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6540'
+    - '7349'
+    - '7523'
+    - '7995'
+    source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/ocbc-cards-rewards-transaction-exclusion-list.pdf
+    quote: MCC 4784 4829 4900 5047 5199 5960 5993 6010 6012 6051 6211 6300 6513 6540 7349 7523 7995
+    source_type: issuer
+    last_verified: *id001
+    note: The PDF marks some MCCs as 'Remain eligible for' specific cards (e.g. OCBC 365 for some bill MCCs). Read the row before telling a user a spend is excluded.
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes: []

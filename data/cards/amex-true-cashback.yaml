@@ -1,0 +1,85 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: amex-true-cashback
+issuer: American Express
+name: American Express True Cashback Card
+type: cashback
+network: American Express
+status: active
+product_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+facts:
+  min_income_sgd:
+    value: null
+    null_reason: Page says only 'regulatory minimum income requirement'.
+  fees:
+    annual_fee_sgd:
+      value: 174.4
+      unit: sgd_incl_gst
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Annual Fee S$174.40 (incl. of 9% GST) waived for the first year
+      source_type: issuer
+      last_verified: &id001 2026-10-03
+    first_year_waiver:
+      value: waived
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Annual Fee S$174.40 (incl. of 9% GST) waived for the first year
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: Not stated.
+    fx_fee_pct:
+      value: null
+      null_reason: Not on product page.
+  earn:
+  - category: all_eligible
+    rate:
+      value: 1.5
+      unit: pct_cashback
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: continue to earn 1.5% Cashback on all your eligible purchases
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Remember there is no limit on how much Cashback you can earn every month.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: welcome_first_6_months
+    rate:
+      value: 3
+      unit: pct_cashback
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Enjoy a simple 3% Cashback on all eligible purchases you make locally and overseas, up to S$5,000 spend in the first 6 months.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 5000
+      unit: sgd_spend
+      period: first_6_months
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Enjoy a simple 3% Cashback on all eligible purchases you make locally and overseas, up to S$5,000 spend in the first 6 months.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: earns_on_insurance_education_utilities
+    note: The page lists Travel, Groceries, Online, Education fees, Insurance, Healthcare, Utilities and Telcos as earning. Counter-example to 'insurance is always excluded'.
+    source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+    quote: 'continue to earn 1.5% Cashback on all your eligible purchases like:'
+    source_type: issuer
+    last_verified: *id001
+  conversion:
+    ratio: &id002
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd: *id002
+pending_changes: []
+notes:
+- 'fetch: manual (Akamai).'

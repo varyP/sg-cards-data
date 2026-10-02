@@ -1,0 +1,91 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: sc-smart
+issuer: Standard Chartered
+name: Standard Chartered Smart Credit Card
+type: cashback
+network: Visa
+status: active
+product_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+    quote: 'Minimum annual income: S$30,000'
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 91
+      unit: sgd_excl_gst
+      note: EXCLUDING GST, unlike most issuers.
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: Thereafter, the annual fee is S$91 (excluding 9% GST).
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: For new cardholders, the annual fee is waived off for the first year.
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: null
+      null_reason: FX fee not on HTML page; SC T&C PDF not yet checked.
+  earn:
+  - category: bonus_merchants_tier_800
+    rate:
+      value: 8
+      unit: pct_cashback
+      note: Bonus merchants (fast food, coffee, streaming, transport etc.); 0.5% on other spend at this tier.
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: Enjoy up to 10% unlimited cashback on your dining, streaming, and commute expenses.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: 800
+      unit: sgd_per_statement_month
+      period: statement_month
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
+      source_type: issuer
+      last_verified: *id001
+  - category: bonus_merchants_tier_1500
+    rate:
+      value: 10
+      unit: pct_cashback
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: 1500
+      unit: sgd_per_statement_month
+      period: statement_month
+      source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
+      quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
+      source_type: issuer
+      last_verified: *id001
+  exclusions:
+  - value: null
+    null_reason: Smart Card T&C PDF on www.sc.com not yet parsed for exclusions.
+  conversion:
+    ratio: &id002
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd: *id002
+pending_changes: []
+notes: []

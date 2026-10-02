@@ -1,0 +1,86 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: citi-rewards
+issuer: Citi
+name: Citi Rewards Card
+type: miles
+network: Visa/Mastercard
+status: active
+product_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/
+    quote: Min. income per year S$30,000 (SG/PR) or S$42,000 (foreigner)
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/
+      quote: The Citi Rewards Card has an annual fee of S$196.20 (inclusive of 9% GST) . The first-year annual fee is waived.
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/
+      quote: The first-year annual fee is waived.
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: null
+      null_reason: Card-specific info sheet not fetched; PremierMiles sheet says up to 3.25%, but not assumed for this card.
+  earn:
+  - category: online_and_selected_shopping
+    rate:
+      value: 10
+      unit: citi_points_per_sgd
+      note: 10X points. Miles-per-dollar equivalent depends on the conversion ratio, which is not recorded yet. Online excludes mobile wallet and travel.
+      source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/
+      quote: 10X Points ^ for online purchases including online grocery, food delivery, ride-hailing.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 9000
+      unit: bonus_points
+      period: statement_month
+      source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/pdf/10x-rewards-promotion-terms-and-conditions-2020.pdf
+      quote: Bonus Points are subject to a cap of 9,000 Bonus Points per statement month.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: travel MCCs excluded from 10X
+    value: no_rewards
+    mccs:
+    - 3000-3350
+    - 3351-3500
+    - 3501-3999
+    source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/pdf/10x-rewards-promotion-terms-and-conditions-2020.pdf
+    quote: MCC 3000 to 3350 Airlines, Air Carriers MCC 3351 to 3500 Car Rental Agencies MCC 3501 to 3999 Lodging - Hotels, Motels, Resorts
+    source_type: issuer
+    last_verified: *id001
+  - category: mobile wallet and travel excluded from online bonus
+    value: no_rewards
+    mccs: []
+    source_url: https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/pdf/10x-rewards-promotion-terms-and-conditions-2020.pdf
+    quote: a Qualifying Charge made at an online retail merchant, excluding mobile wallet and travel-related transactions*
+    source_type: issuer
+    last_verified: *id001
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes:
+- The 10X T&C PDF linked from the page is titled '2020'; confirm it is still the governing version.

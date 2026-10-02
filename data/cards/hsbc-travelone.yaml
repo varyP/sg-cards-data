@@ -1,0 +1,84 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: hsbc-travelone
+issuer: HSBC
+name: HSBC TravelOne Credit Card
+type: miles
+network: Mastercard
+status: active
+product_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+facts:
+  min_income_sgd:
+    value: 65000
+    unit: sgd_per_year
+    applies_to: NEW HSBC customers, SC/PR salaried. SGD30,000 only for existing customers with TRB >= SGD50,000.
+    source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+    quote: Singaporean/ Singapore permanent residents (salaried employees) SGD30,000 SGD65,000 SGD65,000
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+      quote: The annual fee is at SGD196.20 including GST, starting from the issue date, for your credit card.
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: not_waived
+      note: No first-year waiver stated; fee charged from issue date.
+      source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+      quote: The annual fee is at SGD196.20 including GST, starting from the issue date, for your credit card.
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: 25000
+      unit: sgd_spend_per_year
+      source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+      quote: From the second year onwards, we'll waive the annual fee for your card if you spend more than SGD25,000 per year.
+      source_type: issuer
+      last_verified: *id001
+    fx_fee_pct:
+      value: null
+      null_reason: FX fee is in HSBC's tariff PDF, which robots.txt disallows for crawling (/*.pdf$). Manual-verification queue.
+  earn:
+  - category: overseas_fcy
+    rate:
+      value: 2.4
+      unit: mpd
+      source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+      quote: Up to 2.4 miles (6× Reward points)[@cards-travelonetnc] per SGD1 charged on foreign currency spend.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: local
+    rate:
+      value: 1.2
+      unit: mpd
+      source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
+      quote: Up to 1.2 miles (3× Reward points)[@cards-travelonetnc] per SGD1 charged on local spend.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: Exclusions are in the TravelOne T&C PDF (robots-disallowed). Manual queue.
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes: []

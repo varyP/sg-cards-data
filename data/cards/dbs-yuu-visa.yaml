@@ -1,0 +1,101 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: dbs-yuu-visa
+issuer: DBS
+name: DBS yuu Visa Card
+type: hybrid
+network: Visa
+status: active
+product_url: https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR aged 55 and below (S$15,000 if 56+; foreigners S$45,000)
+    source_url: https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards
+    quote: 'Minimum income Singaporeans/PR: S$30,000 p.a. (≤55 years old) or S$15,000 p.a. (56 years and above) Foreigners: S$45,000 p.a.'
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards
+      quote: 'Annual fee Principal Card: S$196.20 Supplementary Card: S$98.10 per card'
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards
+      quote: Annual fee waiver 1 year
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated on the product page.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      note: Cap on total FX charges for DBS Visa/Mastercard credit cards ('up to 2.65%' admin + 1% conversion factor).
+      source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
+      quote: Total administrative fees and fees for conversion factor shall not exceed 3.25%.
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: yuu_participating_merchants
+    rate:
+      value: 10
+      unit: mpd
+      note: '''Up to'': requires the monthly minimum spend AND 4 participating merchants. Or up to 18% cash rebates.'
+      source_url: https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards
+      quote: Enjoy up to 18% cash rebates or 10 miles per S$1 When you hit min. S$800 and spend at four participating merchants monthly
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 28800
+      unit: yuu_points
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
+      quote: Total Bonus Rewards is capped at 28,800 yuu Points (worth up to S$144 cash rebates or 8,000 miles) per calendar month.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: 800
+      unit: sgd_per_calendar_month
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
+      quote: Minimum S$800 worth of Eligible Spend charged and posted to your Card, and ii. Transact at 4 Participating Merchants.
+      source_type: issuer
+      last_verified: *id001
+  - category: non_yuu_merchants
+    rate:
+      value: 0.25
+      unit: pct_cash_rebate
+      note: 'Table columns: yuu Merchant 0.5% | SimplyGo 0.25% | non-yuu 0.25%.'
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
+      quote: Base Rewards 1 yuu Point (0.5% cash rebates) 0.5 yuu Point (0.25% cash rebates) 0.5 yuu Point (0.25% cash rebates)
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
+      quote: There is no minimum spend required, and no cap to the Base Rewards.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: yuu programme exclusions sit in the yuu T&C appendix; not extracted yet.
+    source_url_to_check: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
+  conversion:
+    ratio:
+      value: null
+      null_reason: yuu Points to KrisFlyer ratio not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes:
+- 'DBS news page (fetched 2026-10-03): yuu programme exclusions were revised from 1 May 2026.'

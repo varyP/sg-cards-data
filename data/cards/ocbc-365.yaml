@@ -1,0 +1,162 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: ocbc-365
+issuer: OCBC
+name: OCBC 365 Credit Card
+type: cashback
+network: Visa/Mastercard
+status: active
+product_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+    quote: Singaporeans and Singapore PRs aged 21 to 55, with an annual income of at least S$30,000
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: Principal card S$196.20 (including GST), waived for the first two years
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived_2_years
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: Principal card S$196.20 (including GST), waived for the first two years
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: Spend-based auto-waiver exists per page; threshold not extracted.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_foreign_amount
+      derived: true
+      note: 3.25 = 1% network charge + 2.25% OCBC admin fee, both in the quote.
+      source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/cards-fee-charge.pdf
+      quote: all foreign currency transactions are subjected to a currency conversion charge imposed by the respective card associations (1%) and a bank administrative fee (2.25%) of the foreign transaction amount.
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: dining
+    rate:
+      value: 5
+      unit: pct_cashback
+      note: Becomes 6% from 2026-11-01, see pending_changes.
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: 5% cashback on dining at café, restaurants and food delivery
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 160
+      unit: sgd_cashback
+      period: calendar_month
+      note: S$80 cap at S$800 spend, S$160 at S$1,600.
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: Spend Tiers Minimum Spend Cashback Cap Tier 1 S$800 S$80 Tier 2 S$1,600 S$160
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: 800
+      unit: sgd_per_calendar_month
+      period: calendar_month
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: To enjoy the above cashback, you need to spend a minimum of S$800 based on posted transactions in a calendar month.
+      source_type: issuer
+      last_verified: *id001
+  - category: groceries_utilities_streaming_ev
+    rate:
+      value: 3
+      unit: pct_cashback
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: 3% cashback on groceries, utilities, streaming and EV charging
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: fuel
+    rate:
+      value: 6
+      unit: pct_cashback
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: 6% cashback on fuel
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: OCBC general rewards exclusion MCCs (insurance 6300, utilities 4900, money transfer 4829, etc.)
+    value: no_rewards
+    mccs:
+    - '4784'
+    - '4829'
+    - '4900'
+    - '5047'
+    - '5199'
+    - '5960'
+    - '5993'
+    - '6010'
+    - '6012'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6540'
+    - '7349'
+    - '7523'
+    - '7995'
+    source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/ocbc-cards-rewards-transaction-exclusion-list.pdf
+    quote: MCC 4784 4829 4900 5047 5199 5960 5993 6010 6012 6051 6211 6300 6513 6540 7349 7523 7995
+    source_type: issuer
+    last_verified: *id001
+    note: The PDF marks some MCCs as 'Remain eligible for' specific cards (e.g. OCBC 365 for some bill MCCs). Read the row before telling a user a spend is excluded.
+  conversion:
+    ratio: &id002
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd: *id002
+pending_changes:
+- field: facts.earn[dining].rate
+  old_value: 5
+  new_value: 6
+  unit: pct_cashback
+  announced_date: null
+  effective_date: 2026-11-01
+  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+  quote: Cashback on eligible Dining, Groceries and Land Transport transactions will increase to 6%.
+  source_type: issuer
+  last_verified: *id001
+- field: facts.earn[groceries_utilities_streaming_ev].rate
+  old_value: 3
+  new_value: 6 (groceries) / 0.25 (utilities, streaming, EV, telco)
+  unit: pct_cashback
+  announced_date: null
+  effective_date: 2026-11-01
+  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+  quote: Cashback on Telco, Utilities, Streaming and EV Charging transactions will change to the base cashback rate of 0.25%.
+  source_type: issuer
+  last_verified: *id001
+- field: facts.earn[dining].cap
+  old_value: S$80 (S$800 tier) / S$160 (S$1,600 tier)
+  new_value: 160
+  unit: sgd_cashback_per_month
+  announced_date: null
+  effective_date: 2026-11-01
+  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+  quote: Cashback programme will be simplified to a single S$800 minimum spend requirement and S$160 monthly cashback cap.
+  source_type: issuer
+  last_verified: *id001
+notes:
+- 'New T&C effective 1 Nov 2026: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf'

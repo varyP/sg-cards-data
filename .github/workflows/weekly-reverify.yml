@@ -1,0 +1,57 @@
+name: weekly-reverify
+on:
+  schedule:
+    - cron: "0 2 * * 1"   # Monday 10:00 SGT
+  workflow_dispatch:
+permissions:
+  contents: write        # push the bot/reverify-* branch (never main)
+  pull-requests: write   # open the date-bump PR
+  issues: write          # quote-missing / section-changed / failing-source issues
+concurrency:
+  group: weekly-reverify
+  cancel-in-progress: false
+jobs:
+  reverify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}   # built-in token only; no secrets, no PATs
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Install pdftotext
+        run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils
+      - name: "Check headless Chrome (DBS / Trust pages need it; failures are reported, never bumped)"
+        run: |
+          (google-chrome --version || chromium --version || echo "no Chrome, so headless sources will be reported as failing") | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Re-verify facts
+        run: python scripts/reverify.py --issues
+      - name: Validate after bump
+        run: python scripts/validate.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reverify-latest
+          path: reports/reverify-latest.json
+          retention-days: 60
+      - name: Open date-bump PR (dates and fingerprints only)
+        run: |
+          if git diff --quiet -- data snapshots; then echo "nothing to bump"; exit 0; fi
+          BR="bot/reverify-$(TZ=Asia/Singapore date +%F)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BR"
+          git add data snapshots
+          git commit -m "reverify: bump last_verified where quotes are unchanged"
+          git push -u origin "$BR"
+          BODY="Automated weekly re-verify. Only last_verified dates and snapshots/fingerprints.json change; no values. Review per REVIEW.md."
+          gh pr create --base main --head "$BR" --title "reverify $(TZ=Asia/Singapore date +%F)" --body "$BODY" --label reverify \
+            || gh pr create --base main --head "$BR" --title "reverify $(TZ=Asia/Singapore date +%F)" --body "$BODY" \
+            || gh issue create --title "[reverify] open PR for $BR" --body "Actions may not create PRs in this repo. Branch pushed: $BR. $BODY"
+      - name: Report broken pipeline
+        if: failure()
+        run: python scripts/pipeline_broken.py weekly-reverify "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

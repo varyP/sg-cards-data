@@ -1,0 +1,111 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: hsbc-revolution
+issuer: HSBC
+name: HSBC Revolution Credit Card
+type: miles
+network: Visa
+status: active
+product_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+facts:
+  min_income_sgd:
+    value: 65000
+    unit: sgd_per_year
+    applies_to: NEW HSBC customers, SC/PR salaried. SGD30,000 only for existing customers with TRB >= SGD50,000.
+    note: 'Table columns: existing TRB>=50k | existing TRB<50k | new customer.'
+    source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+    quote: Singaporean / Singapore permanent residents (salaried employees) SGD30,000 SGD65,000 SGD65,000
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: null
+      null_reason: Fee amount not stated on page; page only says it is waived.
+    first_year_waiver:
+      value: waived
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: We're waiving your HSBC Revolution Credit Card annual fee.
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: Not applicable.
+    fx_fee_pct:
+      value: null
+      null_reason: FX fee is in HSBC's tariff PDF, which robots.txt disallows for crawling (/*.pdf$). Manual-verification queue.
+  earn:
+  - category: contactless_and_online_selected_mccs
+    rate:
+      value: 4
+      unit: mpd
+      note: Only on MCCs in HSBC's qualifying list (dining, shopping, travel, ride hailing, taxis, memberships), contactless or online. NOT on everything.
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: All other cardholders 1× 9× 10× (up to 4 miles) 9,000 Bonus Points per calendar month
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 9000
+      unit: bonus_points
+      period: calendar_month
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: All other cardholders 1× 9× 10× (up to 4 miles) 9,000 Bonus Points per calendar month
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: contactless_and_online_with_50k_deposits
+    rate:
+      value: 8
+      unit: mpd
+      note: Needs Everyday Global Account ADB of SGD50,000+.
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: of at least SGD50,000 1× 19× 20× (up to 8 miles) 22,800 Bonus Points per calendar month
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 22800
+      unit: bonus_points
+      period: calendar_month
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: of at least SGD50,000 1× 19× 20× (up to 8 miles) 22,800 Bonus Points per calendar month
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: all_other
+    rate:
+      value: 1x base points
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: Plus, you'll earn 1× Base Points for all other qualifying transactions, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: Plus, you'll earn 1× Base Points for all other qualifying transactions, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: Qualifying/excluded MCC list is a PDF (robots-disallowed). Manual queue.
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted (rewards page is JS/PDF).
+    fee_sgd:
+      value: 0
+      unit: sgd_per_conversion
+      derived: true
+      note: '''with no fees'' read as S$0. Temporary: ''until such a time as determined by HSBC''.'
+      source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
+      quote: Redeem airline miles or hotel points instantly, with no fees (until such a time as determined by HSBC)
+      source_type: issuer
+      last_verified: *id001
+pending_changes: []
+notes:
+- 'EVA Air transfer ratio (lead: 25k points -> 10k miles) NOT verified on an issuer page; not recorded.'

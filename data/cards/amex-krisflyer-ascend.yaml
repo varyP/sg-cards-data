@@ -1,0 +1,101 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: amex-krisflyer-ascend
+issuer: American Express
+name: American Express Singapore Airlines KrisFlyer Ascend Credit Card
+type: miles
+network: American Express
+status: active
+product_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+facts:
+  min_income_sgd:
+    value: null
+    null_reason: Page says only 'regulatory minimum income requirement'; no figure stated.
+  fees:
+    annual_fee_sgd:
+      value: 397.85
+      unit: sgd_incl_gst
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Annual Fee S$397.85 (incl. of 9% GST)
+      source_type: issuer
+      last_verified: &id001 2026-10-03
+    first_year_waiver:
+      value: null
+      null_reason: No first-year waiver stated on page.
+    spend_based_waiver:
+      value: null
+      null_reason: Not stated.
+    fx_fee_pct:
+      value: null
+      null_reason: Not on product page.
+  earn:
+  - category: local_and_overseas_other
+    rate:
+      value: 1.2
+      unit: mpd
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Earn 1.2 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Earn 1.2 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: sia_scoot_krisshop_pelago
+    rate:
+      value: 2
+      unit: mpd
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Earn 2 KrisFlyer miles for every S$1 spent on eligible Singapore Airlines and Scoot flight bookings, KrisShop and Pelago purchases, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: grab_sg
+    rate:
+      value: 2
+      unit: mpd
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Earn up to 2 KrisFlyer miles for every S$1 spent on eligible Grab Singapore transactions, up to S$200 spend in each calendar month.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 200
+      unit: sgd_spend
+      period: calendar_month
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: Earn up to 2 KrisFlyer miles for every S$1 spent on eligible Grab Singapore transactions, up to S$200 spend in each calendar month.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: Full list at go.amex/sgexclusions (not fetched).
+  conversion:
+    ratio:
+      value: credited directly as KrisFlyer miles
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: all KrisFlyer miles earned with the American Express Singapore Airlines KrisFlyer Ascend Credit Card are conveniently credited directly into your KrisFlyer account.
+      source_type: issuer
+      last_verified: *id001
+    fee_sgd:
+      value: no_conversion_step
+      note: No points-to-miles transfer, so no per-conversion fee applies.
+      source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+      quote: all KrisFlyer miles earned with the American Express Singapore Airlines KrisFlyer Ascend Credit Card are conveniently credited directly into your KrisFlyer account.
+      source_type: issuer
+      last_verified: *id001
+pending_changes: []
+notes:
+- 'fetch: manual (Akamai blocks scripted fetch).'

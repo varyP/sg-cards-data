@@ -1,0 +1,87 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: sc-journey
+issuer: Standard Chartered
+name: Standard Chartered Journey Credit Card
+type: miles
+network: Visa
+status: active
+product_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+facts:
+  min_income_sgd:
+    value: null
+    null_reason: Not on the fetched landing page; T&C PDF on av.sc.com is robots-disallowed. Manual queue.
+  fees:
+    annual_fee_sgd:
+      value: null
+      null_reason: Manual queue.
+    first_year_waiver:
+      value: null
+      null_reason: Manual queue.
+    spend_based_waiver:
+      value: null
+      null_reason: Manual queue.
+    fx_fee_pct:
+      value: null
+      null_reason: Manual queue.
+  earn:
+  - category: transport_food_delivery_online_selected
+    rate:
+      value: 3
+      unit: mpd
+      source_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+      quote: 3 miles per S$1 on selected bonus categories (Transportation, Food deliveries and Online Merchant)
+      source_type: issuer
+      last_verified: &id001 2026-10-03
+    cap:
+      value: null
+      null_reason: Bonus cap not on landing page; check T&C (manual).
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_fcy
+    rate:
+      value: 2
+      unit: mpd
+      source_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+      quote: 2 miles per S$1 for overseas spends with no cap
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+      quote: 2 miles per S$1 for overseas spends with no cap
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: local
+    rate:
+      value: 1.2
+      unit: mpd
+      source_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+      quote: 1.2 miles per S$1 for local spends with no cap
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://www.sc.com/sg/credit-cards/journey-credit-card/
+      quote: 1.2 miles per S$1 for local spends with no cap
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: Manual queue (T&C PDF robots-disallowed).
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes: []

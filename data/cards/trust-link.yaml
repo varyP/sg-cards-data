@@ -1,0 +1,87 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: trust-link
+issuer: Trust
+name: Trust Link Credit Card
+type: rewards
+network: Visa
+status: active
+product_url: https://trustbank.sg/link-credit-card/
+facts:
+  min_income_sgd:
+    value: null
+    null_reason: Not extracted.
+  fees:
+    annual_fee_sgd:
+      value: 0
+      unit: sgd
+      derived: true
+      note: '''None'' read as S$0.'
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: Annual fee charges None, for both main cardholders and supplementary cardholders!
+      source_type: issuer
+      last_verified: &id001 2026-10-03
+    first_year_waiver:
+      value: not_applicable
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: Annual fee charges None, for both main cardholders and supplementary cardholders!
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: Not applicable.
+    fx_fee_pct:
+      value: 0
+      unit: pct
+      derived: true
+      note: '''no fee from Trust'' read as 0%; the Link page also says ''0% FX fees''.'
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: will be converted from US dollars into Singapore dollars at the foreign exchange rate provided by Visa with no fee from Trust
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: local_base
+    rate:
+      value: 0.22
+      unit: pct_linkpoints
+      note: Base outside FairPrice Group; FPG spend earns more (headline 'up to 21% savings' at FairPrice).
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: will receive 0.22% Linkpoints on all Local Eligible Spend, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: will receive 0.22% Linkpoints on all Local Eligible Spend, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: foreign_base
+    rate:
+      value: 0.05
+      unit: pct_linkpoints
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: will receive 0.05% Linkpoints on all Foreign Eligible Spend, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: none
+      source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
+      quote: will receive 0.05% Linkpoints on all Foreign Eligible Spend, with no cap.
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - value: null
+    null_reason: Not extracted.
+  conversion:
+    ratio: &id002
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd: *id002
+pending_changes: []
+notes: []

@@ -1,0 +1,44 @@
+name: daily-scan
+on:
+  schedule:
+    - cron: "15 1 * * *"   # 09:15 SGT daily
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: daily-scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}   # built-in token only; no secrets, no PATs
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Restore scan state (seen feed items, yesterday's page text)
+        uses: actions/cache@v4
+        with:
+          path: .state
+          key: scan-state-${{ github.run_id }}
+          restore-keys: scan-state-
+      - name: Scan feeds and issuer pages
+        run: python scripts/scan_feeds.py --state-dir .state
+      - name: Digest to job summary
+        if: always()
+        run: cat reports/digest.md >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scan-latest
+          path: reports/
+          retention-days: 30
+      - name: Report broken pipeline
+        if: failure()
+        run: python scripts/pipeline_broken.py daily-scan "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

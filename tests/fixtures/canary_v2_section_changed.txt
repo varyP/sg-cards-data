@@ -1,0 +1,7 @@
+Example Bank Rewards Card - Key Facts (synthetic canary fixture, not a real card)
+Earn 4 miles per dollar (mpd) on online spend. Bonus is capped at S$1,000 spend per calendar month.
+NEW: from 1 January, mobile wallet top-ups are excluded from bonus miles.
+Excluded transactions include insurance premiums (MCC 6300), education (MCC 8220) and government services (MCC 9399).
+The annual fee is S$196.20 inclusive of GST. The first year is waived.
+Foreign currency transactions incur a fee of 3.25% of the converted amount.
+This text is padded so the section fingerprint has surrounding context on both sides of each quote.

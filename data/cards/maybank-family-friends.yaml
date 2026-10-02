@@ -1,0 +1,129 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: maybank-family-friends
+issuer: Maybank
+name: Maybank Family & Friends Card
+type: cashback
+network: Mastercard
+status: active
+product_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+facts:
+  min_income_sgd:
+    value: null
+    null_reason: Not shown on the fetched rendering.
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
+      source_type: issuer
+      last_verified: &id001 2026-10-03
+    first_year_waiver:
+      value: waived_3_years
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: 12000
+      unit: sgd_spend_per_year
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: Subsequent annual fee will be automatically waived with a minimum spend of S$12,000 yearly
+      source_type: issuer
+      last_verified: *id001
+    fx_fee_pct:
+      value: null
+      null_reason: Not on product page.
+  earn:
+  - category: five_chosen_categories_tier2
+    rate:
+      value: 8
+      unit: pct_cashback_up_to
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 30
+      unit: sgd_cashback_per_category
+      period: calendar_month
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: 1600
+      unit: sgd_per_month
+      period: calendar_month
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
+      source_type: issuer
+      last_verified: *id001
+  - category: five_chosen_categories_tier1
+    rate:
+      value: 6
+      unit: pct_cashback_up_to
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 20
+      unit: sgd_cashback_per_category
+      period: calendar_month
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: 800
+      unit: sgd_per_month
+      period: calendar_month
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
+      source_type: issuer
+      last_verified: *id001
+  - category: other
+    rate:
+      value: 0.22
+      unit: pct_cashback
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+      quote: 0.22% cashback on all other spend
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: insurance-related (all personal Maybank cards from 1 Dec 2025, with stated exceptions)
+    value: no_rewards
+    mccs:
+    - '5960'
+    - '6381'
+    - '6399'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+    quote: 5960, 6381, 6399 | Insurance Related
+    source_type: issuer
+    last_verified: *id001
+    note: Rendered as a table; '|' is a cell separator in the WebFetch rendering. Horizon Visa Signature / Platinum Visa / Visa Infinite are exceptions.
+  - category: money transfer, utilities
+    value: no_rewards
+    mccs:
+    - '4829'
+    - '4900'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+    quote: From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1
+    source_type: issuer
+    last_verified: *id001
+  conversion:
+    ratio: &id002
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd: *id002
+pending_changes: []
+notes:
+- 'fetch: manual (Akamai). Groceries category earns up to 6% regardless of tier, per page.'

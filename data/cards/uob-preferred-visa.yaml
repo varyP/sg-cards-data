@@ -1,0 +1,135 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: uob-preferred-visa
+issuer: UOB
+name: UOB Preferred Visa Card (formerly Preferred Platinum Visa)
+type: miles
+network: Visa
+status: active
+product_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR aged 55 and below (S$15,000 if 56+; foreigners S$40,000)
+    source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+    quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: Fees Principal card S$196.20 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: waived
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: Fees Principal card S$196.20 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+      quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: mobile_contactless
+    rate:
+      value: 4
+      unit: mpd
+      note: Phone/watch tap at a physical reader only. In-app Apple/Google Pay counts as online, not contactless.
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: Earn rewards from mobile contactless spending Up to UNI$10 per S$5 spend (4 miles per S$1 spend)
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 1080
+      unit: bonus_uni_dollars
+      period: calendar_month
+      note: UNI$1,080 bonus is about S$600 of spend per category. The same page still carries an older 'capped at UNI$2,000' sentence; the newer per-category cap (from 1 Oct 2025) is recorded.
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: 'Category 1 is capped at UNI$1,080. Category 2 is capped at UNI$1,080. Total new monthly cap : UNI$2,160'
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: selected_online
+    rate:
+      value: 4
+      unit: mpd
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: Earn rewards on online shopping and entertainment Up to UNI$10 per S$5 spend (4 miles per S$1 spend)
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: 1080
+      unit: bonus_uni_dollars
+      period: calendar_month
+      source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
+      quote: 'Category 1 is capped at UNI$1,080. Category 2 is capped at UNI$1,080. Total new monthly cap : UNI$2,160'
+      source_type: issuer
+      last_verified: *id001
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
+    value: no_rewards
+    mccs:
+    - '4829'
+    - '4900'
+    - '5199'
+    - '5960'
+    - '5965'
+    - '5993'
+    - '6012'
+    - '6050'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '6540'
+    - '7349'
+    - '7511'
+    - '7523'
+    - '7995'
+    - '8062'
+    - '8211'
+    - '8220'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
+    quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
+    source_type: issuer
+    last_verified: *id001
+    note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
+  conversion:
+    ratio:
+      value: null
+      null_reason: See UOB Rewards+ T&C.
+    fee_sgd:
+      value: 27
+      unit: sgd_per_conversion
+      note: Clause in UOB Rewards+ T&C; exceptions listed for UOB Reserve / Visa Infinite / Privilege Banking cardmembers.
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
+      source_type: issuer
+      last_verified: *id001
+pending_changes: []
+notes:
+- Renamed from 'UOB Preferred Platinum Visa' on 10 Mar 2026 (UOB FAQ).

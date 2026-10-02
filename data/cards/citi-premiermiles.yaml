@@ -1,0 +1,101 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: citi-premiermiles
+issuer: Citi
+name: Citi PremierMiles Card
+type: miles
+network: Mastercard
+status: active
+product_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+    quote: Minimum income per year S$30,000 (SG/PR) or S$42,000 (Foreigner)
+    source_type: issuer
+    last_verified: &id001 2026-10-03
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: Basic fee of S$196.20, inclusive of 9% GST
+      source_type: issuer
+      last_verified: *id001
+    first_year_waiver:
+      value: only_via_alternative_welcome_offer
+      note: First-year waiver is one of two sign-up options; the 30,000-mile option says '1st year annual fee applies'. Not a standing waiver.
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: Receive first year annual fee waiver, 8,000 Bonus Citi Miles* when you apply & spend S$800 in 2 months.
+      source_type: issuer
+      last_verified: *id001
+    spend_based_waiver:
+      value: renewal_bonus_not_waiver
+      note: Paying the fee earns 10,000 miles; a requested waiver reverses them.
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: Renewal bonus of 10,000 Citi Miles ^ for Annual Fee payment
+      source_type: issuer
+      last_verified: *id001
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_up_to
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card/pdf/information-sheet.pdf
+      quote: subject to an administrative fee of up to 3.25% on the converted Singapore dollar amount if processed by VISA or Mastercard International
+      source_type: issuer
+      last_verified: *id001
+  earn:
+  - category: local
+    rate:
+      value: 1.2
+      unit: mpd
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: '1.2 Citi Miles # for every S$1 local spent'
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_fcy
+    rate:
+      value: 2.2
+      unit: mpd
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: '2.2 Citi Miles # for every S$1 foreign currency spent'
+      source_type: issuer
+      last_verified: *id001
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  exclusions:
+  - category: Citi rewards exclusion list (insurance, education, quasi-cash, utilities etc.)
+    value: no_rewards
+    mccs:
+    - '5960'
+    - '6012'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    - '8062'
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: MCC 5199 MCC 5960 MCC 6012 MCC 8241 MCC 8244 MCC 8249 MCC 8299 MCC 8398 MCC 8062**
+    source_type: issuer
+    last_verified: *id001
+    note: PDF table; asterisks mark card-specific footnotes. Read the PDF before quoting a specific MCC.
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Citi conversion fee not found on fetched pages.
+pending_changes: []
+notes: []

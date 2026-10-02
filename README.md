@@ -1,0 +1,58 @@
+# sg-cards-data
+
+Verified, source-cited data on Singapore credit cards, plus the pipeline that keeps it fresh.
+Information only, not financial advice. Card terms change: always confirm on the issuer's T&Cs.
+
+## What's here
+| Path | What |
+|---|---|
+| `data/cards/*.yaml` | One file per card (25 in the phase-1 pilot). Every fact has `value`, `source_url`, a verbatim `quote` and `last_verified`, or `value: null` with a `null_reason`. |
+| `schema/card.schema.json` | JSON Schema for card files |
+| `sources.yaml` | Source tiers, allowlist, blacklist, fetch rules, change keywords, card aliases |
+| `scripts/validate.py` | Fails on schema errors, numbers without provenance, expired pending changes, future dates. Warns on facts older than 30/60 days. |
+| `scripts/scan_feeds.py` | Daily: Tier 2 RSS + issuer page diffs, sends signals to issues (issuer/Tier 2) or a digest (everything else) |
+| `scripts/reverify.py` | Weekly: re-fetches sources, bumps `last_verified` only when the exact quote is still present, section-fingerprint diff |
+| `scripts/health_report.py` | Weekly: freshness, stale facts, failing sources, pending changes, canary, review backlog over 7 days |
+| `scripts/canary.py` | Proves the change-detection path still works (fixtures in `tests/fixtures`) |
+| `scripts/scan_repo.py` | Secret / personal-data / tracking-link scan (runs in CI) |
+| `tests/eval_set.yaml` | Bot evaluation set (owner: second reviewer) |
+| `bot/system_prompt.md` | Behaviour contract for the chat bot |
+| `REVIEW.md` | Two-reviewer handshake; the repo owner merges |
+
+## Source tiers
+1. **Issuer** pages, T&Cs and announcements, plus MAS / MoneySense / ABS: the only sole source for a number.
+2. **Change signals:** MileLion, Mainly Miles, Suitesmile. Two independent hits = high confidence, still confirmed on the issuer site.
+3. **Cross-check only:** SingSaver, MoneySmart (affiliate-funded; used only with a card-level T&C linked) and Sethisfy.
+
+## Automation (GitHub Actions, no secrets)
+| Workflow | When (SGT) | Permissions |
+|---|---|---|
+| `validate` | every push / PR | `contents: read` |
+| `daily-scan` | daily 09:15 | `contents: read`, `issues: write` |
+| `weekly-reverify` | Mon 10:00 | `contents: write`, `pull-requests: write`, `issues: write` |
+| `weekly-health` | Mon 12:00 | `contents: read`, `issues: write`, `pull-requests: read`, `actions: read` |
+
+Only the built-in `GITHUB_TOKEN` is used; there are no repository secrets and no personal access
+tokens. Opening the re-verify PR needs *Settings → Actions → General → "Allow GitHub Actions to
+create and approve pull requests"*; without it the job pushes the branch and opens an issue instead.
+
+## Known limits
+- **Manual sources:** Maybank and American Express block scripted fetches (bot wall); HSBC and some
+  Standard Chartered PDFs are disallowed by robots.txt. These facts are skipped by the re-verify job
+  and listed in the health report's manual-check queue; they go stale unless an agent re-checks them.
+- **JS-rendered pages:** DBS card pages and Trust product pages need headless Chrome (present on
+  GitHub's Ubuntu runners). If Chrome is missing, those fetches fail and dates are not bumped.
+- Issuer sites may block cloud IP ranges, including GitHub runners. Failed fetches never bump dates;
+  they show up as failing sources.
+
+## Run locally
+```bash
+python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+python scripts/validate.py
+python -m unittest discover -s tests -v
+python scripts/scan_repo.py
+```
+
+## Notes on content
+Quotes are short excerpts from issuer documents, kept only so each fact can be checked. Card names
+and trademarks belong to their owners. No referral or affiliate links, ever.
