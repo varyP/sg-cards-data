@@ -6,6 +6,7 @@ FAILS (exit 1) on:
   * any number that is not inside an object carrying source_url + quote + last_verified
   * a pending change whose effective_date has passed (apply it via a reviewed PR)
   * last_verified in the future
+  * data/index.json missing or out of date (regenerate with scripts/build_index.py)
 WARNS on:
   * facts older than 30 days (warn) / 60 days (stale: bot must not state as current)
   * numeric value not visible in its own quote (unless derived: true)
@@ -23,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from sgcards_lib import ROOT, as_date, card_files, iter_facts, load_yaml, today  # noqa: E402
+from build_index import index_is_current  # noqa: E402
 
 import jsonschema  # noqa: E402
 
@@ -149,6 +151,10 @@ def main() -> int:
                             "effective_date": str(eff), "days_until": (eff - now).days if eff else None})
             if eff and eff <= now:
                 errors.append(f"{cid}: pending change on {pc.get('field')} took effect {eff}: open a PR that applies new_value and removes the pending entry")
+
+    # 4) generated card index (data/index.json) must match the card files (repo run only)
+    if not args.cards_dir and not index_is_current():
+        errors.append("data/index.json is missing or out of date: run python scripts/build_index.py and commit it")
 
     verified = stats["verified"] or 1
     stats["pct_issuer_verified_fresh"] = round(100 * min(stats["fresh"], stats["issuer"]) / max(stats["facts"], 1), 1)

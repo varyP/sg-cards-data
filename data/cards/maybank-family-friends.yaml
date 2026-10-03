@@ -33,8 +33,14 @@ facts:
       source_type: issuer
       last_verified: *id001
     fx_fee_pct:
-      value: null
-      null_reason: Not on product page.
+      value: 3.25
+      unit: pct_up_to
+      derived: true
+      note: '3.25 = Maybank administrative fee 2.25% + card association charge of up to 1%, both in the quote; applies ''for all Cards''. Maybank blocks scripted fetches: quote read via WebFetch (manual source).'
+      source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
+      quote: 'the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: five_chosen_categories_tier2
     rate:

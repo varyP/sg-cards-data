@@ -30,8 +30,13 @@ facts:
       value: null
       null_reason: Threshold not extracted.
     fx_fee_pct:
-      value: null
-      null_reason: FX fee is in HSBC's tariff PDF, which robots.txt disallows for crawling (/*.pdf$). Manual-verification queue.
+      value: 3.25
+      unit: pct_up_to
+      note: 'Row ''Foreign currency transactions'' of the fee table in HSBC''s credit card application form (''Effective from August 2026''), which covers Live+, TravelOne and Revolution; text extraction separates the row label from the value. HSBC PDFs are robots-disallowed for crawlers: fetch is manual (one-off agent check), not automated.'
+      source_url: https://www.hsbc.com.sg/content/dam/hsbc/sg/documents/credit-cards/application-form.pdf
+      quote: 'Up to 3.25% of the transaction amount'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: dining_shopping_entertainment
     rate:

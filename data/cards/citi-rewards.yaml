@@ -33,8 +33,13 @@ facts:
       value: null
       null_reason: No spend-based waiver stated.
     fx_fee_pct:
-      value: null
-      null_reason: Card-specific info sheet not fetched; PremierMiles sheet says up to 3.25%, but not assumed for this card.
+      value: 3.25
+      unit: pct_up_to
+      note: 'From the ''Citibank Rewards Visa Signature/WORLD Mastercard information sheet'' linked from the Citi Rewards product page (printed Nov 2023, with effect from 1 Jan 2024).'
+      source_url: https://www.citibank.com.sg/credit-cards/rewards/pdf/citibank-rewards-info.pdf
+      quote: 'subject to an administrative fee of up to 3.25% on the converted Singapore dollar amount if processed by VISA or Mastercard International'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: online_and_selected_shopping
     rate:
@@ -79,8 +84,13 @@ facts:
       value: null
       null_reason: Not extracted.
     fee_sgd:
-      value: null
-      null_reason: Not extracted.
+      value: 27.25
+      unit: sgd_incl_gst_per_transfer
+      note: 'Applies to Points Transfers of Citi Rewards Points to airline partners incl. KrisFlyer (charged per card account). Instant transfers to KrisPay via Kris+ carry no fee, at a different ratio; not recorded here.'
+      source_url: https://www.citibank.com.sg/credit-cards/privileges-programs/credit-card-rewards-redemption/points-transfer.html
+      quote: 'An administrative fee of SGD27.25 (inclusive of GST) will be charged for each Points Transfer. This Fee is waived for Points Transfer from a Citi ULTIMA Card.'
+      source_type: issuer
+      last_verified: 2026-10-03
 pending_changes: []
 notes:
 - The 10X T&C PDF linked from the page is titled '2020'; confirm it is still the governing version.

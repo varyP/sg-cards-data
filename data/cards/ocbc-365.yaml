@@ -30,8 +30,12 @@ facts:
       source_type: issuer
       last_verified: *id001
     spend_based_waiver:
-      value: null
-      null_reason: Spend-based auto-waiver exists per page; threshold not extracted.
+      value: 10000
+      unit: sgd_spend_per_year
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: 'Minimum spending required to have your Annual Service Fee automatically waived S$10,000 in one year, starting from the month in which your OCBC 365 Credit Card was issued'
+      source_type: issuer
+      last_verified: 2026-10-03
     fx_fee_pct:
       value: 3.25
       unit: pct_of_foreign_amount
