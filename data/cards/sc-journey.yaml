@@ -22,8 +22,14 @@ facts:
       value: null
       null_reason: Manual queue.
     fx_fee_pct:
-      value: null
-      null_reason: Manual queue.
+      value: 3.5
+      unit: pct_of_converted_sgd_amount
+      derived: true
+      note: '3.5 = 1% Visa/Mastercard charge + 2.5% SC fee, both in the quote (''Important Notes on Credit Cards'' > ''Foreign Currency Transactions'' on SC''s pricing guide; applies to all SC Visa/Mastercard credit cards).'
+      source_url: https://www.sc.com/sg/pricing-guide/
+      quote: '(i) a prevailing charge of 1% of the converted Singapore Dollar amount representing the charge imposed by Visa / Mastercard on the transaction; and (ii) a prevailing fee of 2.5% of the converted Singapore Dollars amount'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: transport_food_delivery_online_selected
     rate:

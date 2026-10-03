@@ -40,6 +40,34 @@ class TestData(unittest.TestCase):
         self.assertEqual(method_for("https://www.uob.com.sg/x", s), "static")
 
 
+class TestIndex(unittest.TestCase):
+    """data/index.json lists every card and is regenerated whenever a card changes."""
+
+    def test_index_up_to_date(self):
+        import build_index
+        self.assertTrue(build_index.index_is_current(), "run python scripts/build_index.py")
+
+    def test_index_lists_every_card(self):
+        idx = json.loads((ROOT / "data" / "index.json").read_text())
+        self.assertEqual([c["id"] for c in idx["cards"]], sorted(p.stem for p in card_files()))
+        self.assertEqual(idx["count"], len(idx["cards"]))
+        for c in idx["cards"]:
+            self.assertTrue(c["issuer"] and c["name"], c["id"])
+            self.assertEqual(c["path"], f"data/cards/{c['id']}.yaml")
+            self.assertTrue((ROOT / c["path"]).is_file(), c["path"])
+
+    def test_stale_index_fails_validation(self):
+        path = ROOT / "data" / "index.json"
+        original = path.read_text()
+        try:
+            path.write_text(original.replace('"count": ', '"count": 1', 1))
+            rc, res = run_validate()
+            self.assertNotEqual(rc, 0)
+            self.assertTrue(any("index.json" in e for e in res["errors"]))
+        finally:
+            path.write_text(original)
+
+
 class TestValidatorRejects(unittest.TestCase):
     """A number without a quote, or an expired pending change, must fail the build."""
 

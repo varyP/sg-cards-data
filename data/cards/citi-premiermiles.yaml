@@ -25,11 +25,12 @@ facts:
       last_verified: *id001
     first_year_waiver:
       value: only_via_alternative_welcome_offer
-      note: First-year waiver is one of two sign-up options; the 30,000-mile option says '1st year annual fee applies'. Not a standing waiver.
+      note: 'New-to-Citi sign-up has two options (both quoted): 30,000 bonus Citi Miles with the first-year fee charged, OR a first-year fee waiver with 8,000 bonus Citi Miles; both need S$800 spend in 2 months. Not a standing waiver. Page footnote: ''Promotion valid till 31 March 2027.'''
       source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
-      quote: Receive first year annual fee waiver, 8,000 Bonus Citi Miles* when you apply & spend S$800 in 2 months.
+      quote: 'Receive 30,000 Bonus Citi Miles* when you apply and spend S$800 in 2 months (1st year annual fee applies). *T&Cs apply. Select OR Receive first year annual fee waiver, 8,000 Bonus Citi Miles* when you apply & spend S$800 in 2 months.'
       source_type: issuer
       last_verified: *id001
+      effective_to: 2027-03-31
     spend_based_waiver:
       value: renewal_bonus_not_waiver
       note: Paying the fee earns 10,000 miles; a requested waiver reverses them.
@@ -95,7 +96,12 @@ facts:
       value: null
       null_reason: Not extracted.
     fee_sgd:
-      value: null
-      null_reason: Citi conversion fee not found on fetched pages.
+      value: 27.25
+      unit: sgd_incl_gst_per_transfer
+      note: 'Applies to Points Transfers of Citi Miles to airline partners incl. KrisFlyer (charged per card account). Instant transfers to KrisPay via Kris+ carry no fee, at a different ratio; not recorded here.'
+      source_url: https://www.citibank.com.sg/credit-cards/privileges-programs/credit-card-rewards-redemption/points-transfer.html
+      quote: 'An administrative fee of SGD27.25 (inclusive of GST) will be charged for each Points Transfer. This Fee is waived for Points Transfer from a Citi ULTIMA Card.'
+      source_type: issuer
+      last_verified: 2026-10-03
 pending_changes: []
 notes: []

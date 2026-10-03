@@ -1,5 +1,6 @@
 # Evaluation set for the SG cards bot (phase 1 pilot data, verified 2026-10-03 SGT).
-# Owner / second reviewer: Maxis. Changes to this file follow REVIEW.md: both reviewers must OK.
+# Owner: Maxis (the second reviewer in REVIEW.md), maintained with grokbot. Changes to this file follow
+# REVIEW.md: both reviewers must OK.
 # Kill criterion (phase 1): the bot must score >= 95% on this set AND beat a general chatbot
 # (same questions, no data repo) by a clear margin. Otherwise, stop and rethink.
 #
@@ -10,7 +11,7 @@
 # Case IDs M1-M8 are the second reviewer's original eight. "as_of" = the date the answer is valid for.
 meta:
   owner: Maxis
-  second_reviewer: Maxis
+  maintained_with: grokbot
   data_as_of: 2026-10-03
   pass_threshold_pct: 95
   default_behaviour: [cites issuer source with last-checked date, no affiliate links, information-only disclaimer when recommending]
@@ -73,7 +74,7 @@ cases:
   - id: M7
     category: exclusion
     question: "Can I earn miles paying my insurance premiums by credit card?"
-    expected: "Usually not: insurance MCCs (e.g. 6300) are excluded on DBS, UOB, OCBC, Citi and Maybank F&F. Exceptions in the pilot: Maybank Horizon says it earns on insurance; AMEX True Cashback lists insurance as eligible. Check the card's current exclusion list."
+    expected: "Usually not. MCC 6300 is on the quoted exclusion lists of DBS (with 6381 and 6399), UOB and OCBC. Maybank F&F excludes its 'Insurance Related' MCCs 5960, 6381 and 6399 (its table does not list 6300). Citi's quoted exclusion list (rewards-exclusion-list PDF) is cited without a quoted insurance MCC, so don't name an MCC for Citi; point to that list. Exceptions in the pilot: Maybank Horizon says it earns on insurance; AMEX True Cashback lists insurance as eligible. Check the card's current exclusion list."
     must_include: ["6300|excluded", "Horizon|True Cashback"]
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
   - id: M8
@@ -88,7 +89,7 @@ cases:
     category: fee_waiver
     card: citi-premiermiles
     question: "Is the Citi PremierMiles first-year fee waived?"
-    expected: "Only via the alternative welcome option (first-year waiver + 8,000 bonus Citi Miles with S$800 spend in 2 months). The 30,000-mile sign-up option charges the first-year fee. Annual fee S$196.20."
+    expected: "Only via one of the two new-to-Citi welcome options: first-year fee waiver + 8,000 bonus Citi Miles with S$800 spend in 2 months. The other option (30,000 bonus Citi Miles with S$800 spend in 2 months) says '1st year annual fee applies'. Annual fee S$196.20."
     must_include: ["196.20", "alternative|option|instead"]
     source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
   - id: F2

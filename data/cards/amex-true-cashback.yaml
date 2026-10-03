@@ -29,8 +29,13 @@ facts:
       value: null
       null_reason: Not stated.
     fx_fee_pct:
-      value: null
-      null_reason: Not on product page.
+      value: 3.25
+      unit: pct
+      note: 'Clause ''Foreign Exchange Charges'' of the True Cashback Card Member Agreement and Benefits T&C linked from the product page. AMEX blocks scripted fetches (Akamai 403): PDF read via a browser, manual source.'
+      source_url: https://www.americanexpress.com/content/dam/amex/sg/campaigns/pdfs/true-cashback-card.pdf
+      quote: 'We will increase the Foreign Charge by a single conversion commission of 3.25%.'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: all_eligible
     rate:

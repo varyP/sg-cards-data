@@ -26,8 +26,13 @@ facts:
       value: null
       null_reason: Not stated.
     fx_fee_pct:
-      value: null
-      null_reason: Not on product page.
+      value: 3.25
+      unit: pct
+      note: 'Clause ''Foreign Exchange Charges'' of the KrisFlyer Ascend Card Member Agreement and Benefits T&C linked from the product page. AMEX blocks scripted fetches (Akamai 403): PDF read via a browser, manual source. The same PDF''s fee summary also says ''Fees for foreign currency transactions 3.25%''.'
+      source_url: https://www.americanexpress.com/content/dam/amex/sg/campaigns/pdfs/krisflyer-ascend-credit-card.pdf
+      quote: 'We will increase the Foreign Charge by a single conversion commission of 3.25%.'
+      source_type: issuer
+      last_verified: 2026-10-03
   earn:
   - category: local_and_overseas_other
     rate:

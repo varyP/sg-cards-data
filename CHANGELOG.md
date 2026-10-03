@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-03: fix 1 (self-test findings)
+- Eval set: M7 expected answer now matches the quoted exclusion data (MCC 6300 quoted for DBS, UOB,
+  OCBC; Maybank F&F lists 5960/6381/6399; no insurance MCC quoted for Citi). F1 cites the 30,000-mile
+  option from the now-quoted Citi PremierMiles welcome text. Meta: owner Maxis, maintained with grokbot.
+- Filled with verbatim issuer quotes: FX fees for HSBC Live+/Revolution/TravelOne (up to 3.25%),
+  Maybank F&F/Horizon (up to 3.25%, derived 2.25% + up to 1%), AMEX KrisFlyer Ascend/True Cashback
+  (3.25%), SC Journey/Smart (3.5%, derived 1% + 2.5%), Citi Rewards (up to 3.25%); Citi points
+  transfer fee S$27.25 (PremierMiles and Rewards); OCBC 365 spend-based waiver S$10,000 a year.
+- New generated `data/index.json` (card id, issuer, name, path) and `scripts/build_index.py`; the
+  validator fails when the index is stale. Bot prompt and README point to the raw index file.
+
 ## 2026-10-03: phase 1 pilot
 - 25 pilot cards (DBS, UOB, OCBC, Citi, HSBC, Standard Chartered, Trust, Maybank, American Express),
   every fact issuer-sourced with a verbatim quote, checked 2026-10-03 (SGT).
