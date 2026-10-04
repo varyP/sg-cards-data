@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-04: MoneySmart knowledge hub audited (explainer tier)
+- New `tier3_explainer` tier in `sources.yaml` and source `moneysmart-knowledge-hub`
+  (kind: reference, fetch: manual, so the pipeline never fetches it). Concepts only: never the source
+  or check for a number, not a change signal, link only a bare canonical article URL.
+- Audit: 10 sampled claims; 6 matched issuer/MAS pages, 4 wrong or stale (DBS Vantage fee waiver,
+  Maybank F&F tier, OCBC 365 streaming rate and the 1 Nov revision missing, MAS credit-limit table).
+  No card data changed.
+
 ## 2026-10-03: fix 1 (self-test findings)
 - Eval set: M7 expected answer now matches the quoted exclusion data (MCC 6300 quoted for DBS, UOB,
   OCBC; Maybank F&F lists 5960/6381/6399; no insurance MCC quoted for Citi). F1 cites the 30,000-mile
