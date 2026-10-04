@@ -63,9 +63,10 @@ sources:
       date. Spot check: 6 of 10 card/MAS claims matched issuer or MAS pages; 4 were wrong or stale on
       pages 'Updated' Jan-Sep 2026: DBS Vantage S$60k fee waiver (ceased 1 Aug 2026); Maybank F&F 8%
       at S$800 (issuer: 6% at S$800, 8% at S$1,600); OCBC 365 streaming at 5% (issuer: 3%) with the
-      1 Nov 2026 revision not mentioned; MAS credit-limit table applies the 2x-monthly-income row to
-      all sub-S$30k earners (MAS: over-55s only). Usable for: DCC, MCC 4722 OTA coding, fee-waiver
-      request steps, miles vs cashback. Prefer MAS/MoneySense for regulatory rules.
+      1 Nov 2026 revision not mentioned; MAS/ABS credit-limit bands are income-based (2x below
+      S$30k, 4x from S$30k to < S$120k) with no age qualifier on the band itself — prefer ABS FAQ
+      / MAS for regulatory rules, not MoneySmart. Usable for: DCC, MCC 4722 OTA coding, fee-waiver
+      request steps, miles vs cashback.
 
 # How each URL prefix is fetched by scripts/reverify.py (first match wins; default static).
 fetch_rules:
