@@ -31,6 +31,8 @@ its `path`. Raw files are not subject to the GitHub API's unauthenticated rate l
 1. **Issuer** pages, T&Cs and announcements, plus MAS / MoneySense / ABS: the only sole source for a number.
 2. **Change signals:** MileLion, Mainly Miles, Suitesmile. Two independent hits = high confidence, still confirmed on the issuer site.
 3. **Cross-check only:** SingSaver, MoneySmart (affiliate-funded; used only with a card-level T&C linked) and Sethisfy.
+   **Explainer only:** the MoneySmart credit card knowledge hub, for concepts (DCC, MCCs, how caps and
+   fee-waiver requests work). Never a source or check for a number; its card-level figures are often stale.
 
 ## Automation (GitHub Actions, no secrets)
 | Workflow | When (SGT) | Permissions |
