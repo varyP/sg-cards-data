@@ -74,6 +74,40 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: kaligo_portal_hotels
+    description: Hotel bookings via the dedicated Kaligo link (promotion)
+    rate:
+      value: 10
+      unit: mpd
+      effective_to: 2026-12-31
+      note: "Must book through the dedicated link on the Citi page."
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: "Kaligo Earn 10 Citi Miles for every S$1 spent on kaligo.com/bonus-miles Valid till 31 December 2026."
+      source_type: issuer
+      last_verified: 2026-10-05
+    cap:
+      value: null
+      null_reason: No promotion cap stated on the product page; check the promotion T&C.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition stated for this promotion; check the promotion T&C.
+  - category: agoda_portal_hotels
+    description: Hotel bookings via the dedicated Agoda link (promotion)
+    rate:
+      value: 7.2
+      unit: mpd
+      effective_to: 2026-12-31
+      note: "'Up to' rate. Bookings to 31 Dec 2026, stays to 30 Apr 2027; must book through the dedicated link."
+      source_url: https://www.citibank.com.sg/credit-cards/travel/premiermiles-card
+      quote: "Agoda Earn up to 7.2 Citi Miles for every S$1 spent on hotel bookings worldwide on agoda.com/bonusmiles Valid for bookings made now till 31 December 2026 and for stays until 30 April 2027."
+      source_type: issuer
+      last_verified: 2026-10-05
+    cap:
+      value: null
+      null_reason: No promotion cap stated on the product page; check the promotion T&C.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition stated for this promotion; check the promotion T&C.
   exclusions:
   - category: Citi rewards exclusion list (insurance, education, quasi-cash, utilities etc.)
     value: no_rewards
