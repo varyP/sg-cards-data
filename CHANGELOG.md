@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)
+- New ground rules 11-14 in `bot/system_prompt.md`: coverage honesty ("among the N cards I track";
+  no "no card beats X" without a market check on issuer pages in the chat); cards outside the dataset
+  only with figures read live from the issuer page in the chat, cited with link and date and labelled
+  "not in my checked list"; outcomes, not orders ("on these numbers X comes out ahead"); unsourced
+  claims marked "unconfirmed" with no number, or left out.
+- Citations required inline in follow-up answers too; the disclaimer goes on every shortlist or
+  comparison; never save a user's cards, spending, trips or income beyond the conversation.
+- "Only the data" and the load-failure rule now allow the rule-12 exception.
+- Tests check the new wording. No card data changed.
+
 ## 2026-10-05: live bot rules (rules version 2026-10-05.1)
 - `bot/system_prompt.md` is now loaded live by each installed bot at the start of every conversation
   (bootstrap prompt keeps the hard safety rules inline). Added the `Rules version: 2026-10-05.1` line,

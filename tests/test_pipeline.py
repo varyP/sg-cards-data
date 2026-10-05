@@ -149,6 +149,23 @@ class TestBotRules(unittest.TestCase):
         ):
             self.assertIn(phrase, low, phrase)
 
+    def test_answer_quality_rules_present(self):
+        low = " ".join(self.text.lower().split())
+        for phrase in (
+            "among the n cards i track",                     # coverage honesty
+            "never say \"no card beats x\"",
+            "read live from that card's issuer page",        # cards outside the dataset
+            "\"not in my checked list\"",
+            "in follow-up answers too",                      # citations in follow-ups
+            "every shortlist",                               # disclaimer on every shortlist
+            "on these numbers x comes out ahead",            # outcomes, not orders
+            "not \"book x\"",
+            "save a user's cards, spending, trips or income to memory",
+            "keep them for this conversation only",
+            "marked \"unconfirmed\" with no number",       # unsourced claims
+        ):
+            self.assertIn(phrase, low, phrase)
+
 
 if __name__ == "__main__":
     unittest.main()
