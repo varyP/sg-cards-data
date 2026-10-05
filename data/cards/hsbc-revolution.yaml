@@ -16,7 +16,7 @@ facts:
     source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
     quote: Singaporean / Singapore permanent residents (salaried employees) SGD30,000 SGD65,000 SGD65,000
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: null
@@ -26,7 +26,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: We're waiving your HSBC Revolution Credit Card annual fee.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: Not applicable.
@@ -35,7 +35,7 @@ facts:
       unit: pct_up_to
       note: 'Row ''Foreign currency transactions'' of the fee table in HSBC''s credit card application form (''Effective from August 2026''), which covers Live+, TravelOne and Revolution; text extraction separates the row label from the value. HSBC PDFs are robots-disallowed for crawlers: fetch is manual (one-off agent check), not automated.'
       source_url: https://www.hsbc.com.sg/content/dam/hsbc/sg/documents/credit-cards/application-form.pdf
-      quote: 'Up to 3.25% of the transaction amount'
+      quote: Up to 3.25% of the transaction amount
       source_type: issuer
       last_verified: 2026-10-03
   earn:
@@ -47,7 +47,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: All other cardholders 1× 9× 10× (up to 4 miles) 9,000 Bonus Points per calendar month
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 9000
       unit: bonus_points
@@ -55,7 +55,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: All other cardholders 1× 9× 10× (up to 4 miles) 9,000 Bonus Points per calendar month
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -67,7 +67,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: of at least SGD50,000 1× 19× 20× (up to 8 miles) 22,800 Bonus Points per calendar month
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 22800
       unit: bonus_points
@@ -75,7 +75,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: of at least SGD50,000 1× 19× 20× (up to 8 miles) 22,800 Bonus Points per calendar month
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -85,13 +85,13 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: Plus, you'll earn 1× Base Points for all other qualifying transactions, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: none
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: Plus, you'll earn 1× Base Points for all other qualifying transactions, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -110,7 +110,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/revolution/
       quote: Redeem airline miles or hotel points instantly, with no fees (until such a time as determined by HSBC)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
 pending_changes: []
 notes:
 - 'EVA Air transfer ratio (lead: 25k points -> 10k miles) NOT verified on an issuer page; not recorded.'

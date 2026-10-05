@@ -15,7 +15,7 @@ facts:
     source_url: https://www.uob.com.sg/personal/cards/cashback/one-card.page
     quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -23,14 +23,14 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/cashback/one-card.page
       quote: 'Principal card: S$196.20 (first year fee wavier)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     first_year_waiver:
       value: waived
       note: '''wavier'' is the issuer''s typo; quote kept verbatim.'
       source_url: https://www.uob.com.sg/personal/cards/cashback/one-card.page
       quote: 'Principal card: S$196.20 (first year fee wavier)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: No spend-based waiver stated.
@@ -40,7 +40,7 @@ facts:
       source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
       quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: quarterly_tier_1
     rate:
@@ -50,7 +50,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
       quote: a total of at least S$600 but less than S$1,000 worth of Card Transactions comprising at least 10 Card Transactions. S$60
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -61,7 +61,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
       quote: a total of at least S$600 but less than S$1,000 worth of Card Transactions comprising at least 10 Card Transactions. S$60
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: quarterly_tier_3
     rate:
       value: 200
@@ -69,7 +69,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
       quote: a total of at least S$2,000 worth of Card Transactions comprising at least 10 Card Transactions. S$200
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -80,7 +80,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
       quote: a total of at least S$2,000 worth of Card Transactions comprising at least 10 Card Transactions. S$200
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: headline_up_to
     rate:
       value: 10
@@ -89,7 +89,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/cashback/one-card.page
       quote: Enjoy up to 10% cashback on your daily spend
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -101,16 +101,16 @@ facts:
     source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
     quote: '"Quarter" means a period of three consecutive statement months'
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-05
   exclusions:
   - value: null
     null_reason: UOB One exclusions in the One Card T&C not yet extracted.
     source_url_to_check: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
   conversion:
-    ratio: &id002
+    ratio: &id001
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd: *id001
 pending_changes: []
 notes:
 - 'Issuer inconsistency: the product page mentions ''S$100 or S$50 quarterly cashback'' while the T&C (w.e.f. 1 Jul 2025) sets Tier 1 at S$60. The T&C value is recorded; flagged for review.'

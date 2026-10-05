@@ -14,7 +14,7 @@ facts:
     source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
     quote: 'Minimum Income: Singaporeans/PR/Foreigners: S$120,000 p.a.'
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: 414.2
@@ -22,13 +22,13 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
       quote: 'Principal card: S$414.20 ^ yearly First year card fee waiver'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     first_year_waiver:
       value: waived
       source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
       quote: 'Principal card: S$414.20 ^ yearly First year card fee waiver'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: No spend-based waiver stated.
@@ -38,7 +38,7 @@ facts:
       source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
       quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: two_chosen_bonus_categories
     rate:
@@ -48,7 +48,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
       quote: 10X UNI$ per S$5 spent ( 4 miles per S$1 ) with no min. spend on UOB Lady's Credit Card
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 1500
       unit: sgd_spend
@@ -57,13 +57,13 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
       quote: if you hold a Lady's Solitaire Card, 2,700 UNI$ (which is equivalent to S$1,500 spent), with each Preferred Rewards Category capped at 1,350 UNI$ (which is equivalent to S$750 spent).
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: none
       source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
       quote: 10X UNI$ per S$5 spent ( 4 miles per S$1 ) with no min. spend on UOB Lady's Credit Card
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: other
     rate:
       value: 0.4
@@ -71,7 +71,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
       quote: UNI$1 per S$5 spent ( 0.4 miles per S$1 ) on other purchases
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -113,7 +113,7 @@ facts:
     source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
     quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-05
     note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
   - category: 'category definitions are MCC-based (example: Dining)'
     value: bonus_category_mcc_whitelist
@@ -125,7 +125,7 @@ facts:
     source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
     quote: Dining 5811, 5812, 5814, 5499 Caterers, Eating places and Restaurants, Fast food restaurants and food deliveries
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-05
     note: 'Not an exclusion: this is the MCC whitelist for the Dining bonus category. Other categories: Beauty & Wellness, Entertainment, Family, Fashion, Transport, Travel.'
   conversion:
     ratio:
@@ -138,7 +138,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
       quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
 pending_changes: []
 notes:
 - 'Cap history: S$2,000/month (3,600 UNI$) until 31 Jul 2025, then 2 x S$750 from 1 Aug 2025 (issuer T&C).'

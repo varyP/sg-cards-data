@@ -15,7 +15,7 @@ facts:
     source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
     quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -23,13 +23,13 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: Fees Principal card S$196.20 ^ yearly First year card fee waiver
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     first_year_waiver:
       value: waived
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: Fees Principal card S$196.20 ^ yearly First year card fee waiver
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: No spend-based waiver stated.
@@ -39,7 +39,7 @@ facts:
       source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
       quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: mobile_contactless
     rate:
@@ -49,7 +49,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: Earn rewards from mobile contactless spending Up to UNI$10 per S$5 spend (4 miles per S$1 spend)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 1080
       unit: bonus_uni_dollars
@@ -58,7 +58,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: 'Category 1 is capped at UNI$1,080. Category 2 is capped at UNI$1,080. Total new monthly cap : UNI$2,160'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -69,7 +69,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: Earn rewards on online shopping and entertainment Up to UNI$10 per S$5 spend (4 miles per S$1 spend)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 1080
       unit: bonus_uni_dollars
@@ -77,7 +77,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page
       quote: 'Category 1 is capped at UNI$1,080. Category 2 is capped at UNI$1,080. Total new monthly cap : UNI$2,160'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -116,7 +116,7 @@ facts:
     source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
     quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-05
     note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
   conversion:
     ratio:
@@ -129,7 +129,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
       quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
 pending_changes: []
 notes:
 - Renamed from 'UOB Preferred Platinum Visa' on 10 Mar 2026 (UOB FAQ).

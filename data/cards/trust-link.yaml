@@ -20,13 +20,13 @@ facts:
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: Annual fee charges None, for both main cardholders and supplementary cardholders!
       source_type: issuer
-      last_verified: &id001 2026-10-03
+      last_verified: 2026-10-05
     first_year_waiver:
       value: not_applicable
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: Annual fee charges None, for both main cardholders and supplementary cardholders!
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: Not applicable.
@@ -38,7 +38,7 @@ facts:
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: will be converted from US dollars into Singapore dollars at the foreign exchange rate provided by Visa with no fee from Trust
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: local_base
     rate:
@@ -48,13 +48,13 @@ facts:
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: will receive 0.22% Linkpoints on all Local Eligible Spend, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: none
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: will receive 0.22% Linkpoints on all Local Eligible Spend, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -65,13 +65,13 @@ facts:
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: will receive 0.05% Linkpoints on all Foreign Eligible Spend, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: none
       source_url: https://trustbank.sg/legal/key-facts-sheet-credit-card/
       quote: will receive 0.05% Linkpoints on all Foreign Eligible Spend, with no cap.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -79,9 +79,9 @@ facts:
   - value: null
     null_reason: Not extracted.
   conversion:
-    ratio: &id002
+    ratio: &id001
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd: *id001
 pending_changes: []
 notes: []
