@@ -20,6 +20,16 @@
   must keep the core safety rules.
 - No card data changed.
 
+## 2026-10-05: portal bonuses and UOB overseas-processed SGD fee (data)
+- UOB PRVI Miles: added promotion earn rows for the dedicated Agoda site (up to 8 mpd, foreign-currency
+  hotel spend, bookings to 2027-08-15, Japan stays excluded) and Expedia site (up to 8 mpd hotels/other,
+  up to 3 mpd flights, bookings to 2027-03-31); new fact `overseas_processed_sgd_fee_pct` = 1% for SGD
+  transactions on Visa/Mastercard processed outside Singapore (UOB general card information).
+- Citi PremierMiles: added promotion earn rows for Kaligo (10 mpd, to 2026-12-31) and Agoda (up to
+  7.2 mpd, bookings to 2026-12-31, stays to 2027-04-30) via the dedicated links.
+- All quotes verbatim from issuer pages, checked 2026-10-05. Caps and minimum spend not stated on the
+  product pages, so `null` with a reason.
+
 ## 2026-10-04: MoneySmart knowledge hub audited (explainer tier)
 - New `tier3_explainer` tier in `sources.yaml` and source `moneysmart-knowledge-hub`
   (kind: reference, fetch: manual, so the pipeline never fetches it). Concepts only: never the source
