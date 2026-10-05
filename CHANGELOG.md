@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-05: live bot rules (rules version 2026-10-05.1)
+- `bot/system_prompt.md` is now loaded live by each installed bot at the start of every conversation
+  (bootstrap prompt keeps the hard safety rules inline). Added the `Rules version: 2026-10-05.1` line,
+  a "How this file is used" section (bootstrap rules win; bump version on every change; report the
+  version when asked) and an explicit "say so when data can't be loaded, never answer from memory" rule.
+- Tests: the rules file must carry a well-formed version line that is recorded in this changelog, and
+  must keep the core safety rules.
+- No card data changed.
+
 ## 2026-10-04: MoneySmart knowledge hub audited (explainer tier)
 - New `tier3_explainer` tier in `sources.yaml` and source `moneysmart-knowledge-hub`
   (kind: reference, fetch: manual, so the pipeline never fetches it). Concepts only: never the source
