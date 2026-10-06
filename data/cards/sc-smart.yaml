@@ -14,7 +14,7 @@ facts:
     source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
     quote: 'Minimum annual income: S$30,000'
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: 91
@@ -23,13 +23,13 @@ facts:
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: Thereafter, the annual fee is S$91 (excluding 9% GST).
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     first_year_waiver:
       value: waived
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: For new cardholders, the annual fee is waived off for the first year.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: No spend-based waiver stated.
@@ -37,11 +37,11 @@ facts:
       value: 3.5
       unit: pct_of_converted_sgd_amount
       derived: true
-      note: '3.5 = 1% Visa/Mastercard charge + 2.5% SC fee, both in the quote (''Important Notes on Credit Cards'' > ''Foreign Currency Transactions'' on SC''s pricing guide; applies to all SC Visa/Mastercard credit cards).'
+      note: 3.5 = 1% Visa/Mastercard charge + 2.5% SC fee, both in the quote ('Important Notes on Credit Cards' > 'Foreign Currency Transactions' on SC's pricing guide; applies to all SC Visa/Mastercard credit cards).
       source_url: https://www.sc.com/sg/pricing-guide/
-      quote: '(i) a prevailing charge of 1% of the converted Singapore Dollar amount representing the charge imposed by Visa / Mastercard on the transaction; and (ii) a prevailing fee of 2.5% of the converted Singapore Dollars amount'
+      quote: (i) a prevailing charge of 1% of the converted Singapore Dollar amount representing the charge imposed by Visa / Mastercard on the transaction; and (ii) a prevailing fee of 2.5% of the converted Singapore Dollars amount
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-05
   earn:
   - category: bonus_merchants_tier_800
     rate:
@@ -51,13 +51,13 @@ facts:
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: none
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: Enjoy up to 10% unlimited cashback on your dining, streaming, and commute expenses.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: 800
       unit: sgd_per_statement_month
@@ -65,7 +65,7 @@ facts:
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: bonus_merchants_tier_1500
     rate:
       value: 10
@@ -73,7 +73,7 @@ facts:
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -84,14 +84,14 @@ facts:
       source_url: https://www.sc.com/sg/credit-cards/smart-credit-card/
       quote: ≥ S$800 8% 0.5% ≥ S$1,500 10% 1%
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   exclusions:
   - value: null
     null_reason: Smart Card T&C PDF on www.sc.com not yet parsed for exclusions.
   conversion:
-    ratio: &id002
+    ratio: &id001
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd: *id001
 pending_changes: []
 notes: []

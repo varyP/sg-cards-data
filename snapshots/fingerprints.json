@@ -1,4 +1,8 @@
 {
+ "citi-premiermiles:facts.conversion.fee_sgd": {
+  "sha256": "ffd3cec85c6cb99e5a202638c4e2b59ebf220b63dc22f69663c4a0450d569162",
+  "url": "https://www.citibank.com.sg/credit-cards/privileges-programs/credit-card-rewards-redemption/points-transfer.html"
+ },
  "citi-premiermiles:facts.earn[local].rate": {
   "sha256": "7f41e9aaac52efebe5c9703bc7a11cc821c1a29ca40a2f1c698dc2d7b9455a16",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
@@ -16,7 +20,7 @@
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.first_year_waiver": {
-  "sha256": "4d7b514f56b44c5460a073f73ebef0aba08fba81005be3c75c207f4024115e0b",
+  "sha256": "4bccfbec89bd1829d1531000c64ae498c47446d2adebad4d40718558010d5a39",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.fx_fee_pct": {
@@ -30,6 +34,10 @@
  "citi-premiermiles:facts.min_income_sgd": {
   "sha256": "b68dc0240a2e9e252a0980d24112cec053daf39b40bfe888617c6b25f974f20f",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
+ },
+ "citi-rewards:facts.conversion.fee_sgd": {
+  "sha256": "ffd3cec85c6cb99e5a202638c4e2b59ebf220b63dc22f69663c4a0450d569162",
+  "url": "https://www.citibank.com.sg/credit-cards/privileges-programs/credit-card-rewards-redemption/points-transfer.html"
  },
  "citi-rewards:facts.earn[online_and_selected_shopping].cap": {
   "sha256": "3a9842013cd8d51010443abf1f1f2172748e0152e6bb6fc9ad13f7ccf6b1f508",
@@ -54,6 +62,10 @@
  "citi-rewards:facts.fees.first_year_waiver": {
   "sha256": "0eccec407eedb26d95d006fd034c82c659634a228bec24fb21653bde90f3612d",
   "url": "https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/"
+ },
+ "citi-rewards:facts.fees.fx_fee_pct": {
+  "sha256": "acba8a1fbc8fc392b65effe698071ba1bdabed46fd8706f3be6ead8eb1c515f5",
+  "url": "https://www.citibank.com.sg/credit-cards/rewards/pdf/citibank-rewards-info.pdf"
  },
  "citi-rewards:facts.min_income_sgd": {
   "sha256": "93a89e337abd1562fb62f5732d052e4f24ca62ad6c12854a685f124aae8316f6",
@@ -116,7 +128,7 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-vantage:facts.conversion.fee_sgd": {
-  "sha256": "2c48dff78e11748992bc027739e4aa2d578bdd831080d5e1b9f7278dbd8b8c4e",
+  "sha256": "e9cfde6dc3269a7a7c08a1f76d917717ab5a355095ba75b11a7f847d374f9474",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.earn[local].rate": {
@@ -160,7 +172,7 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "dbs-vantage:facts.fees.spend_based_waiver": {
-  "sha256": "d185f927130dd58f9c80ec1d34d6653f7eed77c1f4ca193d6cd066f6422eb8f4",
+  "sha256": "7b76553e5bec0d82b5ecc994d206e59310b353a4b1125da1aa3e6ba1d00f58b6",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.min_income_sgd": {
@@ -172,7 +184,7 @@
   "url": "https://www.dbs.com.sg/personal/cards/cards-news-announcements.page"
  },
  "dbs-vantage:pending_changes[0].announced_date_source": {
-  "sha256": "e25d047e6102cd890dd3d1355b002e018d4f17ea85c4f18193ad35348ebd698b",
+  "sha256": "58e63c2c99e601a228f0c387d2d160a2ae5d931a0e528653b41ecb2bd987ba51",
   "url": "https://milelion.com/2026/09/29/dbs-vantage-card-cuts-local-earn-rates-to-1-4-mpd-adds-free-limo-rides-and-annual-fee-waiver/"
  },
  "dbs-womans-world:facts.conversion.fee_sgd": {
@@ -407,6 +419,10 @@
   "sha256": "4405843a16b940c37c624ed683b4c33dbe76500e93c94ec27aea20437af74093",
   "url": "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/cards-fee-charge.pdf"
  },
+ "ocbc-365:facts.fees.spend_based_waiver": {
+  "sha256": "4f43a65578526b881d7c9cc524ae1c53b807567869a70415fbec85c993f86a66",
+  "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
+ },
  "ocbc-365:facts.min_income_sgd": {
   "sha256": "4eacd3e6370b39e0df69dc2be611708600f904fae9ef199f083b68d7d6013c81",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
@@ -519,6 +535,10 @@
   "sha256": "a52ca0720b15641f36707d1c58196e07ee38c6701b78a233d2dfcea13c0bdccc",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
+ "sc-journey:facts.fees.fx_fee_pct": {
+  "sha256": "57e56b03485a4d0643b6579a09ecb49587133690f0fba65d9307f1ef0db2816b",
+  "url": "https://www.sc.com/sg/pricing-guide/"
+ },
  "sc-smart:facts.earn[bonus_merchants_tier_1500].min_spend": {
   "sha256": "ec17656b08d9d920889bef1b3aca11b60c1c9c1e27ecfd46632b3c0b21223dcb",
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
@@ -546,6 +566,10 @@
  "sc-smart:facts.fees.first_year_waiver": {
   "sha256": "8bfad7524c2cc63c478a6aadfe0f59e82c763c2ca5f3eb958f9ea6cfab56e754",
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
+ },
+ "sc-smart:facts.fees.fx_fee_pct": {
+  "sha256": "57e56b03485a4d0643b6579a09ecb49587133690f0fba65d9307f1ef0db2816b",
+  "url": "https://www.sc.com/sg/pricing-guide/"
  },
  "sc-smart:facts.min_income_sgd": {
   "sha256": "0da2e558ec3bb28a034a3e1af5e4a780b6edd62a26586ab0a857e812e9c33f2c",

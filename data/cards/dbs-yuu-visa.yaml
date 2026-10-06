@@ -40,7 +40,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
       quote: Total administrative fees and fees for conversion factor shall not exceed 3.25%.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: yuu_participating_merchants
     rate:
@@ -58,7 +58,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Total Bonus Rewards is capped at 28,800 yuu Points (worth up to S$144 cash rebates or 8,000 miles) per calendar month.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: 800
       unit: sgd_per_calendar_month
@@ -66,7 +66,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Minimum S$800 worth of Eligible Spend charged and posted to your Card, and ii. Transact at 4 Participating Merchants.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: non_yuu_merchants
     rate:
       value: 0.25
@@ -75,13 +75,13 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Base Rewards 1 yuu Point (0.5% cash rebates) 0.5 yuu Point (0.25% cash rebates) 0.5 yuu Point (0.25% cash rebates)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: none
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: There is no minimum spend required, and no cap to the Base Rewards.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.

@@ -20,13 +20,13 @@ facts:
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: Annual fee charges None!
       source_type: issuer
-      last_verified: &id001 2026-10-03
+      last_verified: 2026-10-05
     first_year_waiver:
       value: not_applicable
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: Annual fee charges None!
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: Not applicable.
@@ -38,7 +38,7 @@ facts:
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: converted from US dollars into Singapore dollars at the foreign exchange rate provided by Visa with no fee from Trust
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   earn:
   - category: stockback_mode_local_and_foreign
     rate:
@@ -48,7 +48,7 @@ facts:
       source_url: https://trustbank.sg/freedom-credit-card/
       quote: 3% stockback on both Local and Foreign Eligible Spend promo is until 31 Dec 2026
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 500
       unit: sgd_stockback
@@ -56,7 +56,7 @@ facts:
       source_url: https://trustbank.sg/freedom-credit-card/
       quote: '*Stockback value is capped at S$500 per quarter.'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -80,6 +80,6 @@ pending_changes:
   source_url: https://trustbank.sg/freedom-credit-card/
   quote: will change to 2% stockback on Local Eligible Spend and 0.5% stockback on Foreign Eligible Spend from 1 Jan 2027.
   source_type: issuer
-  last_verified: *id001
+  last_verified: 2026-10-05
 notes:
 - 'Trust''s canonical domain is trustbank.sg. Product page is JS-rendered (fetch: headless).'

@@ -15,7 +15,7 @@ facts:
     source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
     quote: Singaporean/ Singapore permanent residents (salaried employees) SGD30,000 SGD65,000 SGD65,000
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: null
@@ -25,7 +25,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: We'll waive your annual fee for the first year, starting from the issue date for your credit card.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: null
       null_reason: Threshold not extracted.
@@ -34,7 +34,7 @@ facts:
       unit: pct_up_to
       note: 'Row ''Foreign currency transactions'' of the fee table in HSBC''s credit card application form (''Effective from August 2026''), which covers Live+, TravelOne and Revolution; text extraction separates the row label from the value. HSBC PDFs are robots-disallowed for crawlers: fetch is manual (one-off agent check), not automated.'
       source_url: https://www.hsbc.com.sg/content/dam/hsbc/sg/documents/credit-cards/application-form.pdf
-      quote: 'Up to 3.25% of the transaction amount'
+      quote: Up to 3.25% of the transaction amount
       source_type: issuer
       last_verified: 2026-10-03
   earn:
@@ -46,7 +46,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: 'Third quarter and thereafter: From 1 October 2026 5% 0% 5% SGD600 per month in that calendar quarter'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: 250
       unit: sgd_cashback
@@ -54,7 +54,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: The total cashback amount is capped at SGD250 per calendar quarter.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     min_spend:
       value: 600
       unit: sgd_per_month
@@ -62,7 +62,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: 'Third quarter and thereafter: From 1 October 2026 5% 0% 5% SGD600 per month in that calendar quarter'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
   - category: petrol
     rate:
       value: 5
@@ -70,7 +70,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: Power up on your spending with 5% cashback for petrol, and 0.3% on all other eligible purchases.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -84,7 +84,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/liveplus/
       quote: Power up on your spending with 5% cashback for petrol, and 0.3% on all other eligible purchases.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -95,9 +95,9 @@ facts:
   - value: null
     null_reason: Exclusions in Live+ cashback T&C PDF (robots-disallowed). Manual queue.
   conversion:
-    ratio: &id002
+    ratio: &id001
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd: *id001
 pending_changes: []
 notes: []

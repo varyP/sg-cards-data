@@ -15,7 +15,7 @@ facts:
     source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
     quote: Singaporean/ Singapore permanent residents (salaried employees) SGD30,000 SGD65,000 SGD65,000
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-05
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -23,27 +23,27 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
       quote: The annual fee is at SGD196.20 including GST, starting from the issue date, for your credit card.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     first_year_waiver:
       value: not_waived
       note: No first-year waiver stated; fee charged from issue date.
       source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
       quote: The annual fee is at SGD196.20 including GST, starting from the issue date, for your credit card.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     spend_based_waiver:
       value: 25000
       unit: sgd_spend_per_year
       source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
       quote: From the second year onwards, we'll waive the annual fee for your card if you spend more than SGD25,000 per year.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
       note: 'Row ''Foreign currency transactions'' of the fee table in HSBC''s credit card application form (''Effective from August 2026''), which covers Live+, TravelOne and Revolution; text extraction separates the row label from the value. HSBC PDFs are robots-disallowed for crawlers: fetch is manual (one-off agent check), not automated.'
       source_url: https://www.hsbc.com.sg/content/dam/hsbc/sg/documents/credit-cards/application-form.pdf
-      quote: 'Up to 3.25% of the transaction amount'
+      quote: Up to 3.25% of the transaction amount
       source_type: issuer
       last_verified: 2026-10-03
   earn:
@@ -54,7 +54,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
       quote: Up to 2.4 miles (6× Reward points)[@cards-travelonetnc] per SGD1 charged on foreign currency spend.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -68,7 +68,7 @@ facts:
       source_url: https://www.hsbc.com.sg/credit-cards/products/travelone/
       quote: Up to 1.2 miles (3× Reward points)[@cards-travelonetnc] per SGD1 charged on local spend.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-05
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
