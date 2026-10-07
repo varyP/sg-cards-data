@@ -12,6 +12,7 @@ Information only, not financial advice. Card terms change: always confirm on the
 | `sources.yaml` | Source tiers, allowlist, blacklist, fetch rules, change keywords, card aliases |
 | `scripts/validate.py` | Fails on schema errors, numbers without provenance, expired pending changes, future dates, and a missing or stale `data/index.json`. Warns on facts older than 30/60 days. |
 | `scripts/build_index.py` | Regenerates `data/index.json` from the card files (`--check` to verify only) |
+| `scripts/check_bump_diff.py` | Guard for the weekly re-verify PR: card files may differ from `HEAD` only in `last_verified` (dates move forward only); `--strict-text` also flags re-dump noise |
 | `scripts/scan_feeds.py` | Daily: Tier 2 RSS + issuer page diffs, sends signals to issues (issuer/Tier 2) or a digest (everything else) |
 | `scripts/reverify.py` | Weekly: re-fetches sources, bumps `last_verified` only when the exact quote is still present, section-fingerprint diff |
 | `scripts/health_report.py` | Weekly: freshness, stale facts, failing sources, pending changes, canary, review backlog over 7 days |

@@ -89,9 +89,11 @@ facts:
   - value: null
     null_reason: Smart Card T&C PDF on www.sc.com not yet parsed for exclusions.
   conversion:
-    ratio: &id001
+    ratio:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id001
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
 pending_changes: []
 notes: []
