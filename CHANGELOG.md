@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-07: Maybank and AMEX manual re-check (data)
+- AMEX KrisFlyer Ascend and True Cashback: every quote re-read verbatim from the product pages and
+  T&C PDFs on 2026-10-07 (dates bumped). No value changed. Filled: Ascend SIA/Scoot/KrisShop/Pelago cap
+  (none, "with no cap"); True Cashback minimum spend (none) for both rows; exclusions from the AMEX
+  non-eligible purchases list (updated 21 Aug 2025): Ascend 8 entries (insurance except via AMEX
+  channel, utilities, education/non-profit, public hospitals, bill payments/SingPost, public transit,
+  wallet top-ups, SPC); True Cashback public transit and wallet top-ups.
+- Maybank Family & Friends and Horizon Visa Signature: not re-readable (Akamai 403 to scripted and
+  browser fetches from the box, WebFetch HTTP 500). Dates NOT bumped; a note records the attempt.
+- Files rewritten with the canonical dumper (no YAML anchors), so `*id001` aliases are expanded.
+
 ## 2026-10-07: licences
 - Data under CC BY 4.0 (`LICENSE-DATA`): `data/`, `sources.yaml`, `tests/eval_set.yaml`, plus
   `snapshots/`, `reports/` and the docs. Code under MIT (`LICENSE`): `scripts/`, workflows, `schema/`,

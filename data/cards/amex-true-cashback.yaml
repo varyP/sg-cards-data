@@ -18,13 +18,13 @@ facts:
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: Annual Fee S$174.40 (incl. of 9% GST) waived for the first year
       source_type: issuer
-      last_verified: &id001 2026-10-03
+      last_verified: 2026-10-07
     first_year_waiver:
       value: waived
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: Annual Fee S$174.40 (incl. of 9% GST) waived for the first year
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-07
     spend_based_waiver:
       value: null
       null_reason: Not stated.
@@ -33,9 +33,9 @@ facts:
       unit: pct
       note: 'Clause ''Foreign Exchange Charges'' of the True Cashback Card Member Agreement and Benefits T&C linked from the product page. AMEX blocks scripted fetches (Akamai 403): PDF read via a browser, manual source.'
       source_url: https://www.americanexpress.com/content/dam/amex/sg/campaigns/pdfs/true-cashback-card.pdf
-      quote: 'We will increase the Foreign Charge by a single conversion commission of 3.25%.'
+      quote: We will increase the Foreign Charge by a single conversion commission of 3.25%.
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
   earn:
   - category: all_eligible
     rate:
@@ -44,16 +44,19 @@ facts:
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: continue to earn 1.5% Cashback on all your eligible purchases
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-07
     cap:
       value: none
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: Remember there is no limit on how much Cashback you can earn every month.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-07
     min_spend:
-      value: null
-      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+      value: none
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: 1.5% Cashback on all subsequent eligible purchases with no minimum spending and no earn cap
+      source_type: issuer
+      last_verified: 2026-10-07
   - category: welcome_first_6_months
     rate:
       value: 3
@@ -61,7 +64,7 @@ facts:
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: Enjoy a simple 3% Cashback on all eligible purchases you make locally and overseas, up to S$5,000 spend in the first 6 months.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-07
     cap:
       value: 5000
       unit: sgd_spend
@@ -69,22 +72,41 @@ facts:
       source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
       quote: Enjoy a simple 3% Cashback on all eligible purchases you make locally and overseas, up to S$5,000 spend in the first 6 months.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-07
     min_spend:
-      value: null
-      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+      value: none
+      source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
+      quote: Enjoy a welcome Cashback bonus. No minimum spend, no cap on Cashback and no categories to track.
+      source_type: issuer
+      last_verified: 2026-10-07
   exclusions:
   - value: earns_on_insurance_education_utilities
-    note: The page lists Travel, Groceries, Online, Education fees, Insurance, Healthcare, Utilities and Telcos as earning. Counter-example to 'insurance is always excluded'.
+    note: The page lists Travel, Groceries, Online, Education fees, Insurance, Healthcare, Utilities and Telcos as earning, and the AMEX non-eligible list for this card (section 3, updated 21 August 2025) does not exclude insurance, utilities or education. Counter-example to 'insurance is always excluded'.
     source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
     quote: 'continue to earn 1.5% Cashback on all your eligible purchases like:'
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-07
+  - category: Singapore public transit (BUS/MRT)
+    value: no_rewards
+    source_url: https://www.americanexpress.com/content/dam/amex/sg/benefits/amex-sg-exclusions.pdf
+    quote: l) Payments for public transit in Singapore, including transactions on public trains and buses, and all transactions bearing the merchant description "BUS/MRT"
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: AMEX non-eligible purchases list (go.amex/sgexclusions), section 3 'For American Express True Cashback Credit Card', updated 21 August 2025. The letter label pins the quote to that section; the list is non-exhaustive.
+  - category: stored-value and digital wallet top-ups (e.g. GrabPay, ShopeePay)
+    value: no_rewards
+    source_url: https://www.americanexpress.com/content/dam/amex/sg/benefits/amex-sg-exclusions.pdf
+    quote: m) Payments for the purpose of stored value card purchase / load / top-ups and/or the topping-up or loading of currency (or equivalent) for digital wallets, including but not limited to GrabPay and ShopeePay (with effect from 30 September 2025)
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: AMEX non-eligible purchases list (go.amex/sgexclusions), section 3 'For American Express True Cashback Credit Card', updated 21 August 2025. The letter label pins the quote to that section; the list is non-exhaustive.
   conversion:
-    ratio: &id002
+    ratio:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
 pending_changes: []
 notes:
-- 'fetch: manual (Akamai).'
+- 'fetch: manual in sources.yaml. On 2026-10-07 the product page and PDFs were readable by a plain scripted fetch from the box (HTTP 200) and via WebFetch; all quotes re-checked verbatim that day.'
