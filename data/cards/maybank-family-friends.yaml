@@ -18,27 +18,27 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: &id001 2026-10-03
+      last_verified: 2026-10-03
     first_year_waiver:
       value: waived_3_years
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     spend_based_waiver:
       value: 12000
       unit: sgd_spend_per_year
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: Subsequent annual fee will be automatically waived with a minimum spend of S$12,000 yearly
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
       derived: true
       note: '3.25 = Maybank administrative fee 2.25% + card association charge of up to 1%, both in the quote; applies ''for all Cards''. Maybank blocks scripted fetches: quote read via WebFetch (manual source).'
       source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
-      quote: 'the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.'
+      quote: the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.
       source_type: issuer
       last_verified: 2026-10-03
   earn:
@@ -49,7 +49,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: 30
       unit: sgd_cashback_per_category
@@ -57,7 +57,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     min_spend:
       value: 1600
       unit: sgd_per_month
@@ -65,7 +65,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
   - category: five_chosen_categories_tier1
     rate:
       value: 6
@@ -73,7 +73,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: 20
       unit: sgd_cashback_per_category
@@ -81,7 +81,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     min_spend:
       value: 800
       unit: sgd_per_month
@@ -89,7 +89,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
   - category: other
     rate:
       value: 0.22
@@ -97,7 +97,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 0.22% cashback on all other spend
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -114,7 +114,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: 5960, 6381, 6399 | Insurance Related
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-03
     note: Rendered as a table; '|' is a cell separator in the WebFetch rendering. Horizon Visa Signature / Platinum Visa / Visa Infinite are exceptions.
   - category: money transfer, utilities
     value: no_rewards
@@ -124,12 +124,15 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-03
   conversion:
-    ratio: &id002
+    ratio:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id002
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
 pending_changes: []
 notes:
 - 'fetch: manual (Akamai). Groceries category earns up to 6% regardless of tier, per page.'
+- 'Re-check attempted 2026-10-07: every Maybank URL returned HTTP 403 (Akamai ''Access Denied'') to scripted fetches and a real browser from the box, and HTTP 500 via WebFetch, so no quote could be re-read and last_verified was NOT bumped. Needs a manual browser check.'

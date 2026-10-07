@@ -96,6 +96,15 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on this Visa/Mastercard card processed outside Singapore (e.g. overseas-based websites)
+    note: UOB general card information (applies across UOB Visa/Mastercard cards).
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+    quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
+    source_type: issuer
+    last_verified: 2026-10-07
   quarter_definition:
     value: three consecutive statement months
     source_url: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
@@ -107,10 +116,12 @@ facts:
     null_reason: UOB One exclusions in the One Card T&C not yet extracted.
     source_url_to_check: https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf
   conversion:
-    ratio: &id001
+    ratio:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id001
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
 pending_changes: []
 notes:
 - 'Issuer inconsistency: the product page mentions ''S$100 or S$50 quarterly cashback'' while the T&C (w.e.f. 1 Jul 2025) sets Tier 1 at S$60. The T&C value is recorded; flagged for review.'
