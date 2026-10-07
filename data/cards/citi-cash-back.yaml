@@ -1,0 +1,226 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: citi-cash-back
+issuer: Citi
+name: Citi Cash Back Card
+type: cashback
+status: active
+product_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR (foreigners S$42,000)
+    source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+    quote: Min. income per year S$30,000 (SG/PR) or S$42,000 (foreigner)
+    source_type: issuer
+    last_verified: 2026-10-07
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: Basic fee of S$196.20 inclusive of 9% GST
+      source_type: issuer
+      last_verified: 2026-10-07
+    first_year_waiver:
+      value: null
+      null_reason: No first-year waiver stated on the product page or information sheet.
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_up_to
+      note: Citi Cash Back Card Information Sheet (PDF created Nov 2023).
+      source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/information-sheet.pdf
+      quote: subject to an administrative fee of up to 3.25% on the converted Singapore dollar amount if processed by VISA or Mastercard International
+      source_type: issuer
+      last_verified: 2026-10-07
+  earn:
+  - category: petrol_and_private_commute
+    rate:
+      value: 8
+      unit: pct_cashback
+      note: 7.8% bonus + 0.2% base, with the S$800 minimum spend. Category MCCs in exclusions (whitelists).
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: 8% cash back ^ on petrol spend worldwide and private commute (e.g Grab, GoJek, and more )
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 80
+      unit: sgd_cashback_combined
+      period: statement_month
+      note: One S$80 cap shared across all categories, base cash back included.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: The total cash back you can earn is capped at S$80 combined across all qualifying retail spend per statement month.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 800
+      unit: sgd_per_statement_month
+      period: statement_month
+      note: Qualifying retail spend, based on posted transactions per statement month (FAQ 1); exclusions in FAQ 3.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: Receive bonus cash back in selected categories when you spend a minimum of S$800 in a statement month.
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: dining_and_groceries
+    rate:
+      value: 6
+      unit: pct_cashback
+      note: 5.8% bonus + 0.2% base, with the S$800 minimum spend.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: 6% cash back ^ on dining and groceries spend, worldwide
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 80
+      unit: sgd_cashback_combined
+      period: statement_month
+      note: One S$80 cap shared across all categories, base cash back included.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: The total cash back you can earn is capped at S$80 combined across all qualifying retail spend per statement month.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 800
+      unit: sgd_per_statement_month
+      period: statement_month
+      note: Qualifying retail spend, based on posted transactions per statement month (FAQ 1); exclusions in FAQ 3.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: Receive bonus cash back in selected categories when you spend a minimum of S$800 in a statement month.
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: other
+    rate:
+      value: 0.2
+      unit: pct_cashback
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: 0.2% cash back on all other retail purchases
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 80
+      unit: sgd_cashback_combined
+      period: statement_month
+      note: One S$80 cap shared across all categories, base cash back included.
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: The total cash back you can earn is capped at S$80 combined across all qualifying retail spend per statement month.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: none
+      source_url: https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card
+      quote: If you spend less than the minimum required spend, you will still earn 0.2% cash back on your qualifying retail spend.
+      source_type: issuer
+      last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions with a local merchant paid through an overseas intermediary, or with a merchant registered overseas
+    note: Citi Cash Back Card Information Sheet, section c 'Singapore Dollars transactions processed outside Singapore'.
+    source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/information-sheet.pdf
+    quote: such card transaction will be subject to an administrative fee of 1% on the transaction amount if the card transaction is processed by VISA/Mastercard International.
+    source_type: issuer
+    last_verified: 2026-10-07
+  exclusions:
+  - category: card is covered by Citi's rewards exclusion list
+    value: exclusion_list_applies
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: d. Citi Cash Back+ Card e. Citi Cash Back Card f. Citi Rewards Card
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: Citi exclusion T&C 'Updated November 2024. With effect from 16 December 2024.'
+  - category: quasi-cash, wallet loads, parking, betting, money transfer, utilities
+    value: no_rewards
+    mccs:
+    - '6529'
+    - '6530'
+    - '6534'
+    - '6540'
+    - '7349'
+    - '7511'
+    - '7523'
+    - '7800'
+    - '7995'
+    - '4829'
+    - '4900'
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: MCC 6529 MCC 6530 MCC 6534 MCC 6540 MCC 7349 MCC 7511 MCC 7523 MCC 7800 MCC 7995 MCC 4829 MCC 4900*
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: insurance, brokers, rentals, schools, cigar stores
+    value: no_rewards
+    mccs:
+    - '6211'
+    - '6300'
+    - '6513'
+    - '8211'
+    - '8220'
+    - '5993'
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: MCC 6211 MCC 6300 MCC 6513 MCC 8211 MCC 8220 MCC 5993
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: direct-marketing insurance, education, charities, hospitals
+    value: no_rewards
+    mccs:
+    - '5199'
+    - '5960'
+    - '6012'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    - '8062'
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: MCC 5199 MCC 5960 MCC 6012 MCC 8241 MCC 8244 MCC 8249 MCC 8299 MCC 8398 MCC 8062**
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: 'not counted towards the S$800 minimum spend: insurance'
+    value: excluded_from_min_spend
+    source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf
+    quote: vi. payments to insurance companies (sales, underwriting, and premiums)
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: 'not counted towards the S$800 minimum spend: transit'
+    value: excluded_from_min_spend
+    source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf
+    quote: xi. transit-related transactions
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: category definitions are MCC-based (Dining, Groceries, Petrol)
+    value: bonus_category_mcc_whitelist
+    mccs:
+    - '5811'
+    - '5812'
+    - '5814'
+    - '5411'
+    - '5541'
+    - '5542'
+    source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf
+    quote: MCC 5811 (Caterers) MCC 5812 (Eating Places, Restaurants) MCC 5814 (Fast Food Restaurants) Groceries • MCC 5411 (Grocery Stores, Supermarkets) Petrol • MCC 5541 (Service Stations) MCC 5542 (Automated Fuel Dispensers)
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Not an exclusion: MCC whitelists for the bonus categories (FAQ dated 04/2024).'
+  - category: category definitions are MCC-based (Private Commute)
+    value: bonus_category_mcc_whitelist
+    mccs:
+    - '4121'
+    source_url: https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf
+    quote: Private Commute • Transaction Description# MCC 4121 (Taxicabs and Limousines)
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Not an exclusion: MCC 4121 with a listed merchant description (Grab, ComfortDelGro/CityCab, Gojek, Tada, Ryde and others in the FAQ).'
+  conversion:
+    ratio:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+pending_changes: []
+notes:
+- 'Added 2026-10-07 (issue #8). The product page is served from www1.citibank.com.sg; the www path returned 404 on 2026-10-07.'

@@ -15,7 +15,7 @@ facts:
     source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
     quote: 'Foreigners: S$45,000 p.a. S$80,000 p.a.'
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-03
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -24,29 +24,29 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: 'Principal Card: S$163.50 Supplementary Card: S$81.75 per card Principal Card: S$196.20'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     first_year_waiver:
       value: waived
       note: First year waived.
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: 1 year Charge at least S$25,000 to your card each year to waive the annual fee for the following year.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     spend_based_waiver:
       value: ceased
       effective_date: 2026-08-01
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: With effect from 1 Aug 2026, the annual fee waiver eligibility upon meeting the retail spend of S$25,000 in the previous card year will be ceased.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     fx_fee_pct:
       value: 3.25
       unit: pct_of_converted_amount
-      note: Cap on total FX charges for DBS Visa/Mastercard credit cards ('up to 2.65%' admin + 1% conversion factor).
-      source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
-      quote: Total administrative fees and fees for conversion factor shall not exceed 3.25%.
+      note: 'DBS Credit Card Agreement clause 9.1.5 (last updated 30 June 2026): 1.00% card association + 2.25% bank. Previously quoted from the debit-card section of the Rates & Fees page; value unchanged.'
+      source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
+      quote: Total administrative fee 3.25%, on top of the prevailing foreign exchange rate determined by respective card associations
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-07
   earn:
   - category: online
     rate:
@@ -55,7 +55,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: DBS Woman's World Card 10X DBS points on online purchases (4 miles per S$1)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: 1000
       unit: sgd_spend
@@ -70,7 +70,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: DBS Woman's World Card 10X DBS points on online purchases (4 miles per S$1)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
   - category: overseas_fcy
     rate:
       value: 1.2
@@ -78,7 +78,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: 3X DBS points on overseas purchases (1.2 miles per S$1)
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -92,13 +92,31 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: 'All other purchases: 1x DBS Points (0.4 miles per S$1)'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on DBS Visa/Mastercard credit cards processed outside Singapore
+    note: DBS Credit Card Agreement clause 9.3, last updated 30 June 2026 (newer than the 2.8% debit-section text). Same wording in the 'DBS Credit Card Charges' section of the Rates & Fees page.
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
+    quote: All card transactions processed outside Singapore but charged in Singapore dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 1% by Visa or MasterCard, which shall be payable by you and debited from your Card account.
+    source_type: issuer
+    last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct_debit_card_section:
+    value: 2.8
+    unit: pct
+    applies_to: DBS debit cards only (debit-card section of the Rates & Fees page), not this credit card
+    note: 'Recorded only to document the conflict raised in issue #8. The section is stamped ''As at 30 December 2020''. Do not quote this figure for the credit card.'
+    source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
+    quote: All transactions processed outside of Singapore but charged in Singapore Dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 2.8% on the total transaction amount, which includes a 1% fee by Visa/Mastercard or 0.6% fee by UnionPay
+    source_type: issuer
+    last_verified: 2026-10-07
   exclusions:
   - category: insurance
     value: no_rewards
@@ -162,14 +180,15 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: KrisFlyer Miles 5,000 10,000
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     fee_sgd:
       value: 27.25
       unit: sgd_per_conversion
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card
       quote: An administrative fee of S$27.25 (inclusive of GST) applies to each miles conversion and will be charged to DBS Credit Card.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
 pending_changes: []
 notes:
 - '''Online'' is decided by system indicators from the merchant''s acquirer, not by what the user sees.'
+- 'DBS overseas-processed SGD fee: two figures on DBS documents. 1% is in the DBS Credit Card Agreement clause 9.3 (PDF ''Last updated: 30 June 2026'') and in the ''DBS Credit Card Charges'' section of the Rates & Fees page. 2.8% is in the ''DBS Debit Card - Fees and Charges'' section of the same page, which is stamped ''As at 30 December 2020''. The newer credit-card document says 1%, so 1% is used for this credit card; the 2.8% is recorded separately as the debit-card figure.'
