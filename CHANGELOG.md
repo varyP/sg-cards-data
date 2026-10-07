@@ -11,6 +11,12 @@
   browser fetches from the box, WebFetch HTTP 500). Dates NOT bumped; a note records the attempt.
 - Files rewritten with the canonical dumper (no YAML anchors), so `*id001` aliases are expanded.
 
+## 2026-10-07: licences
+- Data under CC BY 4.0 (`LICENSE-DATA`): `data/`, `sources.yaml`, `tests/eval_set.yaml`, plus
+  `snapshots/`, `reports/` and the docs. Code under MIT (`LICENSE`): `scripts/`, workflows, `schema/`,
+  test code. Issuer quote excerpts are not relicensed. README "Licence" section added.
+- No card data or bot rules changed.
+
 ## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)
 - New ground rules 11-14 in `bot/system_prompt.md`: coverage honesty ("among the N cards I track";
   no "no card beats X" without a market check on issuer pages in the chat); cards outside the dataset

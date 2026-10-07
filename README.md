@@ -64,6 +64,17 @@ python -m unittest discover -s tests -v
 python scripts/scan_repo.py
 ```
 
+## Licence
+| What | Licence | File |
+|---|---|---|
+| Data: `data/` (card files, `index.json`), `sources.yaml`, `tests/eval_set.yaml`, plus `snapshots/`, `reports/` and the docs (`README.md`, `REVIEW.md`, `CHANGELOG.md`, `bot/`) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | `LICENSE-DATA` |
+| Code: `scripts/`, `.github/workflows/`, `schema/`, test code (`tests/test_pipeline.py`, `tests/fixtures/`) | MIT | `LICENSE` |
+
+Reuse the data freely, including commercially, with attribution: "sg-cards-data contributors,
+CC BY 4.0" plus a link to this repository and a note of any changes. The short `quote` excerpts are
+from issuer and regulator documents and stay with their owners; they are here only so each fact can
+be checked, and are not relicensed. Card names and trademarks belong to their owners.
+
 ## Notes on content
 Quotes are short excerpts from issuer documents, kept only so each fact can be checked. Card names
 and trademarks belong to their owners. No referral or affiliate links, ever.
