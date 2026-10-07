@@ -20,12 +20,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import yaml  # noqa: E402
 
-from sgcards_lib import (ROOT, FetchError, card_files, fetch_text, iter_facts, load_snapshots,  # noqa: E402
-                         load_sources, load_yaml, method_for, norm, save_snapshots, section_fingerprint, today)
-
-HEADER = "# Information only, not financial advice. Every fact cites its source; check the issuer T&C.\n"
+from sgcards_lib import (ROOT, FetchError, card_files, dump_card, fetch_text, iter_facts,  # noqa: E402
+                         load_snapshots, load_sources, load_yaml, method_for, norm, save_snapshots,
+                         section_fingerprint, today)
 
 
 def provenance_targets(doc):
@@ -96,7 +94,7 @@ def main() -> int:
                 obj["last_verified"] = today()
                 changed = True
         if changed and not args.no_bump:
-            path.write_text(HEADER + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True, width=1000))
+            path.write_text(dump_card(doc))  # canonical: no anchors, stable quoting
             results["bumped"] += 1
     save_snapshots(new_snaps)
     out = ROOT / "reports" / "reverify-latest.json"

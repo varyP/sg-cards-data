@@ -4,6 +4,49 @@
 - `REVIEW.md`: any PR that changes `bot/system_prompt.md` is merged by the repo owner in person, even
   after both reviewers say OK (every installed bot loads it live); such changes go in their own PR
   marked owner-merge. Agents may merge only data, sources and tooling PRs.
+
+## 2026-10-07: stable weekly re-verify (tooling)
+- `scripts/reverify.py` now writes card files with `sgcards_lib.dump_card` (no YAML anchors, stable
+  quoting), so a re-run changes only `last_verified` lines. Six card files that still used anchors or
+  non-canonical quoting were re-dumped once (formatting only; parsed content identical).
+- New `scripts/check_bump_diff.py`: fails if a card file changes in anything but `last_verified`, or a
+  date moves backwards or into the future. The weekly workflow now runs the validator, unit tests,
+  privacy scan and this guard, and puts the results in the PR body (Actions-opened PRs get no CI).
+- Tests: dump is lossless and idempotent; a date bump changes only date lines.
+
+## 2026-10-07: issue #8 gaps and three new cards (data)
+- New cards (28 in `data/index.json`): UOB Visa Signature, Citi Cash Back, DBS Live Fresh (closed to
+  new applicants from 7 Sep 2026; existing cardmembers still earn). Maybank XL Rewards not added: every
+  maybank2u.com.sg URL returned Akamai 403 / HTTP 500 on 2026-10-07, so no fact could be quoted.
+- UOB Lady's / Lady's Solitaire: category lock period (calendar quarter, change applies from the next
+  quarter), selection deadline and default; Travel defined in the T&C as airlines and hotels only, with
+  no MCC list (so MCC 4722 travel agencies and 7512 car rental are not confirmed); product page wording
+  recorded alongside; Transport MCC whitelist; `UNI$1 = 2 miles` conversion filled.
+- UOB One / Preferred Visa / Lady's / Solitaire: `overseas_processed_sgd_fee_pct` = 1 (UOB general card
+  information), as already on PRVI Miles.
+- DBS (Altitude, Vantage, Woman's World, yuu, Live Fresh): `overseas_processed_sgd_fee_pct` = 1 from the
+  DBS Credit Card Agreement cl. 9.3 (last updated 30 June 2026); the 2.8% figure is recorded separately
+  as the debit-card section of the Rates & Fees page ("As at 30 December 2020"). `fx_fee_pct` (3.25%,
+  unchanged) now quotes the credit card agreement instead of the debit-card section.
+- Trust Freedom: Miles / Unlimited / Bonus cashback modes added as earn rows with `value: null` (rates
+  shown only as images in the KFS); quarterly mode switching, bonus minimum-spend period, overseas SGD
+  treatment, Trust Miles conversion ratio and S$27.25 fee filled.
+
+## 2026-10-07: Maybank and AMEX manual re-check (data)
+- AMEX KrisFlyer Ascend and True Cashback: every quote re-read verbatim from the product pages and
+  T&C PDFs on 2026-10-07 (dates bumped). No value changed. Filled: Ascend SIA/Scoot/KrisShop/Pelago cap
+  (none, "with no cap"); True Cashback minimum spend (none) for both rows; exclusions from the AMEX
+  non-eligible purchases list (updated 21 Aug 2025): Ascend 8 entries (insurance except via AMEX
+  channel, utilities, education/non-profit, public hospitals, bill payments/SingPost, public transit,
+  wallet top-ups, SPC); True Cashback public transit and wallet top-ups.
+- Maybank Family & Friends and Horizon Visa Signature: not re-readable (Akamai 403 to scripted and
+  browser fetches from the box, WebFetch HTTP 500). Dates NOT bumped; a note records the attempt.
+- Files rewritten with the canonical dumper (no YAML anchors), so `*id001` aliases are expanded.
+
+## 2026-10-07: licences
+- Data under CC BY 4.0 (`LICENSE-DATA`): `data/`, `sources.yaml`, `tests/eval_set.yaml`, plus
+  `snapshots/`, `reports/` and the docs. Code under MIT (`LICENSE`): `scripts/`, workflows, `schema/`,
+  test code. Issuer quote excerpts are not relicensed. README "Licence" section added.
 - No card data or bot rules changed.
 
 ## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)

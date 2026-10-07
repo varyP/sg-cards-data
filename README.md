@@ -6,12 +6,13 @@ Information only, not financial advice. Card terms change: always confirm on the
 ## What's here
 | Path | What |
 |---|---|
-| `data/cards/*.yaml` | One file per card (25 in the phase-1 pilot). Every fact has `value`, `source_url`, a verbatim `quote` and `last_verified`, or `value: null` with a `null_reason`. |
+| `data/cards/*.yaml` | One file per card; the current count is the `count` field in `data/index.json`. Every fact has `value`, `source_url`, a verbatim `quote` and `last_verified`, or `value: null` with a `null_reason`. |
 | `data/index.json` | Generated card list (`id`, `issuer`, `name`, `path`). **Use this to find cards** instead of listing files through the GitHub API (unauthenticated calls are rate-limited). |
 | `schema/card.schema.json` | JSON Schema for card files |
 | `sources.yaml` | Source tiers, allowlist, blacklist, fetch rules, change keywords, card aliases |
 | `scripts/validate.py` | Fails on schema errors, numbers without provenance, expired pending changes, future dates, and a missing or stale `data/index.json`. Warns on facts older than 30/60 days. |
 | `scripts/build_index.py` | Regenerates `data/index.json` from the card files (`--check` to verify only) |
+| `scripts/check_bump_diff.py` | Guard for the weekly re-verify PR: card files may differ from `HEAD` only in `last_verified` (dates move forward only); `--strict-text` also flags re-dump noise |
 | `scripts/scan_feeds.py` | Daily: Tier 2 RSS + issuer page diffs, sends signals to issues (issuer/Tier 2) or a digest (everything else) |
 | `scripts/reverify.py` | Weekly: re-fetches sources, bumps `last_verified` only when the exact quote is still present, section-fingerprint diff |
 | `scripts/health_report.py` | Weekly: freshness, stale facts, failing sources, pending changes, canary, review backlog over 7 days |
@@ -63,6 +64,17 @@ python scripts/validate.py
 python -m unittest discover -s tests -v
 python scripts/scan_repo.py
 ```
+
+## Licence
+| What | Licence | File |
+|---|---|---|
+| Data: `data/` (card files, `index.json`), `sources.yaml`, `tests/eval_set.yaml`, plus `snapshots/`, `reports/` and the docs (`README.md`, `REVIEW.md`, `CHANGELOG.md`, `bot/`) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | `LICENSE-DATA` |
+| Code: `scripts/`, `.github/workflows/`, `schema/`, test code (`tests/test_pipeline.py`, `tests/fixtures/`) | MIT | `LICENSE` |
+
+Reuse the data freely, including commercially, with attribution: "sg-cards-data contributors,
+CC BY 4.0" plus a link to this repository and a note of any changes. The short `quote` excerpts are
+from issuer and regulator documents and stay with their owners; they are here only so each fact can
+be checked, and are not relicensed. Card names and trademarks belong to their owners.
 
 ## Notes on content
 Quotes are short excerpts from issuer documents, kept only so each fact can be checked. Card names

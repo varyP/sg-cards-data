@@ -60,16 +60,90 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: miles_mode
+    description: Trust Miles on Local and Foreign Eligible Spend (1 reward mode per quarter)
+    rate:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/2sZGGmT4hrV8xVoVIySNnK/63e5a4f58327cbe5b2710342488e0167/Miles_Mode.png
+    cap:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/2sZGGmT4hrV8xVoVIySNnK/63e5a4f58327cbe5b2710342488e0167/Miles_Mode.png
+    min_spend:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/2sZGGmT4hrV8xVoVIySNnK/63e5a4f58327cbe5b2710342488e0167/Miles_Mode.png
+  - category: unlimited_cashback_mode
+    description: Cashback on Local and Foreign Eligible Spend, no preferred category
+    rate:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/5pc0Bj513kLNqReyZEQDLm/137bcfa1825920a3d4a8a0b2645687a2/Freedom_Card_KFS_5.png
+    cap:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/5pc0Bj513kLNqReyZEQDLm/137bcfa1825920a3d4a8a0b2645687a2/Freedom_Card_KFS_5.png
+    min_spend:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/5pc0Bj513kLNqReyZEQDLm/137bcfa1825920a3d4a8a0b2645687a2/Freedom_Card_KFS_5.png
+  - category: bonus_cashback_mode
+    description: Base cashback on all Eligible Spend plus bonus cashback on one preferred MCC-based category (Dining, Shopping, Travel, Wellness, Transport, Entertainment); minimum spend is per calendar month (KFS note 5)
+    rate:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/6KFjJCNPe6H3g6wWDS5dm1/cd7747bf9cefcaccec7b1bfc20931eda/Bonus_Cashback_Mode.jpg
+    cap:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/6KFjJCNPe6H3g6wWDS5dm1/cd7747bf9cefcaccec7b1bfc20931eda/Bonus_Cashback_Mode.jpg
+    min_spend:
+      value: null
+      null_reason: Rates, caps and minimum spend for this mode are shown only as images in the Key Facts Sheet (checked 2026-10-07); no text quote exists to verify, so no figure is recorded. Ask a human to read the image or find a text source.
+      source_url_to_check: https://images.ctfassets.net/qje1q22sway2/6KFjJCNPe6H3g6wWDS5dm1/cd7747bf9cefcaccec7b1bfc20931eda/Bonus_Cashback_Mode.jpg
+  reward_mode_switching:
+    value: quarterly
+    period: quarter
+    note: 'Modes: Stockback, Miles, Unlimited cashback, Bonus cashback. KFS: ''You can''t change the starting month of each quarter after you have signed up.'''
+    source_url: https://trustbank.sg/freedom-credit-card/
+    quote: Switch your rewards every quarter if you like. No fees, no penalty.
+    source_type: issuer
+    last_verified: 2026-10-07
+  bonus_cashback_min_spend_period:
+    value: calendar_month
+    period: calendar_month
+    source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
+    quote: Minimum monthly spend refers to required Eligible Spend in a calendar month to earn Bonus cashback on your preferred category.
+    source_type: issuer
+    last_verified: 2026-10-07
+  overseas_processed_sgd_treatment:
+    value: treated_as_foreign_currency
+    note: So they earn the Foreign Eligible Spend rate of the chosen mode. Trust charges no FX fee (see fees.fx_fee_pct).
+    source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
+    quote: Please remember that some transactions may be processed overseas even if displayed in Singapore dollars. We will consider these transactions as using your Trust Freedom credit card in a foreign currency.
+    source_type: issuer
+    last_verified: 2026-10-07
   exclusions:
   - value: null
     null_reason: Ineligible transactions listed in Trust FAQs/Product Terms; not extracted.
   conversion:
     ratio:
-      value: null
-      null_reason: Miles mode exists; ratio not extracted.
+      value: 1 Trust Mile = 1 KrisFlyer mile (or 1 Max mile)
+      applies_to: Miles mode only
+      note: 'Trust Miles Redemption T&Cs: partners are KrisFlyer and HeyMax; ''1 Trust mile = 1 Max mile'' for HeyMax.'
+      source_url: https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/
+      quote: 1 Trust mile = 1 KrisFlyer mile
+      source_type: issuer
+      last_verified: 2026-10-07
     fee_sgd:
-      value: null
-      null_reason: Not extracted.
+      value: 27.25
+      unit: sgd_per_conversion
+      applies_to: Miles mode only
+      source_url: https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/
+      quote: Conversion fee per transfer $27.25 (inclusive of GST)
+      source_type: issuer
+      last_verified: 2026-10-07
 pending_changes:
 - field: facts.earn[stockback_mode_local_and_foreign].rate
   old_value: 3
@@ -83,3 +157,4 @@ pending_changes:
   last_verified: 2026-10-05
 notes:
 - 'Trust''s canonical domain is trustbank.sg. Product page is JS-rendered (fetch: headless).'
+- 'Issue #8: the Miles, Unlimited cashback and Bonus cashback mode rates are published only as images in the Key Facts Sheet (Version 3, last updated 21 September 2026), so they stay null until a text source is found. The 2027 Stockback change in pending_changes applies to the Stockback mode only.'

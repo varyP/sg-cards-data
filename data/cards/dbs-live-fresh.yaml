@@ -1,0 +1,236 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: dbs-live-fresh
+issuer: DBS
+name: DBS Live Fresh Card
+type: cashback
+network: Visa
+status: closed_to_new_applicants
+product_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR aged 55 and below (S$15,000 if 56+; foreigners S$45,000)
+    source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+    quote: 'Minimum income Singaporeans/PR: S$30,000 p.a. (≤55 years old) or S$15,000 p.a. (56 years and above) Foreigners: S$45,000 p.a.'
+    source_type: issuer
+    last_verified: 2026-10-07
+  fees:
+    annual_fee_sgd:
+      value: 196.2
+      unit: sgd_incl_gst
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+      quote: 'Annual fee Principal Card: S$196.20 Supplementary Card: S$98.10 per card Annual fee waiver 1 year'
+      source_type: issuer
+      last_verified: 2026-10-07
+    first_year_waiver:
+      value: waived_1_year
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+      quote: 'Annual fee Principal Card: S$196.20 Supplementary Card: S$98.10 per card Annual fee waiver 1 year'
+      source_type: issuer
+      last_verified: 2026-10-07
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      note: DBS Credit Card Agreement clause 9.1.5 (last updated 30 June 2026). See the in_store_overseas_asia earn row for the cashback offset.
+      source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
+      quote: Total administrative fee 3.25%, on top of the prevailing foreign exchange rate determined by respective card associations
+      source_type: issuer
+      last_verified: 2026-10-07
+  new_applications:
+    value: closed
+    note: Existing cardmembers keep using the card and earning cashback; supplementary cards still available (DBS Live Fresh FAQ).
+    effective_date: 2026-09-07
+    source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+    quote: From 7 Sep 2026, we will no longer accept new applications for DBS Live Fresh Card.
+    source_type: issuer
+    last_verified: 2026-10-07
+  earn:
+  - category: shopping
+    rate:
+      value: 5.7
+      unit: pct_cashback_bonus
+      note: On top of the 0.3% base = 6% total. Shopping = MCCs in T&C Table 3 (apparel, department stores, electronics, home furnishing, personal services, specialty retail, watches & jewellery).
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Additional 5.7% cashback on Shopping Spend S$50
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 50
+      unit: sgd_cashback
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Additional 5.7% cashback on Shopping Spend S$50
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 800
+      unit: sgd_per_month
+      period: calendar_month
+      note: Retail transactions; IPP/MP3 instalments, bill payments, AXS/SAM and fees do not count (T&C clause 6).
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: To qualify for the additional 5.7% cashback ("Bonus Rewards") on Shopping and Transport Spend, Cardmembers must charge at least S$800 worth of retail transaction(s) ("Minimum Spend Requirement") to the Card in the same calendar month.
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: transport
+    rate:
+      value: 5.7
+      unit: pct_cashback_bonus
+      note: On top of the 0.3% base = 6% total. Transport = public transport, ride-hailing and taxis (T&C Table 4).
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Additional 5.7% cashback on Transport Spend S$20
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 20
+      unit: sgd_cashback
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Additional 5.7% cashback on Transport Spend S$20
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 800
+      unit: sgd_per_month
+      period: calendar_month
+      note: Retail transactions; IPP/MP3 instalments, bill payments, AXS/SAM and fees do not count (T&C clause 6).
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: To qualify for the additional 5.7% cashback ("Bonus Rewards") on Shopping and Transport Spend, Cardmembers must charge at least S$800 worth of retail transaction(s) ("Minimum Spend Requirement") to the Card in the same calendar month.
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: in_store_overseas_asia
+    rate:
+      value: 3.25
+      unit: pct_cashback_bonus
+      note: 'Promotion: in-store (point-of-sale) spend in selected Asian currencies; DCC and online foreign-currency spend excluded (promotion T&C). No end date found on the page or promotion T&C.'
+      effective_date: 2025-04-01
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+      quote: Zero FX Fees (offset by 3.25% cashback, capped at S$50 per calendar month)
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 50
+      unit: sgd_cashback
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+      quote: Zero FX Fees (offset by 3.25% cashback, capped at S$50 per calendar month)
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 800
+      unit: sgd_per_month
+      period: calendar_month
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/livefresh-325fx/dbs-livefresh-325fx-tncs.pdf
+      quote: if he/she charges at least S$800 worth of retail transaction(s) ("Minimum Spend Requirement") to his/her
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: all_spend_base
+    rate:
+      value: 0.3
+      unit: pct_cashback
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Base Rewards 0.3% cashback on All Spend No cap
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: none
+      source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+      quote: Base Rewards 0.3% cashback on All Spend No cap
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: none
+      source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card
+      quote: 0.3% unlimited cashback No minimum spend required
+      source_type: issuer
+      last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on DBS Visa/Mastercard credit cards processed outside Singapore
+    note: DBS Credit Card Agreement clause 9.3, last updated 30 June 2026 (newer than the 2.8% debit-section text). Same wording in the 'DBS Credit Card Charges' section of the Rates & Fees page.
+    source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
+    quote: All card transactions processed outside Singapore but charged in Singapore dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 1% by Visa or MasterCard, which shall be payable by you and debited from your Card account.
+    source_type: issuer
+    last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct_debit_card_section:
+    value: 2.8
+    unit: pct
+    applies_to: DBS debit cards only (debit-card section of the Rates & Fees page), not this credit card
+    note: 'Recorded only to document the conflict raised in issue #8. The section is stamped ''As at 30 December 2020''. Do not quote this figure for the credit card.'
+    source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
+    quote: All transactions processed outside of Singapore but charged in Singapore Dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 2.8% on the total transaction amount, which includes a 1% fee by Visa/Mastercard or 0.6% fee by UnionPay
+    source_type: issuer
+    last_verified: 2026-10-07
+  exclusions:
+  - category: insurance
+    value: no_rewards
+    mccs:
+    - '6300'
+    - '6381'
+    - '6399'
+    source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+    quote: 6300 Insurance Sales, Underwriting, and Premiums 6381 Insurance Premiums 6399 Insurance, Not Elsewhere Classified
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: utilities, money transfer, tolls
+    value: no_rewards
+    mccs:
+    - '4784'
+    - '4829'
+    - '4900'
+    source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+    quote: Table 1 MCC Description 4784 Toll and Bridge Fees 4829 Money Transfer 4900 Utilities - Electric, Gas, Water, Sanitary
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: parking, betting, hospitals
+    value: no_rewards
+    mccs:
+    - '7523'
+    - '7995'
+    - '8062'
+    source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+    quote: 7523 Parking Lots, Parking Meters and Garages 7995 Betting (including Lottery Tickets, Casino Gaming Chips, Off-track Betting and Wagers) 8062 Hospitals
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: education, non-profit, political/religious, membership, professional services, government
+    value: no_rewards
+    mccs:
+    - '8211'
+    - '8220'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    - '8651'
+    - '8661'
+    - '8699'
+    - '8999'
+    - '9211'
+    - '9222'
+    - '9223'
+    - '9311'
+    - '9399'
+    - '9402'
+    - '9405'
+    source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf
+    quote: 8211 8220 8241 8244 8249 8299 8398 8651 8661 8699 8999 9211 9222 9223 9311 9399 9402 9405
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: T&C Table 1 (last updated 16 January 2026) lists the MCCs, then their descriptions, in this order.
+  conversion:
+    ratio:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
+pending_changes: []
+notes:
+- 'Added 2026-10-07 (issue #8). Closed to new applicants from 7 Sep 2026 (was missing from the DBS listing on 2026-10-03 for this reason); existing cardmembers still earn cashback.'
+- 'DBS overseas-processed SGD fee: two figures on DBS documents. 1% is in the DBS Credit Card Agreement clause 9.3 (PDF ''Last updated: 30 June 2026'') and in the ''DBS Credit Card Charges'' section of the Rates & Fees page. 2.8% is in the ''DBS Debit Card - Fees and Charges'' section of the same page, which is stamped ''As at 30 December 2020''. The newer credit-card document says 1%, so 1% is used for this credit card; the 2.8% is recorded separately as the debit-card figure.'

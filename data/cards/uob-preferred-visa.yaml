@@ -81,6 +81,15 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on this Visa card processed outside Singapore (e.g. overseas-based websites)
+    note: UOB general card information (applies across UOB Visa/Mastercard cards).
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+    quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
+    source_type: issuer
+    last_verified: 2026-10-07
   exclusions:
   - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
     value: no_rewards
@@ -120,8 +129,12 @@ facts:
     note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
   conversion:
     ratio:
-      value: null
-      null_reason: See UOB Rewards+ T&C.
+      value: UNI$1 = 2 miles
+      note: UOB Rewards+ T&C clause 49 (UNI$ cards).
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Once enrolled, the Eligible Person can effect mile transfers at the conversion rate of UNI$1 = 2 miles.
+      source_type: issuer
+      last_verified: 2026-10-07
     fee_sgd:
       value: 27
       unit: sgd_per_conversion

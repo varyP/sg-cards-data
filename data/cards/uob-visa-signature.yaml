@@ -1,0 +1,214 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: uob-visa-signature
+issuer: UOB
+name: UOB Visa Signature Card
+type: miles
+network: Visa
+status: active
+product_url: https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    applies_to: Singapore Citizens/PR aged 55 and below (S$15,000 if 56+; foreigners S$40,000)
+    source_url: https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page
+    quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
+    source_type: issuer
+    last_verified: 2026-10-07
+  fees:
+    annual_fee_sgd:
+      value: 218
+      unit: sgd_incl_gst
+      source_url: https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page
+      quote: Principal card S$218 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: 2026-10-07
+    first_year_waiver:
+      value: waived
+      source_url: https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page
+      quote: Principal card S$218 ^ yearly First year card fee waiver
+      source_type: issuer
+      last_verified: 2026-10-07
+    spend_based_waiver:
+      value: null
+      null_reason: No spend-based waiver stated.
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_of_converted_amount
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+      quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
+      source_type: issuer
+      last_verified: 2026-10-07
+  earn:
+  - category: overseas_foreign_currency
+    description: Foreign-currency spend overseas or online. SGD transactions made overseas, and online spend at merchants with a Singapore payment gateway, earn the base UNI$1 per S$5.
+    rate:
+      value: 10
+      unit: uni_dollars_per_sgd5
+      note: Separate caps and minimum spends per category apply to cards approved on or after 1 July 2025, and to older cards from the September 2025 statement (T&C 'Updated 28 October 2025 (Ver 2.1)'). UNI$10 per S$5 = 4 miles per S$1 at UNI$1 = 2 miles.
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: You will earn UNI$10 per S$5 spend overseas or online in foreign currencies
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 2400
+      unit: uni_dollars_at_10x
+      period: statement_month
+      note: UNI$2,400 at 10X = S$1,200 of Overseas Spend per statement period.
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: The awarding of UNI$10 per S$5 spend on Overseas Spend is subject to a cap of UNI$2,400, per statement period.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 1000
+      unit: sgd_per_statement_period
+      period: statement_month
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: To earn UNI$10 per S$5 spend on Overseas Spend, you are subject to a minimum spend of S$1,000 in Singapore dollars on Overseas Spend per statement period
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: petrol_and_contactless
+    rate:
+      value: 10
+      unit: uni_dollars_per_sgd5
+      note: Separate caps and minimum spends per category apply to cards approved on or after 1 July 2025, and to older cards from the September 2025 statement (T&C 'Updated 28 October 2025 (Ver 2.1)'). UNI$10 per S$5 = 4 miles per S$1 at UNI$1 = 2 miles. Petrol excludes SPC and Shell; SimplyGo counts as contactless from 1 July 2025; Magnetic Secure Transmission payments are excluded.
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: To earn UNI$10 per S$5 spend on Petrol Spend and/or Contactless Transactions, you are subject to a combined minimum spend of S$1,000 in Singapore dollars on Petrol Spend and/or Contactless Transactions per statement period
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 2400
+      unit: uni_dollars_at_10x
+      period: statement_month
+      note: UNI$2,400 at 10X = S$1,200 of spend per statement period.
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: The awarding of UNI$10 per S$5 spend on Petrol Spend and/or Contactless Transactions is subject to a cap of UNI$2,400, per statement period.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 1000
+      unit: sgd_per_statement_period
+      period: statement_month
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: To earn UNI$10 per S$5 spend on Petrol Spend and/or Contactless Transactions, you are subject to a combined minimum spend of S$1,000 in Singapore dollars on Petrol Spend and/or Contactless Transactions per statement period
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: other
+    rate:
+      value: 1
+      unit: uni_dollars_per_sgd5
+      note: 0.4 miles per S$1 at UNI$1 = 2 miles.
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: You will earn UNI$1 per S$5 spend on the Card. There is no cap to the amount of UNI$ earned on this basic tier.
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: none
+      source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+      quote: You will earn UNI$1 per S$5 spend on the Card. There is no cap to the amount of UNI$ earned on this basic tier.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition stated for the base tier.
+  overseas_sgd_transactions_earn:
+    value: base_rate_only
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+    quote: Card transactions made overseas but effected in Singapore dollars will be treated as transactions in Singapore dollars and will earn UNI$1 per S$5 spend.
+    source_type: issuer
+    last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on this Visa card processed outside Singapore (e.g. overseas-based websites)
+    note: UOB general card information (applies across UOB Visa/Mastercard cards).
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+    quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
+    source_type: issuer
+    last_verified: 2026-10-07
+  exclusions:
+  - category: excluded MCC list, part 1 (wire transfer, utilities, insurance, quasi-cash, rentals, brokers)
+    value: no_rewards
+    mccs:
+    - '4829'
+    - '4900'
+    - '5199'
+    - '5960'
+    - '5965'
+    - '5993'
+    - '6012'
+    - '6050'
+    - '6051'
+    - '6211'
+    - '6300'
+    - '6513'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '6540'
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+    quote: Merchant Description Code (MCC) 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: excluded MCC list, part 2 (parking, betting, hospitals, education, charities, religious/political, membership, professional services, government)
+    value: no_rewards
+    mccs:
+    - '7349'
+    - '7511'
+    - '7523'
+    - '7995'
+    - '8062'
+    - '8211'
+    - '8220'
+    - '8241'
+    - '8244'
+    - '8249'
+    - '8299'
+    - '8398'
+    - '8661'
+    - '8651'
+    - '8699'
+    - '8999'
+    - '9211'
+    - '9222'
+    - '9223'
+    - '9311'
+    - '9402'
+    - '9405'
+    - '9399'
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+    quote: 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398 8661 8651 8699 8999 9211 9222 9223 9311 9402 9405 9399
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: SPC and Shell service stations
+    value: no_rewards
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+    quote: all transactions or payments made to SPC Service Stations and Shell Service Stations
+    source_type: issuer
+    last_verified: 2026-10-07
+  - category: bill payment and prepaid/wallet top-ups
+    value: no_rewards
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf
+    quote: all transactions in relation to or in connection with bill payment, top-ups of any pre-paid card and payment of funds to payment service providers or prepaid accounts
+    source_type: issuer
+    last_verified: 2026-10-07
+  conversion:
+    ratio:
+      value: UNI$1 = 2 miles
+      note: UOB Rewards+ T&C clause 49 (UNI$ cards).
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Once enrolled, the Eligible Person can effect mile transfers at the conversion rate of UNI$1 = 2 miles.
+      source_type: issuer
+      last_verified: 2026-10-07
+    fee_sgd:
+      value: 27
+      unit: sgd_per_conversion
+      note: Clause in UOB Rewards+ T&C; exceptions listed for UOB Reserve / Visa Infinite / Privilege Banking cardmembers.
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
+      source_type: issuer
+      last_verified: 2026-10-07
+pending_changes: []
+notes:
+- 'Added 2026-10-07 (issue #8). Bonus UNI$ are credited in the following statement period.'
