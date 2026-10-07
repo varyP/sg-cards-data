@@ -78,6 +78,50 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  category_selection_period:
+    value: calendar_quarter
+    period: calendar_quarter
+    note: A chosen category is locked for the whole calendar quarter (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec per the T&C definition). A change made during a quarter applies from the next quarter.
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: You may change your selection each Quarter. The first selection made upon registering will be applicable for that Quarter. Subsequent selections will only be applicable to the following Quarter.
+    source_type: issuer
+    last_verified: 2026-10-07
+  category_selection_deadline:
+    value: 11:59pm SGT on the day before the quarter starts
+    note: If several selections are made before a new quarter, the last one recorded by this deadline applies.
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: provided that such selection is made by 11.59PM (Singapore time) before the first calendar day of the following Quarter.
+    source_type: issuer
+    last_verified: 2026-10-07
+  category_selection_default:
+    value: previous_category_continues
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: If you do not select or change your Preferred Rewards Category(ies) for the next Quarter, the current selected category(s) shall continue to apply in the next Quarter.
+    source_type: issuer
+    last_verified: 2026-10-07
+  travel_category_definition:
+    value: airlines_and_hotels_only
+    note: T&C Schedule 1 gives no MCC list for Travel. Travel agencies (MCC 4722) and car rental (MCC 7512) are not named, so they are not stated as covered. See notes for the product-page conflict.
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: Travel Credit card retail transaction(s) made at major airlines and/or hotels with their main business activity classified as flights and/or hotels only.
+    source_type: issuer
+    last_verified: 2026-10-07
+  travel_category_product_page:
+    value: airlines_hotels_resorts_duty_free
+    note: Marketing page wording, broader than the T&C; the T&C prevails. The page's example merchant list includes online travel agencies and travel agents.
+    source_url: https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page
+    quote: Travel Travel comprises of airlines, hotels & resorts bookings and duty-free stores.
+    source_type: issuer
+    last_verified: 2026-10-07
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct
+    applies_to: SGD transactions on this Mastercard card processed outside Singapore (e.g. overseas-based websites)
+    note: UOB general card information (applies across UOB Visa/Mastercard cards).
+    source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
+    quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
+    source_type: issuer
+    last_verified: 2026-10-07
   exclusions:
   - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
     value: no_rewards
@@ -127,10 +171,27 @@ facts:
     source_type: issuer
     last_verified: 2026-10-05
     note: 'Not an exclusion: this is the MCC whitelist for the Dining bonus category. Other categories: Beauty & Wellness, Entertainment, Family, Fashion, Transport, Travel.'
+  - category: category definitions are MCC-based (Transport)
+    value: bonus_category_mcc_whitelist
+    mccs:
+    - '4111'
+    - '4121'
+    - '4789'
+    - '5541'
+    - '5542'
+    source_url: https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf
+    quote: Transport 4111, 4121, 4789, 5541, 5542 Local Commuter Transport, Taxi, Cabs, Limousines and Travel Service, Service Stations and Automatic Gas Dispensers
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Not an exclusion: MCC whitelist for the Transport bonus category. Car rental (MCC 7512) is not in it.'
   conversion:
     ratio:
-      value: null
-      null_reason: See UOB Rewards+ T&C (UNI$1 = 2 miles on UNI$ cards).
+      value: UNI$1 = 2 miles
+      note: UOB Rewards+ T&C clause 49 (UNI$ cards).
+      source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
+      quote: Once enrolled, the Eligible Person can effect mile transfers at the conversion rate of UNI$1 = 2 miles.
+      source_type: issuer
+      last_verified: 2026-10-07
     fee_sgd:
       value: 27
       unit: sgd_per_conversion
@@ -140,4 +201,5 @@ facts:
       source_type: issuer
       last_verified: 2026-10-05
 pending_changes: []
-notes: []
+notes:
+- 'Conflict (ground rule 9, T&C over marketing page): the Lady''s Cards T&C (Schedule 1, PDF dated Aug 2025) defines Travel as major airlines and hotels only and gives no MCC list for it; the product page says Travel covers airlines, hotels & resorts bookings and duty-free stores and lists example merchants including travel agencies (e.g. Chan Brothers Travel, EU Holidays), while saying UOB does not control how merchants are categorised. On the T&C, travel agencies (MCC 4722) and car rental (MCC 7512) are not stated as covered by Travel, and neither MCC is in the Transport list.'

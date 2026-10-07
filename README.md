@@ -6,7 +6,7 @@ Information only, not financial advice. Card terms change: always confirm on the
 ## What's here
 | Path | What |
 |---|---|
-| `data/cards/*.yaml` | One file per card (25 in the phase-1 pilot). Every fact has `value`, `source_url`, a verbatim `quote` and `last_verified`, or `value: null` with a `null_reason`. |
+| `data/cards/*.yaml` | One file per card; the current count is the `count` field in `data/index.json`. Every fact has `value`, `source_url`, a verbatim `quote` and `last_verified`, or `value: null` with a `null_reason`. |
 | `data/index.json` | Generated card list (`id`, `issuer`, `name`, `path`). **Use this to find cards** instead of listing files through the GitHub API (unauthenticated calls are rate-limited). |
 | `schema/card.schema.json` | JSON Schema for card files |
 | `sources.yaml` | Source tiers, allowlist, blacklist, fetch rules, change keywords, card aliases |

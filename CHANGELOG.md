@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-07: issue #8 gaps and three new cards (data)
+- New cards (28 in `data/index.json`): UOB Visa Signature, Citi Cash Back, DBS Live Fresh (closed to
+  new applicants from 7 Sep 2026; existing cardmembers still earn). Maybank XL Rewards not added: every
+  maybank2u.com.sg URL returned Akamai 403 / HTTP 500 on 2026-10-07, so no fact could be quoted.
+- UOB Lady's / Lady's Solitaire: category lock period (calendar quarter, change applies from the next
+  quarter), selection deadline and default; Travel defined in the T&C as airlines and hotels only, with
+  no MCC list (so MCC 4722 travel agencies and 7512 car rental are not confirmed); product page wording
+  recorded alongside; Transport MCC whitelist; `UNI$1 = 2 miles` conversion filled.
+- UOB One / Preferred Visa / Lady's / Solitaire: `overseas_processed_sgd_fee_pct` = 1 (UOB general card
+  information), as already on PRVI Miles.
+- DBS (Altitude, Vantage, Woman's World, yuu, Live Fresh): `overseas_processed_sgd_fee_pct` = 1 from the
+  DBS Credit Card Agreement cl. 9.3 (last updated 30 June 2026); the 2.8% figure is recorded separately
+  as the debit-card section of the Rates & Fees page ("As at 30 December 2020"). `fx_fee_pct` (3.25%,
+  unchanged) now quotes the credit card agreement instead of the debit-card section.
+- Trust Freedom: Miles / Unlimited / Bonus cashback modes added as earn rows with `value: null` (rates
+  shown only as images in the KFS); quarterly mode switching, bonus minimum-spend period, overseas SGD
+  treatment, Trust Miles conversion ratio and S$27.25 fee filled.
+
 ## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)
 - New ground rules 11-14 in `bot/system_prompt.md`: coverage honesty ("among the N cards I track";
   no "no card beats X" without a market check on issuer pages in the chat); cards outside the dataset
