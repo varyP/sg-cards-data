@@ -127,10 +127,12 @@ facts:
     last_verified: 2026-10-05
     note: The PDF marks some MCCs as 'Remain eligible for' specific cards (e.g. OCBC 365 for some bill MCCs). Read the row before telling a user a spend is excluded.
   conversion:
-    ratio: &id001
+    ratio:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-    fee_sgd: *id001
+    fee_sgd:
+      value: null
+      null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
 pending_changes:
 - field: facts.earn[dining].rate
   old_value: 5

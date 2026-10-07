@@ -89,9 +89,9 @@ facts:
       value: 8
       unit: mpd
       effective_to: 2027-08-15
-      note: "'Up to' rate. Booking window to 15 Aug 2027, stays to 15 Nov 2027. Foreign-currency spend only ('overseas currency spent'); only hotels showing the bonus banner; full upfront payment; bonus UNI$ credited within three months of hotel departure. Japan accommodation is excluded (same page: 'Accommodation bookings for Japan will not be considered as an Agoda Qualifying Transaction.')."
+      note: '''Up to'' rate. Booking window to 15 Aug 2027, stays to 15 Nov 2027. Foreign-currency spend only (''overseas currency spent''); only hotels showing the bonus banner; full upfront payment; bonus UNI$ credited within three months of hotel departure. Japan accommodation is excluded (same page: ''Accommodation bookings for Japan will not be considered as an Agoda Qualifying Transaction.'').'
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: "Up to 8 miles per S$1 spend on Agoda bookings : Valid for bookings till 15 August 2027 (date inclusive) and stay till 15 November 2027 (date inclusive). Cardmembers will earn up to UNI$20 for every S$5 overseas currency spent (akin to 8 miles per S$1 spend) on bookings via the dedicated PRVI Miles Agoda website."
+      quote: 'Up to 8 miles per S$1 spend on Agoda bookings : Valid for bookings till 15 August 2027 (date inclusive) and stay till 15 November 2027 (date inclusive). Cardmembers will earn up to UNI$20 for every S$5 overseas currency spent (akin to 8 miles per S$1 spend) on bookings via the dedicated PRVI Miles Agoda website.'
       source_type: issuer
       last_verified: 2026-10-05
     cap:
@@ -106,9 +106,9 @@ facts:
       value: 8
       unit: mpd
       effective_to: 2027-03-31
-      note: "'Up to' rate. Bookings to 31 Mar 2027; full upfront payment to Expedia via the dedicated site."
+      note: '''Up to'' rate. Bookings to 31 Mar 2027; full upfront payment to Expedia via the dedicated site.'
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: "Valid for bookings made till 31 March 2027. Cardmembers will earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent) on flight, hotel and/or other eligible products/services bookings made via the dedicated PRVI Miles Expedia"
+      quote: Valid for bookings made till 31 March 2027. Cardmembers will earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent) on flight, hotel and/or other eligible products/services bookings made via the dedicated PRVI Miles Expedia
       source_type: issuer
       last_verified: 2026-10-05
     cap:
@@ -123,9 +123,9 @@ facts:
       value: 3
       unit: mpd
       effective_to: 2027-03-31
-      note: "'Up to' rate. Same booking window as the Expedia hotel bonus (to 31 Mar 2027); Expedia must be the merchant of record on participating airlines."
+      note: '''Up to'' rate. Same booking window as the Expedia hotel bonus (to 31 Mar 2027); Expedia must be the merchant of record on participating airlines.'
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: "Eligible flight bookings will earn up to UNI$7.5 for every S$5 spent (akin to 3 miles per S$1 spent), and eligible hotel and other eligible products/services bookings will each earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent)."
+      quote: Eligible flight bookings will earn up to UNI$7.5 for every S$5 spent (akin to 3 miles per S$1 spent), and eligible hotel and other eligible products/services bookings will each earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent).
       source_type: issuer
       last_verified: 2026-10-05
     cap:
@@ -140,7 +140,7 @@ facts:
     applies_to: SGD transactions on the Visa or Mastercard variant processed outside Singapore
     note: UOB general card information (applies across UOB cards). This clause names Visa and Mastercard only; it does not state a figure for the American Express variant.
     source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
-    quote: "SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount."
+    quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
     source_type: issuer
     last_verified: 2026-10-05
   exclusions:

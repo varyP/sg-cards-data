@@ -30,8 +30,22 @@ jobs:
           (google-chrome --version || chromium --version || echo "no Chrome, so headless sources will be reported as failing") | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Re-verify facts
         run: python scripts/reverify.py --issues
+      # PRs opened with the built-in token do not trigger the validate workflow, so run the same
+      # checks here and put the results in the PR body.
       - name: Validate after bump
-        run: python scripts/validate.py
+        run: |
+          set -o pipefail
+          python scripts/validate.py | tee /tmp/validate.txt
+      - name: Unit tests and privacy scan
+        run: |
+          python -m unittest discover -s tests
+          python scripts/scan_repo.py | tee /tmp/scan.txt
+      - name: Guard (card files may change only in last_verified)
+        run: |
+          set -o pipefail
+          python scripts/check_bump_diff.py | tee /tmp/guard.txt
+          python scripts/check_bump_diff.py --strict-text > /tmp/guard-strict.txt || true
+          tail -n 1 /tmp/guard-strict.txt | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -48,7 +62,13 @@ jobs:
           git add data snapshots
           git commit -m "reverify: bump last_verified where quotes are unchanged"
           git push -u origin "$BR"
-          BODY="Automated weekly re-verify. Only last_verified dates and snapshots/fingerprints.json change; no values. Review per REVIEW.md."
+          BODY="Automated weekly re-verify. Only last_verified dates and snapshots/fingerprints.json change; no values. Review per REVIEW.md.
+
+          Checks run in this job (Actions-opened PRs get no CI):
+          - validate.py: $(grep -E '^(Validated|RESULT)' /tmp/validate.txt | tr '\n' ' ')
+          - unit tests: OK; $(tail -n 1 /tmp/scan.txt)
+          - $(tail -n 1 /tmp/guard.txt)
+          - text-level (re-dump noise): $(tail -n 1 /tmp/guard-strict.txt)"
           gh pr create --base main --head "$BR" --title "reverify $(TZ=Asia/Singapore date +%F)" --body "$BODY" --label reverify \
             || gh pr create --base main --head "$BR" --title "reverify $(TZ=Asia/Singapore date +%F)" --body "$BODY" \
             || gh issue create --title "[reverify] open PR for $BR" --body "Actions may not create PRs in this repo. Branch pushed: $BR. $BODY"

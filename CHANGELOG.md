@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-07: stable weekly re-verify (tooling)
+- `scripts/reverify.py` now writes card files with `sgcards_lib.dump_card` (no YAML anchors, stable
+  quoting), so a re-run changes only `last_verified` lines. Six card files that still used anchors or
+  non-canonical quoting were re-dumped once (formatting only; parsed content identical).
+- New `scripts/check_bump_diff.py`: fails if a card file changes in anything but `last_verified`, or a
+  date moves backwards or into the future. The weekly workflow now runs the validator, unit tests,
+  privacy scan and this guard, and puts the results in the PR body (Actions-opened PRs get no CI).
+- Tests: dump is lossless and idempotent; a date bump changes only date lines.
+
 ## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)
 - New ground rules 11-14 in `bot/system_prompt.md`: coverage honesty ("among the N cards I track";
   no "no card beats X" without a market check on issuer pages in the chat); cards outside the dataset

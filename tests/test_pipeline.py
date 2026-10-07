@@ -167,5 +167,49 @@ class TestBotRules(unittest.TestCase):
             self.assertIn(phrase, low, phrase)
 
 
+class TestCanonicalDump(unittest.TestCase):
+    """The weekly re-verify rewrites card files; the dump must be stable so its PR shows only dates."""
+
+    def test_dump_is_idempotent_and_lossless(self):
+        from sgcards_lib import dump_card
+        for p in card_files():
+            doc = load_yaml(p)
+            once = dump_card(doc)
+            self.assertEqual(yaml.safe_load(once), doc, p.name)
+            self.assertEqual(dump_card(yaml.safe_load(once)), once, p.name)
+            self.assertNotIn("&id0", once, p.name)
+
+    def test_date_bump_changes_only_date_lines(self):
+        from sgcards_lib import dump_card
+        p = card_files()[0]
+        doc = load_yaml(p)
+        before = dump_card(doc)
+        bumped = copy.deepcopy(doc)
+
+        def walk(n):
+            if isinstance(n, dict):
+                if "last_verified" in n:
+                    n["last_verified"] = "2099-01-01"
+                for v in n.values():
+                    walk(v)
+            elif isinstance(n, list):
+                for v in n:
+                    walk(v)
+        walk(bumped)
+        after = dump_card(bumped)
+        changed = [b for a, b in zip(before.splitlines(), after.splitlines()) if a != b]
+        self.assertEqual(len(before.splitlines()), len(after.splitlines()))
+        self.assertTrue(changed)
+        self.assertTrue(all(c.lstrip().startswith("last_verified:") for c in changed), changed[:3])
+
+    def test_bump_guard_strip(self):
+        import check_bump_diff
+        a = {"x": {"value": 1, "last_verified": "2026-01-01"}}
+        b = {"x": {"value": 1, "last_verified": "2026-02-01"}}
+        c = {"x": {"value": 2, "last_verified": "2026-01-01"}}
+        self.assertEqual(check_bump_diff._strip(a, {}), check_bump_diff._strip(b, {}))
+        self.assertNotEqual(check_bump_diff._strip(a, {}), check_bump_diff._strip(c, {}))
+
+
 if __name__ == "__main__":
     unittest.main()

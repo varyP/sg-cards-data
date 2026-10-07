@@ -151,6 +151,21 @@ def load_yaml(path: Path):
         return yaml.safe_load(f)
 
 
+CARD_HEADER = "# Information only, not financial advice. Every fact cites its source; check the issuer T&C.\n"
+
+
+class _NoAliasDumper(yaml.SafeDumper):
+    """Never emit &anchors / *aliases: each fact is written out in full, so a re-dump is stable."""
+
+    def ignore_aliases(self, data):
+        return True
+
+
+def dump_card(doc) -> str:
+    """Canonical card-file text. dump_card(yaml.safe_load(dump_card(d))) == dump_card(d)."""
+    return CARD_HEADER + yaml.dump(doc, Dumper=_NoAliasDumper, sort_keys=False, allow_unicode=True, width=1000)
+
+
 def card_files(cards_dir=None):
     return sorted(Path(cards_dir or CARDS_DIR).glob("*.yaml"))
 
