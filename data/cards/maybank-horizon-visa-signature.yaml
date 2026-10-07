@@ -14,7 +14,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
     quote: S$30,000 for Singapore Citizens or Singapore Permanent Residents
     source_type: issuer
-    last_verified: &id001 2026-10-03
+    last_verified: 2026-10-03
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -22,27 +22,27 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     first_year_waiver:
       value: waived_3_years
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     spend_based_waiver:
       value: 18000
       unit: sgd_spend_per_year
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: Subsequent annual fee will be automatically waived with a minimum spend of S$18,000 yearly
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
       derived: true
       note: '3.25 = Maybank administrative fee 2.25% + card association charge of up to 1%, both in the quote; applies ''for all Cards''. Maybank blocks scripted fetches: quote read via WebFetch (manual source).'
       source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
-      quote: 'the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.'
+      quote: the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.
       source_type: issuer
       last_verified: 2026-10-03
   earn:
@@ -54,7 +54,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 2.8 miles (7X TREATS Points)¹ on all air ticket purchases² and foreign spend – online and in-person with S$800³ monthly spend
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: 40000
       unit: bonus_treats_points
@@ -63,7 +63,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: Bonus TREATS Points (TP) awarded for air tickets will be capped at 40,000 TP for each calendar month.
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     min_spend:
       value: 800
       unit: sgd_per_month
@@ -71,7 +71,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: If the monthly accumulated spend is less than S$800, 1.2 air miles (3X TREATS Points) will be awarded for air tickets and foreign spend
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
   - category: local_and_travel_related
     rate:
       value: 1.2
@@ -79,7 +79,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 1.2 miles (3X TREATS Points)¹ on all travel-related expenses
       source_type: issuer
-      last_verified: *id001
+      last_verified: 2026-10-03
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -88,11 +88,11 @@ facts:
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
   exclusions:
   - value: earns_on_insurance_medical_education
-    note: Counter-example to 'insurance is always excluded'. Confirm in card T&C before relying on it.
+    note: 'Counter-example to ''insurance is always excluded''. No earn rate is recorded for these categories: it may be lower than the base rate, so give no rate and confirm in the card T&C before relying on it.'
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
     quote: Earn miles when you spend on Insurance, Medical, Education, Rentals and more.
     source_type: issuer
-    last_verified: *id001
+    last_verified: 2026-10-03
   conversion:
     ratio:
       value: null
@@ -103,3 +103,4 @@ facts:
 pending_changes: []
 notes:
 - 'Maybank blocks scripted fetches (Akamai 403): fetch: manual. Quotes were read from the rendered page via WebFetch.'
+- 'Re-check attempted 2026-10-07: every Maybank URL returned HTTP 403 (Akamai ''Access Denied'') to scripted fetches and a real browser from the box, and HTTP 500 via WebFetch, so no quote could be re-read and last_verified was NOT bumped. Needs a manual browser check.'
