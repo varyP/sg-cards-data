@@ -8,7 +8,7 @@ Nothing reaches `main` without two independent reviews and the repo owner's merg
 | Author | an agent (usually grokbot) | Opens the fix PR from a change-signal issue, or the weekly re-verify PR |
 | First reviewer | grokbot | Self-check (below) before asking anyone else |
 | Second reviewer | Maxis | Independent cross-check against the issuer source; **owns `tests/eval_set.yaml`** |
-| Merger | the repo owner | Final OK and merge, only after both reviewers have said OK |
+| Merger | the repo owner; an agent only for data, sources and tooling PRs (see "Merge rights") | Final OK and merge, only after both reviewers have said OK |
 
 ## Handshake for every fix PR
 1. **PR opened** with: the new value, the verbatim `quote`, `source_url` (issuer page or T&C),
@@ -24,6 +24,17 @@ Nothing reaches `main` without two independent reviews and the repo owner's merg
    gives the final OK and merges.
 
 `<card>` is the card id from `data/cards/<card>.yaml` (e.g. `dbs-vantage`). One note per PR.
+
+## Merge rights
+- **`bot/system_prompt.md` changes: the repo owner merges, in person.** Any PR that touches
+  `bot/system_prompt.md` is merged by the repo owner himself, even after both reviewers have said
+  OK. Every installed copy of the bot loads that file live at the start of each conversation, so a
+  merge changes every copy at once.
+- Keep such a change in its own PR, with no data, sources or tooling changes mixed in. Put
+  **owner-merge** in the PR title and say so in the review note.
+- **Agents may merge only data, sources and tooling PRs** (`data/`, `sources.yaml`, `scripts/`,
+  `schema/`, workflows, tests, snapshots, reports and docs other than the bot rules), and only after
+  both reviewers have said OK and the owner has allowed agent merges.
 
 ## Changes to the eval set
 `tests/eval_set.yaml` is owned by the second reviewer. Edits by anyone else need Maxis's OK through

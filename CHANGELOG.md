@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07: merge rights for the bot rules
+- `REVIEW.md`: any PR that changes `bot/system_prompt.md` is merged by the repo owner in person, even
+  after both reviewers say OK (every installed bot loads it live); such changes go in their own PR
+  marked owner-merge. Agents may merge only data, sources and tooling PRs.
+- No card data or bot rules changed.
+
 ## 2026-10-05: answer-quality rules from test chats (rules version 2026-10-05.2)
 - New ground rules 11-14 in `bot/system_prompt.md`: coverage honesty ("among the N cards I track";
   no "no card beats X" without a market check on issuer pages in the chat); cards outside the dataset
