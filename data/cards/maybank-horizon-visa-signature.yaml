@@ -14,7 +14,8 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
     quote: S$30,000 for Singapore Citizens or Singapore Permanent Residents
     source_type: issuer
-    last_verified: 2026-10-03
+    last_verified: 2026-10-07
+    note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -22,20 +23,23 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
     first_year_waiver:
       value: waived_3_years
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
     spend_based_waiver:
       value: 18000
       unit: sgd_spend_per_year
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: Subsequent annual fee will be automatically waived with a minimum spend of S$18,000 yearly
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
@@ -68,11 +72,11 @@ facts:
       value: 40000
       unit: bonus_treats_points
       period: calendar_month
-      note: Cap applies to air tickets.
+      note: Cap applies to air tickets. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-horizon-visa-signature-card.page
       quote: Bonus TREATS Points (TP) awarded for air tickets will be capped at 40,000 TP for each calendar month.
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
     min_spend:
       value: 800
       unit: sgd_per_month
@@ -118,4 +122,4 @@ facts:
 pending_changes: []
 notes:
 - 'Maybank blocks scripted fetches (Akamai 403): fetch: manual. Quotes were read from the rendered page via WebFetch.'
-- '2026-10-07: every Maybank URL returned HTTP 403/500 to the box''s automated fetches. A reviewer read the issuer pages manually in a browser the same day; facts whose quote matched that read verbatim (FX fee, 2.8 mpd rate and S$800 minimum, 1.2 mpd rate (and its ''no minimum spend'', newly filled), the insurance/medical/education earn statement) carry last_verified 2026-10-07 and the note ''Manual read by reviewer''. Facts not re-quoted verbatim in that read keep last_verified 2026-10-03: minimum income, annual fee, first-year and spend-based waivers, the 40,000-point air-ticket cap.'
+- '2026-10-07: every Maybank URL returned HTTP 403/500 to the box''s automated fetches. A reviewer read the issuer pages manually in a browser the same day; facts whose quote matched that read verbatim (FX fee, 2.8 mpd rate and S$800 minimum, 1.2 mpd rate (and its ''no minimum spend'', newly filled), the insurance/medical/education earn statement) carry last_verified 2026-10-07 and the note ''Manual read by reviewer''. The reviewer then supplied verbatim quotes for the minimum income, annual fee, first-year and spend-based waivers and the 40,000-point air-ticket cap, so those are also 2026-10-07.'

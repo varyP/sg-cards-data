@@ -33,7 +33,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: Subsequent annual fee will be automatically waived with a minimum spend of S$12,000 yearly
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-10-07
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
@@ -132,17 +133,18 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: 5960, 6381, 6399 | Insurance Related
     source_type: issuer
-    last_verified: 2026-10-03
-    note: Rendered as a table; '|' is a cell separator in the WebFetch rendering. Horizon Visa Signature / Platinum Visa / Visa Infinite are exceptions.
+    last_verified: 2026-10-07
+    note: Rendered as a table; '|' is a cell separator. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches. Horizon Visa Signature / Platinum Visa / Visa Infinite are exceptions.
   - category: money transfer, utilities
     value: no_rewards
     mccs:
     - '4829'
     - '4900'
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
-    quote: From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1
+    quote: From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.
     source_type: issuer
-    last_verified: 2026-10-03
+    last_verified: 2026-10-07
+    note: Rows '4829 | Money Transfer' and '4900 | Utilities' re-read in the same table. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
   conversion:
     ratio:
       value: null
@@ -153,4 +155,4 @@ facts:
 pending_changes: []
 notes:
 - 'fetch: manual (Akamai). Groceries category earns up to 6% regardless of tier, per page.'
-- '2026-10-07: every Maybank URL returned HTTP 403/500 to the box''s automated fetches. A reviewer read the issuer pages manually in a browser the same day; facts whose quote matched that read verbatim (annual fee, first-year waiver, FX fee, both tiers'' rate/cap/minimum spend, base 0.22%) carry last_verified 2026-10-07 and the note ''Manual read by reviewer''. Facts not re-quoted verbatim in that read keep last_verified 2026-10-03: spend-based waiver (S$12,000) and the MCC exclusions.'
+- '2026-10-07: every Maybank URL returned HTTP 403/500 to the box''s automated fetches. A reviewer read the issuer pages manually in a browser the same day; facts whose quote matched that read verbatim (annual fee, first-year waiver, FX fee, both tiers'' rate/cap/minimum spend, base 0.22%) carry last_verified 2026-10-07 and the note ''Manual read by reviewer''. The reviewer then supplied verbatim quotes for the spend-based waiver (S$12,000) and the MCC exclusions, so those are also 2026-10-07.'

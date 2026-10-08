@@ -6,10 +6,14 @@
   note "Manual read by reviewer". Family & Friends: annual fee and 3-year waiver, both tiers (6% at
   S$800, S$20 cap; 8% at S$1,600, S$30 cap), base 0.22%, FX fee. Horizon: 2.8 mpd with S$800 minimum,
   1.2 mpd (minimum spend filled: none), FX fee, the insurance/medical/education earn statement. FX fee
-  2.25% + up to 1% re-confirmed on the charges page. Other Maybank facts keep last_verified 2026-10-03.
+  2.25% + up to 1% re-confirmed on the charges page. After review, the reviewer supplied verbatim quotes
+  for the rest (F&F S$12,000 waiver and MCC exclusions; Horizon minimum income, fee and waivers, 40,000 TP
+  air-ticket cap), so those are also 2026-10-07.
 - New `overseas_processed_sgd_fee_pct` (up to 1%) on all three Maybank cards (charges page).
 - Horizon's reported 26 May 2025 change stays unconfirmed (no issuer quote; T&C PDF not read).
-- New card: Maybank XL Rewards (29 in `data/index.json`). Fields without an exact quote are null.
+- New card: Maybank XL Rewards (29 in `data/index.json`): minimum income S$30,000, age 21 to 39, the
+  1-Dec-2025 Maybank MCC exclusions, and the full S$500 minimum-spend sentence (all spend counts).
+  Conversion ratio and fee stay null (no exact quote).
 
 ## 2026-10-07: stable weekly re-verify (tooling)
 - `scripts/reverify.py` now writes card files with `sgcards_lib.dump_card` (no YAML anchors, stable
