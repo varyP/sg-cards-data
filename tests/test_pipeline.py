@@ -158,10 +158,17 @@ class TestBotRules(unittest.TestCase):
             "\"not in my checked list\"",
             "in follow-up answers too",                      # citations in follow-ups
             "every shortlist",                               # disclaimer on every shortlist
-            "on these numbers x comes out ahead",            # outcomes, not orders
-            "not \"book x\"",
-            "save a user's cards, spending, trips or income to memory",
-            "keep them for this conversation only",
+            "on these numbers, x comes out ahead",           # outcomes, not orders
+            "do not write \"use x\", \"put everything else on x\"",
+            "processed overseas counts as foreign spend",     # unconfirmed charge treatment
+            "not even that they exist",                       # family one-off questions
+            "drop every expired note",                        # trip notes expire
+            "save anything about the user except what the \"memory\" section allows",  # memory rule
+            "never use user scope",
+            "full or partial, including the last 4 digits",
+            "only the user's own words in this chat",
+            "\"forget everything\"",
+            "never from memory",
             "marked \"unconfirmed\" with no number",       # unsourced claims
         ):
             self.assertIn(phrase, low, phrase)

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-08: rules 2026-10-08.1 (bot rules, owner merge)
+- New "Memory" section: each private copy remembers its owner's card profile (cards, categories, goal, closed cards, expiring trip notes), never card numbers, IDs, income or third parties; plus family one-off questions, stricter "outcomes, not orders", and unconfirmed merchant/charge treatment.
+
 ## 2026-10-07: Maybank manual read and Maybank XL Rewards (data)
 - Maybank blocks automated fetches, so a reviewer read the issuer pages manually in a browser on
   2026-10-07. Facts whose quote matched that read verbatim now carry last_verified 2026-10-07 and the
