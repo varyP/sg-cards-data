@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08: Maybank Family & Friends, two more MCC exclusion rows (data)
+- Added the two missing rows of Maybank's 1-Dec-2025 MCC table to Family & Friends: cash
+  disbursement/quasi-cash/top-ups (6010, 6011, 6050, 6529, 6530, 6534, 7511) and cleaning, maintenance
+  and janitorial services (7349). Quotes come from the reviewer's 2026-10-07 manual read, same framing
+  statement and issuer page as the existing rows. F&F now lists all five table rows, matching XL.
+
 ## 2026-10-07: Maybank manual read and Maybank XL Rewards (data)
 - Maybank blocks automated fetches, so a reviewer read the issuer pages manually in a browser on
   2026-10-07. Facts whose quote matched that read verbatim now carry last_verified 2026-10-07 and the
