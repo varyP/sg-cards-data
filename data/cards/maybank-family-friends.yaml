@@ -145,6 +145,30 @@ facts:
     source_type: issuer
     last_verified: 2026-10-07
     note: Rows '4829 | Money Transfer' and '4900 | Utilities' re-read in the same table. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+  - category: cash disbursement, quasi-cash and top-ups (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '6010'
+    - '6011'
+    - '6050'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '7511'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+    quote: 6010, 6011, 6050, 6529, 6530, 6534, 7511 | Cash Disbursement/Quasi-cash/Top-ups
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  - category: cleaning, maintenance and janitorial services (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '7349'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
+    quote: 7349 | Cleaning, Maintenance & Janitorial Services
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
   conversion:
     ratio:
       value: null
