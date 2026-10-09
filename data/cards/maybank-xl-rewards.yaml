@@ -1,0 +1,176 @@
+# Information only, not financial advice. Every fact cites its source; check the issuer T&C.
+schema_version: 1
+id: maybank-xl-rewards
+issuer: Maybank
+name: Maybank XL Rewards Card
+type: miles
+status: active
+product_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+facts:
+  min_income_sgd:
+    value: 30000
+    unit: sgd_per_year
+    note: Singapore Citizens or PRs. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: S$30,000 for Singapore Citizens or Singapore Permanent Residents
+    source_type: issuer
+    last_verified: 2026-10-07
+  eligibility_age:
+    value: 21_to_39
+    unit: years_of_age
+    note: At least 21 and below 40. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: For Maybank XL Cashback Card and/or Maybank XL Rewards Card, you need to be at least 21 years of age and below 40 years old.
+    source_type: issuer
+    last_verified: 2026-10-07
+  fees:
+    annual_fee_sgd:
+      value: 87.2
+      unit: sgd_incl_gst
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: 'Principal Card: S$87.20* (inclusive of GST), waived for first 2 years'
+      source_type: issuer
+      last_verified: 2026-10-07
+    first_year_waiver:
+      value: waived_2_years
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: 'Principal Card: S$87.20* (inclusive of GST), waived for first 2 years'
+      source_type: issuer
+      last_verified: 2026-10-07
+    spend_based_waiver:
+      value: 6000
+      unit: sgd_spend_per_year
+      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: Subsequent annual fee will be automatically waived with a minimum spend of S$6,000 yearly
+      source_type: issuer
+      last_verified: 2026-10-07
+    fx_fee_pct:
+      value: 3.25
+      unit: pct_up_to
+      derived: true
+      note: 3.25 = Maybank administrative fee 2.25% + card association charge of up to 1%, both in the quote; applies 'for all Cards'. Both parts (2.25% from 1 Nov 2021, plus up to 1% by the card association) re-read by a reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
+      quote: the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.
+      source_type: issuer
+      last_verified: 2026-10-07
+  earn:
+  - category: dine_shop_travel_play_and_fcy
+    description: Dine, Shop, Travel and Play categories, and foreign-currency spend.
+    rate:
+      value: 4
+      unit: mpd
+      note: 10X TREATS Points. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: 4 air miles per dollar (10X TREATS Points) whenever you spend in the Dine, Shop, Travel and Play categories, as well as in foreign currencies.
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: 10000
+      unit: bonus_treats_points
+      period: month
+      note: 'Not the promotional figure: the page also shows a new-cardmember offer (''Up to 15,000 bonus TREATS Points monthly!''), which the reviewer read as running 1 Jul to 30 Sep 2026. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: Up to 10,000 bonus TREATS Points monthly.
+      source_type: issuer
+      last_verified: 2026-10-07
+    min_spend:
+      value: 500
+      unit: sgd_per_month
+      period: calendar_month
+      note: Minimum to earn the 10X TREATS Points; all spend (bonus and non-bonus categories) counts toward it. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: Cardmember needs to spend at least S$500 in a calendar month (including Bonus and non-Bonus Categories) to be eligible for the 5% cashback or the 10X TREATS Points for the respective cards.
+      source_type: issuer
+      last_verified: 2026-10-07
+  - category: other
+    rate:
+      value: 5
+      unit: treats_points_per_sgd5
+      note: 1X TREATS Points. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+      quote: Other transactions will earn 5 TREATS Points for every S$5 spent.
+      source_type: issuer
+      last_verified: 2026-10-07
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  overseas_processed_sgd_fee_pct:
+    value: 1
+    unit: pct_up_to
+    applies_to: SGD card transactions processed overseas
+    note: Maybank credit card charges page (applies across Maybank cards). Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+    source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
+    quote: All card transactions in Singapore dollars but processed overseas will be subject to an administrative fee of up to 1%.
+    source_type: issuer
+    last_verified: 2026-10-07
+  exclusions:
+  - category: money transfer (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '4829'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: 4829 | Money Transfer
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  - category: cash disbursement, quasi-cash, top-ups (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '6010'
+    - '6011'
+    - '6050'
+    - '6529'
+    - '6530'
+    - '6534'
+    - '7511'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: 6010, 6011, 6050, 6529, 6530, 6534, 7511 | Cash Disbursement/Quasi-cash/Top-ups
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  - category: cleaning, maintenance and janitorial services (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '7349'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: 7349 | Cleaning, Maintenance & Janitorial Services
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  - category: utilities (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '4900'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: 4900 | Utilities
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  - category: insurance-related (all personal Maybank cards from 1 Dec 2025)
+    value: no_rewards
+    mccs:
+    - '5960'
+    - '6381'
+    - '6399'
+    source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-xl-card.page
+    quote: 5960, 6381, 6399 | Insurance Related
+    source_type: issuer
+    last_verified: 2026-10-07
+    note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
+  conversion:
+    ratio:
+      value: null
+      null_reason: Not extracted.
+    fee_sgd:
+      value: null
+      null_reason: Not extracted.
+pending_changes: []
+notes:
+- '2026-10-07 (review fixes): minimum income, the 21-39 age band and the 1-Dec-2025 MCC exclusions filled from verbatim quotes in the reviewer''s manual read of the XL hub page; the S$500 minimum-spend quote now uses the full sentence. Conversion ratio and fee stay null (nothing verbatim on the issuer page).'
+- Added 2026-10-07. Maybank blocks automated fetches (Akamai 403 / HTTP 500 from the box); every fact here comes from a reviewer's manual browser read of the issuer page on 2026-10-07. The product lives on the XL hub page; the maybank-xl-rewards-card.page slug returned HTTP 500.
