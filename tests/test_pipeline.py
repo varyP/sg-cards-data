@@ -163,6 +163,7 @@ class TestBotRules(unittest.TestCase):
             "processed overseas counts as foreign spend",     # unconfirmed charge treatment
             "not even that they exist",                       # family one-off questions
             "drop every expired note",                        # trip notes expire
+            "once 13 months have passed since the closure month",  # closed-card facts expire
             "save anything about the user except what the \"memory\" section allows",  # memory rule
             "never use user scope",
             "full or partial, including the last 4 digits",

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-09: rules 2026-10-09.1 (bot rules, owner merge)
+- Memory: closed-card facts now expire. A "Closed <card>, <month year>" fact is removed once 13 months
+  have passed since the closure month, checked at the start of every conversation alongside the "Until"
+  notes (e.g. "Closed Citi Rewards, Mar 2026" is removed from 1 Apr 2027). Memory stays on by default.
+
 ## 2026-10-08: Maybank Family & Friends, two more MCC exclusion rows (data)
 - Added the two missing rows of Maybank's 1-Dec-2025 MCC table to Family & Friends: cash
   disbursement/quasi-cash/top-ups (6010, 6011, 6050, 6529, 6530, 6534, 7511) and cleaning, maintenance
