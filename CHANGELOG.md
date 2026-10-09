@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-09: ChatGPT plugin, skills-only draft (tooling)
+- New `chatgpt/sg-cards-guide/` (portable Agent Plugins package: `plugin.json` + one skill that loads the live rules and data from `main`, inlines only the hard rules, and adapts the memory rule to ChatGPT's user-controlled memory), `chatgpt/test-cases.md`, `scripts/build_chatgpt_plugin.py` (fills the owner placeholders, writes `dist/` ZIP) and 3 tests.
+
 ## 2026-10-08: Maybank Family & Friends, two more MCC exclusion rows (data)
 - Added the two missing rows of Maybank's 1-Dec-2025 MCC table to Family & Friends: cash
   disbursement/quasi-cash/top-ups (6010, 6011, 6050, 6529, 6530, 6534, 7511) and cleaning, maintenance

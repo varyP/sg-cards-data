@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sg-cards-guide",
+  "version": "0.1.0",
+  "description": "Information-only guide to Singapore credit cards. Loads an open, issuer-cited dataset live and cites every number. Not financial advice.",
+  "author": {
+    "name": "sg-cards-data contributors",
+    "url": "https://github.com/{{REPO_OWNER}}/sg-cards-data"
+  },
+  "homepage": "https://github.com/{{REPO_OWNER}}/sg-cards-data",
+  "repository": "https://github.com/{{REPO_OWNER}}/sg-cards-data",
+  "license": "CC-BY-4.0",
+  "keywords": ["singapore", "credit cards", "miles", "cashback"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SG Cards Guide",
+        "shortDescription": "Singapore credit card facts",
+        "longDescription": "Answers questions about Singapore credit cards: earn rates, caps, fees, exclusions and sign-up rules, and which of your cards earns more on a purchase. Every number comes from an open dataset of issuer-quoted facts, loaded live at the start of each chat and cited with the issuer link and the date it was last checked. Limitations: information only, not financial advice; covers only the cards in the dataset unless it reads an issuer page live; does not connect to any bank and only knows what you tell it. The plugin stores nothing; anything carried between chats is in ChatGPT's own memory, which you control.",
+        "developerName": "{{DEVELOPER_NAME}}",
+        "category": "{{CATEGORY}}",
+        "capabilities": [],
+        "defaultPrompt": [
+          "What does the DBS Vantage earn on local spend?",
+          "Is the UOB Lady's Solitaire capped at S$2,000 a month?",
+          "Which rules version are you using?"
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      }
+    }
+  }
+}
