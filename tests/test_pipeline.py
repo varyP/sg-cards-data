@@ -218,5 +218,51 @@ class TestCanonicalDump(unittest.TestCase):
         self.assertNotEqual(check_bump_diff._strip(a, {}), check_bump_diff._strip(c, {}))
 
 
+class TestChatGPTPlugin(unittest.TestCase):
+    """chatgpt/sg-cards-guide is the skills-only ChatGPT plugin built on the same base as the bot."""
+
+    PKG = ROOT / "chatgpt" / "sg-cards-guide"
+    PORTABLE_KEYS = {"$schema", "name", "version", "description", "author", "homepage",
+                     "repository", "license", "keywords", "extensions"}
+
+    def test_manifest_shape(self):
+        import re
+        m = json.loads((self.PKG / "plugin.json").read_text())
+        self.assertEqual(m["$schema"], "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json")
+        self.assertLessEqual(set(m), self.PORTABLE_KEYS, "the portable manifest schema is closed")
+        self.assertRegex(m["name"], r"^[a-z0-9]+(-[a-z0-9]+)*$")
+        self.assertRegex(m["version"], r"^\d+\.\d+\.\d+$")
+        ui = m["extensions"]["com.openai"]["interface"]
+        self.assertLessEqual(len(ui["displayName"]), 30)
+        self.assertLessEqual(len(ui["shortDescription"]), 30)
+        for path in re.findall(r'"(\./[^"]+)"', (self.PKG / "plugin.json").read_text()):
+            self.assertTrue((self.PKG / path).exists(), path)
+
+    def test_skill_loads_live_base_and_keeps_hard_rules(self):
+        import re
+        text = (self.PKG / "skills" / "sg-cards-guide" / "SKILL.md").read_text()
+        self.assertTrue(text.startswith("---\nname: sg-cards-guide\ndescription:"))
+        for url in ("/sg-cards-data/main/bot/system_prompt.md", "/sg-cards-data/main/data/index.json"):
+            self.assertIn(url, text)
+        low = " ".join(text.lower().split())
+        for phrase in ("info only, not financial advice", "never ask chatgpt to remember",
+                       "even the last 4 digits", "income or salary in any form",
+                       "only the user's own words count", "never from memory"):
+            self.assertIn(phrase, low, phrase)
+        built = re.search(r"Built against Rules version (\d{4}-\d{2}-\d{2}\.\d+)", text).group(1)
+        live = re.search(r"Rules version: (\S+)", (ROOT / "bot" / "system_prompt.md").read_text()).group(1)
+        key = lambda v: tuple(int(x) for x in v.replace("-", ".").split("."))  # noqa: E731
+        self.assertLessEqual(key(built), key(live), "skill expects a newer rules version than main has")
+
+    def test_build_fills_placeholders(self):
+        with tempfile.TemporaryDirectory(dir=ROOT) as tmp:
+            out = subprocess.run([sys.executable, str(ROOT / "scripts" / "build_chatgpt_plugin.py"),
+                                  "--owner", "example-owner", "--developer-name", "Example",
+                                  "--category", "Example", "--out", Path(tmp).name],
+                                 capture_output=True, text=True)
+            self.assertEqual(out.returncode, 0, out.stderr)
+            self.assertTrue(list(Path(tmp).glob("sg-cards-guide-*.zip")))
+
+
 if __name__ == "__main__":
     unittest.main()
