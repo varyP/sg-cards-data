@@ -1,6 +1,7 @@
 # Review process
 
-Nothing reaches `main` without two independent reviews and the repo owner's merge.
+Nothing reaches `main` without two independent reviews and a merge allowed under "Merge rights"
+below (the repo owner in person for any `bot/system_prompt.md` change).
 
 ## Roles
 | Role | Who | Does |
@@ -30,8 +31,12 @@ Nothing reaches `main` without two independent reviews and the repo owner's merg
   `bot/system_prompt.md` is merged by the repo owner himself, even after both reviewers have said
   OK. Every installed copy of the bot loads that file live at the start of each conversation, so a
   merge changes every copy at once.
-- Keep such a change in its own PR, with no data, sources or tooling changes mixed in. Put
-  **owner-merge** in the PR title and say so in the review note.
+- Keep such a change in its own PR, with no data, sources or tooling changes mixed in. The only
+  extras allowed are the matching `CHANGELOG.md` entry and the test lines that check the rules'
+  wording (the rules file requires both). Put **owner-merge** in the PR title and say so in the
+  review note.
+- After the owner merges a rules change, the maintainers update the bot's own inline hard rules and
+  skills to match, because those win over the fetched file.
 - **Agents may merge only data, sources and tooling PRs** (`data/`, `sources.yaml`, `scripts/`,
   `schema/`, workflows, tests, snapshots, reports and docs other than the bot rules), and only after
   both reviewers have said OK and the owner has allowed agent merges.
