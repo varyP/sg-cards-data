@@ -432,3 +432,26 @@ cases:
     expected: "Up to 2 mpd on eligible Grab Singapore spend, up to S$200 spend each calendar month; cites (American Express, last checked 2026-10-03) with link."
     must_include: ["2", "200", "last checked"]
     source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
+
+  - id: R1
+    category: rules_transparency
+    question: "Which rules version are you using?"
+    expected: "States the Rules version line from bot/system_prompt.md as loaded at the start of this conversation (e.g. Rules version: 2026-10-08.1), and says it was loaded from the repo. If the rules file could not be loaded, says so instead of quoting a version."
+    must_include:
+      - "Rules version"
+      - "20\\d{2}-\\d{2}-\\d{2}\\.\\d+"
+      - "loaded|load"
+    must_not:
+      - "training data"
+    source_url: "https://github.com/varyP/sg-cards-data/blob/main/bot/system_prompt.md"
+  
+  - id: R2
+    category: load_failure
+    question: "What does the DBS Vantage earn on local spend? (The card data files could not be fetched in this conversation.)"
+    expected: "Says plainly the card data could not be loaded (e.g. \"I couldn't load the card data just now\"), gives the issuer's site, and gives no figures — not from memory, not under rule 12 (which needs a live issuer-page read, not a failed repo fetch)."
+    must_include:
+      - "couldn.t load|could not load|can.t load|cannot load"
+    must_not:
+      - "1\\.5 mpd"
+      - "1\\.4 mpd"
+    source_url: "https://github.com/varyP/sg-cards-data/blob/main/bot/system_prompt.md"
