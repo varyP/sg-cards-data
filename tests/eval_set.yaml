@@ -443,7 +443,7 @@ cases:
       - "loaded|load"
     must_not:
       - "training data"
-    source_url: "https://github.com/varyP/sg-cards-data/blob/main/bot/system_prompt.md"
+    source_url: bot/system_prompt.md
   
   - id: R2
     category: load_failure
@@ -454,4 +454,4 @@ cases:
     must_not:
       - "1\\.5 mpd"
       - "1\\.4 mpd"
-    source_url: "https://github.com/varyP/sg-cards-data/blob/main/bot/system_prompt.md"
+    source_url: bot/system_prompt.md
