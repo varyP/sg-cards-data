@@ -1,7 +1,99 @@
 {
+ "citi-cash-back:facts.earn[dining_and_groceries].cap": {
+  "sha256": "7b854d638fa5bd8142f3549ee9794da2c113d9f04c1d32559ad42a3357507721",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[dining_and_groceries].min_spend": {
+  "sha256": "4b89823988d36cc32f792d045aca51b7981febbea774d0c99880fc67bf697f6a",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[dining_and_groceries].rate": {
+  "sha256": "087e493f3d5f282e0a75c88b277488adaa1e4dc2d8fede99a15e133f7c02c91d",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[other].cap": {
+  "sha256": "7b854d638fa5bd8142f3549ee9794da2c113d9f04c1d32559ad42a3357507721",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[other].min_spend": {
+  "sha256": "6ed1c860dda58b00102bb3f9f6403af78b28ca1f601328f01b2ecbcb16dc1f3d",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[other].rate": {
+  "sha256": "6a0f759c8da39c10f1f4274997786685fbbba6d5fcc2eb7937bd3535f64b0106",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[petrol_and_private_commute].cap": {
+  "sha256": "7b854d638fa5bd8142f3549ee9794da2c113d9f04c1d32559ad42a3357507721",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[petrol_and_private_commute].min_spend": {
+  "sha256": "4b89823988d36cc32f792d045aca51b7981febbea774d0c99880fc67bf697f6a",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.earn[petrol_and_private_commute].rate": {
+  "sha256": "e881287aef946c004efa00acfdcf262d227477a676d2f24d51a47aaaa8366de7",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.exclusions[card is covered by Citi's rewards exclusion list]": {
+  "sha256": "6eefbd19b1ccc581d3d3604442f8f4b2211630740a4989187e57d976a77bf58a",
+  "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
+ },
+ "citi-cash-back:facts.exclusions[category definitions are MCC-based (Dining, Groceries, Petrol)]": {
+  "sha256": "3ab223b32a65f7df14bb8fc5c62b62202e7a7183b706a8cce4673bb0254a90c5",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf"
+ },
+ "citi-cash-back:facts.exclusions[category definitions are MCC-based (Private Commute)]": {
+  "sha256": "6f7c0aed28537832bd23d3f7a0c167e0979ea8373646bb5d3a887ade8785d6a5",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf"
+ },
+ "citi-cash-back:facts.exclusions[direct-marketing insurance, education, charities, hospitals]": {
+  "sha256": "5425a31c3bdbcb4f51a46d2a71eb3eecf6e05e48f5ece2180bfbf307ee6d3c08",
+  "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
+ },
+ "citi-cash-back:facts.exclusions[insurance, brokers, rentals, schools, cigar stores]": {
+  "sha256": "7b2f42bdfe6d3ff7a554bd819d45d503f7b5e772a9d382f3a1864d97fd78bd97",
+  "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
+ },
+ "citi-cash-back:facts.exclusions[not counted towards the S$800 minimum spend: insurance]": {
+  "sha256": "8cc4ec302d883c4bbf9f7c4236bf84fcd12f2d9e4c6f8757ee1ea183728e5a67",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf"
+ },
+ "citi-cash-back:facts.exclusions[not counted towards the S$800 minimum spend: transit]": {
+  "sha256": "934c81e4e105ab8bb09175c8fa0debf18f7cbd5ed5708736eb03aafc2f6e11e3",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/frequently-asked-questions.pdf"
+ },
+ "citi-cash-back:facts.exclusions[quasi-cash, wallet loads, parking, betting, money transfer, utilities]": {
+  "sha256": "ea353d0e6c9c811e68feeea533298c61b36c1d487fbe040b7065dee3eec573d1",
+  "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
+ },
+ "citi-cash-back:facts.fees.annual_fee_sgd": {
+  "sha256": "279aa7465324676f6115edda0c741f42433f0248c83591333c127ff1c2d3bd39",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.fees.fx_fee_pct": {
+  "sha256": "2f4c9860f735449f79172e02935e850cb9ca8a79931b94a7dbf17782bd5ca207",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/information-sheet.pdf"
+ },
+ "citi-cash-back:facts.min_income_sgd": {
+  "sha256": "dcbe44208fdfef6cd35852e609da6e8e4094e6bd0548a49850c39e0f58ba1c2f",
+  "url": "https://www1.citibank.com.sg/credit-cards/cashback/citi-cash-back-card"
+ },
+ "citi-cash-back:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "d95ef6c1570edfb67a4a5e173dcd2fe5dc0921290c383097b5ee40ca13027d82",
+  "url": "https://www.citibank.com.sg/credit-cards/cashback/citi-cash-back-card/pdf/information-sheet.pdf"
+ },
  "citi-premiermiles:facts.conversion.fee_sgd": {
   "sha256": "ffd3cec85c6cb99e5a202638c4e2b59ebf220b63dc22f69663c4a0450d569162",
   "url": "https://www.citibank.com.sg/credit-cards/privileges-programs/credit-card-rewards-redemption/points-transfer.html"
+ },
+ "citi-premiermiles:facts.earn[agoda_portal_hotels].rate": {
+  "sha256": "efd466b05ba6e0856983ca84780dffc30d71e925c58c43d5d0f3ad2b79d5c3ad",
+  "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
+ },
+ "citi-premiermiles:facts.earn[kaligo_portal_hotels].rate": {
+  "sha256": "a5c908a9d30272034b1e49368254ddadc2f51bbb2eeb96a0af76ae25a339ea8c",
+  "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.earn[local].rate": {
   "sha256": "7f41e9aaac52efebe5c9703bc7a11cc821c1a29ca40a2f1c698dc2d7b9455a16",
@@ -72,7 +164,7 @@
   "url": "https://www.citibank.com.sg/credit-cards/rewards/citi-rewards-card/"
  },
  "dbs-altitude-visa:facts.conversion.fee_sgd": {
-  "sha256": "859198b722e3c3b0a1c0e7558cd2c180f1d99b608f3414e55b424ff1b2f97f28",
+  "sha256": "c120e402d0a23697db8d4df4b2545ca986ceb8e1c96c81f58a0b86b27c0eca6b",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.conversion.ratio": {
@@ -80,11 +172,11 @@
   "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/altitude-card-tnc.pdf"
  },
  "dbs-altitude-visa:facts.earn[local].rate": {
-  "sha256": "acf61a3b83780a3e762d86de53d530831ed67b5031525e2f81202fd5b7010878",
+  "sha256": "e09dfb7ab65986dd7b605d45d3d34015c17e943e192dbdac43d2049cc1842903",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.earn[overseas_fcy].rate": {
-  "sha256": "3e6cf2d181cff503ae7d986717e0de4f72034aaaec625d579eb9a0c3089212b1",
+  "sha256": "24a93e5dcd7104a1a93f959cb5cbb7bb7b6dc505ed7dbe643e688e838914efec",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.exclusions[bill payments, AXS/SAM, fees]": {
@@ -108,7 +200,7 @@
   "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf"
  },
  "dbs-altitude-visa:facts.fees.annual_fee_sgd": {
-  "sha256": "ca5e42c64fcd21cf1f6f13c6122b6ef447d345619cd3c69a0f65a2dbef2f0c72",
+  "sha256": "958a23d431ad50e49518afcd8e330ad01f354d7e2e749c4f1396987ffdce3c8b",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.fees.first_year_waiver": {
@@ -116,16 +208,108 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.fees.fx_fee_pct": {
-  "sha256": "b48dda8432761d4fd014c2a569ba45fdec81914d2d9a127918ddd77f61e73c49",
-  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
+  "sha256": "70c6f19b96d292644a1830c2b2c875bad84bd20f8975df1b9f5f67fa5377892c",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
  },
  "dbs-altitude-visa:facts.fees.spend_based_waiver": {
   "sha256": "77c9f970ea8a079dea17ddc24d38369ba47452db813941ee2b73a99d8adf945e",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
  },
  "dbs-altitude-visa:facts.min_income_sgd": {
-  "sha256": "33992e223932e5d7325e95aa71b1700ba223031065651759f8252adf768acf83",
+  "sha256": "8046024919f72f18ecc9bc5f2118632b975a4e29120ed4b63f3be6b7df3693cf",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-altitude-cards"
+ },
+ "dbs-altitude-visa:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "9bf20eb0b1066c5d50ecc195d233efe5cb476f1145483ee25a09c9503886c4a6",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-altitude-visa:facts.overseas_processed_sgd_fee_pct_debit_card_section": {
+  "sha256": "3bfa566cf10af2b9e5a2973f671789226df24d76360f0089d941efc574e431d4",
+  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
+ },
+ "dbs-live-fresh:facts.earn[all_spend_base].cap": {
+  "sha256": "6c68b776c2220491110945237203c389b5723d3477717102067f91c645bd233e",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[all_spend_base].min_spend": {
+  "sha256": "e171ccd7a3836bf6bf58db314cad605099ce21989d9bee1976c430e997ae27c6",
+  "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card"
+ },
+ "dbs-live-fresh:facts.earn[all_spend_base].rate": {
+  "sha256": "6c68b776c2220491110945237203c389b5723d3477717102067f91c645bd233e",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[in_store_overseas_asia].cap": {
+  "sha256": "82db58feec5a289256c05f174a81bd4f61b7bc060f118e23a185bd2b851463c5",
+  "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card"
+ },
+ "dbs-live-fresh:facts.earn[in_store_overseas_asia].min_spend": {
+  "sha256": "d5a83b2629214b64893d473ab85031f403474788207a52f2de1181d7b373620c",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/livefresh-325fx/dbs-livefresh-325fx-tncs.pdf"
+ },
+ "dbs-live-fresh:facts.earn[in_store_overseas_asia].rate": {
+  "sha256": "82db58feec5a289256c05f174a81bd4f61b7bc060f118e23a185bd2b851463c5",
+  "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card"
+ },
+ "dbs-live-fresh:facts.earn[shopping].cap": {
+  "sha256": "1024ae149ebe31fc82c981319b574ed52428b2bd4400edab70c97e3858d62513",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[shopping].min_spend": {
+  "sha256": "ceb9466226fa6d70c1170742db46e5fcc7c20ecb76d7efb7f2ea2985956c99c8",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[shopping].rate": {
+  "sha256": "1024ae149ebe31fc82c981319b574ed52428b2bd4400edab70c97e3858d62513",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[transport].cap": {
+  "sha256": "c943d253e6af68c10a59a1e517aa7e89d56e893f04604d8e1ec7116c698fbfd3",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[transport].min_spend": {
+  "sha256": "ceb9466226fa6d70c1170742db46e5fcc7c20ecb76d7efb7f2ea2985956c99c8",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.earn[transport].rate": {
+  "sha256": "c943d253e6af68c10a59a1e517aa7e89d56e893f04604d8e1ec7116c698fbfd3",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.exclusions[education, non-profit, political/religious, membership, professional services, government]": {
+  "sha256": "e161d1863736c070b7295baaad202c71e03abc3a5228039141781eb001479db1",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.exclusions[insurance]": {
+  "sha256": "b3dcd7e50ccd38104febd0e983351f9f6d6c3fc87782667c428640cede8e45d9",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.exclusions[parking, betting, hospitals]": {
+  "sha256": "235ae2f61ba1fb8940e430732408e861f61ad9007bbdf809c6aa6c2d7308ccfb",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.exclusions[utilities, money transfer, tolls]": {
+  "sha256": "d4fd7075cc94c4299b59c20ab36568cecb2b34d4ffd40a43fc401616e306cad7",
+  "url": "https://www.dbs.com.sg/iwov-resources/media/pdf/cards/live-fresh-cashback-tnc.pdf"
+ },
+ "dbs-live-fresh:facts.fees.fx_fee_pct": {
+  "sha256": "70c6f19b96d292644a1830c2b2c875bad84bd20f8975df1b9f5f67fa5377892c",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-live-fresh:facts.min_income_sgd": {
+  "sha256": "e4b08ceb3609014892e2bb60273e39ffcebdd121a66b32de236df3f182c5f57d",
+  "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card"
+ },
+ "dbs-live-fresh:facts.new_applications": {
+  "sha256": "8deef9cb351c3ef8b4ee9a5bdb881475029ef557229b8d7636970fbb247a533d",
+  "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/live-fresh-dbs-visa-paywave-platinum-card"
+ },
+ "dbs-live-fresh:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "9bf20eb0b1066c5d50ecc195d233efe5cb476f1145483ee25a09c9503886c4a6",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-live-fresh:facts.overseas_processed_sgd_fee_pct_debit_card_section": {
+  "sha256": "3bfa566cf10af2b9e5a2973f671789226df24d76360f0089d941efc574e431d4",
+  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "dbs-vantage:facts.conversion.fee_sgd": {
   "sha256": "e9cfde6dc3269a7a7c08a1f76d917717ab5a355095ba75b11a7f847d374f9474",
@@ -168,8 +352,8 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.fees.fx_fee_pct": {
-  "sha256": "b48dda8432761d4fd014c2a569ba45fdec81914d2d9a127918ddd77f61e73c49",
-  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
+  "sha256": "70c6f19b96d292644a1830c2b2c875bad84bd20f8975df1b9f5f67fa5377892c",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
  },
  "dbs-vantage:facts.fees.spend_based_waiver": {
   "sha256": "7b76553e5bec0d82b5ecc994d206e59310b353a4b1125da1aa3e6ba1d00f58b6",
@@ -178,6 +362,14 @@
  "dbs-vantage:facts.min_income_sgd": {
   "sha256": "5db524a5613b2e0ff360003164959ebeb8ae5788fa1bc0850eb668004a4d400e",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
+ },
+ "dbs-vantage:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "9bf20eb0b1066c5d50ecc195d233efe5cb476f1145483ee25a09c9503886c4a6",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-vantage:facts.overseas_processed_sgd_fee_pct_debit_card_section": {
+  "sha256": "3bfa566cf10af2b9e5a2973f671789226df24d76360f0089d941efc574e431d4",
+  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "dbs-vantage:pending_changes[0]": {
   "sha256": "d964282b177e92157cfc462ca140f1355a2250e41efbf7cdccdae28434bd3621",
@@ -188,7 +380,7 @@
   "url": "https://milelion.com/2026/09/29/dbs-vantage-card-cuts-local-earn-rates-to-1-4-mpd-adds-free-limo-rides-and-annual-fee-waiver/"
  },
  "dbs-womans-world:facts.conversion.fee_sgd": {
-  "sha256": "f16bfeb6e0229188dfbedf3f676e11ff2037e393232034acfb2e3c553ca4a415",
+  "sha256": "510fa3bf901c25a5e8be5d481745593e6df0a22d633d872b1556a785a15ad4f7",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card"
  },
  "dbs-womans-world:facts.conversion.ratio": {
@@ -248,8 +440,8 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card"
  },
  "dbs-womans-world:facts.fees.fx_fee_pct": {
-  "sha256": "b48dda8432761d4fd014c2a569ba45fdec81914d2d9a127918ddd77f61e73c49",
-  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
+  "sha256": "70c6f19b96d292644a1830c2b2c875bad84bd20f8975df1b9f5f67fa5377892c",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
  },
  "dbs-womans-world:facts.fees.spend_based_waiver": {
   "sha256": "b90acc60b09e3736f0a05c47f95dbfbe98b09a268a861b407e9ecc86a804f8c5",
@@ -258,6 +450,14 @@
  "dbs-womans-world:facts.min_income_sgd": {
   "sha256": "b7520093608c291def9451d4ef7bb2489e02b81d2371f63be5ba167a22ce377a",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-woman-mastercard-card"
+ },
+ "dbs-womans-world:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "9bf20eb0b1066c5d50ecc195d233efe5cb476f1145483ee25a09c9503886c4a6",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-womans-world:facts.overseas_processed_sgd_fee_pct_debit_card_section": {
+  "sha256": "3bfa566cf10af2b9e5a2973f671789226df24d76360f0089d941efc574e431d4",
+  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "dbs-yuu-visa:facts.earn[non_yuu_merchants].cap": {
   "sha256": "46002784619ccd16645b64a1189618b1b0a2a3973d09c163258997109db4581b",
@@ -288,12 +488,20 @@
   "url": "https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards"
  },
  "dbs-yuu-visa:facts.fees.fx_fee_pct": {
-  "sha256": "b48dda8432761d4fd014c2a569ba45fdec81914d2d9a127918ddd77f61e73c49",
-  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
+  "sha256": "70c6f19b96d292644a1830c2b2c875bad84bd20f8975df1b9f5f67fa5377892c",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
  },
  "dbs-yuu-visa:facts.min_income_sgd": {
   "sha256": "06457f8cf6ec65d43eb9a16e1cdd2b6eff8843201cdfc570d16d381543e125c6",
   "url": "https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards"
+ },
+ "dbs-yuu-visa:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "9bf20eb0b1066c5d50ecc195d233efe5cb476f1145483ee25a09c9503886c4a6",
+  "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
+ },
+ "dbs-yuu-visa:facts.overseas_processed_sgd_fee_pct_debit_card_section": {
+  "sha256": "3bfa566cf10af2b9e5a2973f671789226df24d76360f0089d941efc574e431d4",
+  "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "hsbc-liveplus:facts.earn[dining_shopping_entertainment].cap": {
   "sha256": "c8f4327b002c84b0a9d6bcab09d5e09d317d92ef2cf8428374770cb3391d801f",
@@ -575,6 +783,18 @@
   "sha256": "0da2e558ec3bb28a034a3e1af5e4a780b6edd62a26586ab0a857e812e9c33f2c",
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
  },
+ "trust-freedom:facts.bonus_cashback_min_spend_period": {
+  "sha256": "5199d0674870c5fade82bc7803a6545c0cb23ac57d172eb0daf29ff092c54f4e",
+  "url": "https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/"
+ },
+ "trust-freedom:facts.conversion.fee_sgd": {
+  "sha256": "43707671bf89e239bc8cbd24707e6eb54131b1adf351c8a68fe24920a533ab2d",
+  "url": "https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/"
+ },
+ "trust-freedom:facts.conversion.ratio": {
+  "sha256": "a5b25049b5898db5635732e7fdb4f4e9bc11fd452bdcf6d067fe7b8ae394ea06",
+  "url": "https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/"
+ },
  "trust-freedom:facts.earn[stockback_mode_local_and_foreign].cap": {
   "sha256": "9472edef838bfb4a19a593736b86d2ca6958109a735789bc4b9a8c890e4aee1e",
   "url": "https://trustbank.sg/freedom-credit-card/"
@@ -594,6 +814,14 @@
  "trust-freedom:facts.fees.fx_fee_pct": {
   "sha256": "e276c61a7f2d66ebb5b4ed0838a1128bdcb991b3bbf512c01f6600b54c3c407d",
   "url": "https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/"
+ },
+ "trust-freedom:facts.overseas_processed_sgd_treatment": {
+  "sha256": "2a2b4d21e342119dad2de5aa6511ae29d9d4a2b0c7eedd7afe05877ffe11b3e9",
+  "url": "https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/"
+ },
+ "trust-freedom:facts.reward_mode_switching": {
+  "sha256": "65e0987872bbc681b72cc028e4338f8a8c68cdd4909c9e5a817220e96a0e112a",
+  "url": "https://trustbank.sg/freedom-credit-card/"
  },
  "trust-freedom:pending_changes[0]": {
   "sha256": "98b642a35b248de1f6c41f7d5a1ca25b830981162202cf1df8393ecfa75b90f5",
@@ -627,8 +855,24 @@
   "sha256": "91dedc872124ae917fc44f5456a2362474ac455cc1b2044b3ab4511dd829bb17",
   "url": "https://trustbank.sg/legal/key-facts-sheet-credit-card/"
  },
+ "uob-ladys-solitaire:facts.category_selection_deadline": {
+  "sha256": "1e3c76ff8b9b4ad41dc86e31662a431901fc5891b451c3d4ee4e7de2f8ed24f5",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys-solitaire:facts.category_selection_default": {
+  "sha256": "2d8dc642b41e1c2616bf88a5ad61b9af00487ff2bbb367fe5968d2029f24cff4",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys-solitaire:facts.category_selection_period": {
+  "sha256": "9ab015a8e07a135732758c118027009183d2fff3a60574b4dd8ce06c111d7809",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
  "uob-ladys-solitaire:facts.conversion.fee_sgd": {
   "sha256": "ed794b43884abbff825e6c48656696ce725f9a02535620b0cdbebfe1c05c49d9",
+  "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
+ },
+ "uob-ladys-solitaire:facts.conversion.ratio": {
+  "sha256": "d7435fb66234fe0559df4bf6e13bfcd12496b0617116458aa8d2cae72ae7763b",
   "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
  },
  "uob-ladys-solitaire:facts.earn[other].rate": {
@@ -646,6 +890,10 @@
  "uob-ladys-solitaire:facts.earn[two_chosen_bonus_categories].rate": {
   "sha256": "8ac551d85ad15a877b315a3621a863367dcb8c483093c7befb03a79beb98038f",
   "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
+ },
+ "uob-ladys-solitaire:facts.exclusions[category definitions are MCC-based (Transport)]": {
+  "sha256": "0bebabdb4681deace19d31e59bb93c0e6536345c715367e30a7e3b05db4cb2b8",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
  },
  "uob-ladys-solitaire:facts.exclusions[category definitions are MCC-based (example: Dining)]": {
   "sha256": "0482cabc7dea148d7590b175de5a38f9200dd35c6e145baa9e0d562192efb196",
@@ -671,8 +919,36 @@
   "sha256": "27d0bb829ac8378820b2fd9cde9c1ebe6a5257b76bfd0554bb2f975123abfe52",
   "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
  },
+ "uob-ladys-solitaire:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
+ "uob-ladys-solitaire:facts.travel_category_definition": {
+  "sha256": "544229fccf9bf32fb2451023cdb0b98e1045fefeae92e83f8207ea70314715ff",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys-solitaire:facts.travel_category_product_page": {
+  "sha256": "88b2b3f9fef263d96c8e6b9fc4a2ebfba3e3756c02b1912386f907bdca223251",
+  "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
+ },
+ "uob-ladys:facts.category_selection_deadline": {
+  "sha256": "1e3c76ff8b9b4ad41dc86e31662a431901fc5891b451c3d4ee4e7de2f8ed24f5",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys:facts.category_selection_default": {
+  "sha256": "2d8dc642b41e1c2616bf88a5ad61b9af00487ff2bbb367fe5968d2029f24cff4",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys:facts.category_selection_period": {
+  "sha256": "9ab015a8e07a135732758c118027009183d2fff3a60574b4dd8ce06c111d7809",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
  "uob-ladys:facts.conversion.fee_sgd": {
   "sha256": "ed794b43884abbff825e6c48656696ce725f9a02535620b0cdbebfe1c05c49d9",
+  "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
+ },
+ "uob-ladys:facts.conversion.ratio": {
+  "sha256": "d7435fb66234fe0559df4bf6e13bfcd12496b0617116458aa8d2cae72ae7763b",
   "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
  },
  "uob-ladys:facts.earn[chosen_bonus_category].cap": {
@@ -690,6 +966,10 @@
  "uob-ladys:facts.earn[other].rate": {
   "sha256": "8ff0e51ea69a9547bfd7bb7023db6fc02cb22aa4c4778642817d0e4af2dc55cd",
   "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
+ },
+ "uob-ladys:facts.exclusions[category definitions are MCC-based (Transport)]": {
+  "sha256": "0bebabdb4681deace19d31e59bb93c0e6536345c715367e30a7e3b05db4cb2b8",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
  },
  "uob-ladys:facts.exclusions[category definitions are MCC-based (example: Dining)]": {
   "sha256": "0482cabc7dea148d7590b175de5a38f9200dd35c6e145baa9e0d562192efb196",
@@ -713,6 +993,18 @@
  },
  "uob-ladys:facts.min_income_sgd": {
   "sha256": "4393d0be652e74104850476ef63b027618ae2dc7155fee05068a9af60c9c6250",
+  "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
+ },
+ "uob-ladys:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
+ "uob-ladys:facts.travel_category_definition": {
+  "sha256": "544229fccf9bf32fb2451023cdb0b98e1045fefeae92e83f8207ea70314715ff",
+  "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
+ },
+ "uob-ladys:facts.travel_category_product_page": {
+  "sha256": "88b2b3f9fef263d96c8e6b9fc4a2ebfba3e3756c02b1912386f907bdca223251",
   "url": "https://www.uob.com.sg/personal/cards/rewards/ladys-card/index.page"
  },
  "uob-one:facts.earn[headline_up_to].rate": {
@@ -751,12 +1043,20 @@
   "sha256": "3cd57af73ca4b88b67701c1e9e9689f1c33a04dab4b2e0b9485c83d14481282d",
   "url": "https://www.uob.com.sg/personal/cards/cashback/one-card.page"
  },
+ "uob-one:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
  "uob-one:facts.quarter_definition": {
   "sha256": "ef12be13fb66896e46a858ffc41cf1a0ce5edc4341fb2828ab8b3949e2813cf8",
   "url": "https://www.uob.com.sg/assets/pdfs/one_card_full_tnc.pdf"
  },
  "uob-preferred-visa:facts.conversion.fee_sgd": {
   "sha256": "ed794b43884abbff825e6c48656696ce725f9a02535620b0cdbebfe1c05c49d9",
+  "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
+ },
+ "uob-preferred-visa:facts.conversion.ratio": {
+  "sha256": "d7435fb66234fe0559df4bf6e13bfcd12496b0617116458aa8d2cae72ae7763b",
   "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
  },
  "uob-preferred-visa:facts.earn[mobile_contactless].cap": {
@@ -795,6 +1095,10 @@
   "sha256": "df5f5b5b01d65228f3f7fb3eed0e277bedeee27298c47ec33c18464638174500",
   "url": "https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page"
  },
+ "uob-preferred-visa:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
  "uob-prvi-miles:facts.conversion.fee_sgd": {
   "sha256": "ed794b43884abbff825e6c48656696ce725f9a02535620b0cdbebfe1c05c49d9",
   "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
@@ -803,8 +1107,20 @@
   "sha256": "e3e9fd30f947da0c35188309232b63aa832abbfcb525dbd39ef687c9a27f578c",
   "url": "https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf"
  },
+ "uob-prvi-miles:facts.earn[agoda_portal_hotels_fcy].rate": {
+  "sha256": "b17d219cabf652e66c5325e4b51f4c856f77d104bd5486f88a63b381f1b14486",
+  "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
+ },
+ "uob-prvi-miles:facts.earn[expedia_portal_flights].rate": {
+  "sha256": "6c44887ec6bab423d71a9bac6618221cbcb6aadd28a53eb9827924204b329703",
+  "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
+ },
+ "uob-prvi-miles:facts.earn[expedia_portal_hotels_other].rate": {
+  "sha256": "f9a06f60988fb04dca5747e670e989927e064fb8f6887a7eb809007ddc4654ca",
+  "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
+ },
  "uob-prvi-miles:facts.earn[local].rate": {
-  "sha256": "e19c85b2dd2da0ab0a227b795eadbf183b65e63504a2752dea8abebcf2369257",
+  "sha256": "0b2ac8c401d81a51613c7ce9f20a4084dc8e0dd30dd048ce2d33665ae93c2f5d",
   "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
  },
  "uob-prvi-miles:facts.earn[overseas_fcy].rate": {
@@ -834,5 +1150,89 @@
  "uob-prvi-miles:facts.min_income_sgd": {
   "sha256": "610ea0a816d0acd887fa649a41962e01527da9af02b575b677bb22f7e4bc6882",
   "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
+ },
+ "uob-prvi-miles:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
+ "uob-visa-signature:facts.conversion.fee_sgd": {
+  "sha256": "ed794b43884abbff825e6c48656696ce725f9a02535620b0cdbebfe1c05c49d9",
+  "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
+ },
+ "uob-visa-signature:facts.conversion.ratio": {
+  "sha256": "d7435fb66234fe0559df4bf6e13bfcd12496b0617116458aa8d2cae72ae7763b",
+  "url": "https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf"
+ },
+ "uob-visa-signature:facts.earn[other].cap": {
+  "sha256": "df55894095ee4ccddcc4943f639738b4b16cfc2033f39883c02f0a3a4b6b3682",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[other].rate": {
+  "sha256": "df55894095ee4ccddcc4943f639738b4b16cfc2033f39883c02f0a3a4b6b3682",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[overseas_foreign_currency].cap": {
+  "sha256": "d57874ec14e98a6afdba68fc86d2e6a6a28955176d2e1aff168e17b884541ac0",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[overseas_foreign_currency].min_spend": {
+  "sha256": "a3162592d35dd714b5b804a3504e982f821f0702ca4a078c66c75c02c2094465",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[overseas_foreign_currency].rate": {
+  "sha256": "f8342bfdc9e5f51b7f1fb2c7525d2975b42e4b78892a70a0e8554ef56166fe06",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[petrol_and_contactless].cap": {
+  "sha256": "c8f2187a57ccd582bf033898e9178c04ca7f7b8e5807f0fbf817912274d10aee",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[petrol_and_contactless].min_spend": {
+  "sha256": "f15cd754d135de8b1ce69d509e6ea9e36ad7a8ddd9ba7e97f9a6e53fbd662c70",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.earn[petrol_and_contactless].rate": {
+  "sha256": "f15cd754d135de8b1ce69d509e6ea9e36ad7a8ddd9ba7e97f9a6e53fbd662c70",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.exclusions[SPC and Shell service stations]": {
+  "sha256": "4d7021c0e517ef156d51051e06e3cdd6770a3c77c9ffa52c3a1d3eaedd3e01c0",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.exclusions[bill payment and prepaid/wallet top-ups]": {
+  "sha256": "68e6cc5c05015eeb2c99bf16819f6a0995fb7bd8ac068ef172184427c50de444",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.exclusions[excluded MCC list, part 1 (wire transfer, utilities, insurance, quasi-cash, rentals, brokers)]": {
+  "sha256": "097511d84f2062b7694611e7a61154066df912375576e429c7fd6938364a995b",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.exclusions[excluded MCC list, part 2 (parking, betting, hospitals, education, charities, religious/political, membership, professional services, government)]": {
+  "sha256": "20ce58dd1783d5ae958a985feac0fde44bc0454390285e7733706457c834831c",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
+ },
+ "uob-visa-signature:facts.fees.annual_fee_sgd": {
+  "sha256": "4b163a958ad122fc82543ffa862f57921cff36cc3421d139e226f7ef7ec1599d",
+  "url": "https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page"
+ },
+ "uob-visa-signature:facts.fees.first_year_waiver": {
+  "sha256": "4b163a958ad122fc82543ffa862f57921cff36cc3421d139e226f7ef7ec1599d",
+  "url": "https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page"
+ },
+ "uob-visa-signature:facts.fees.fx_fee_pct": {
+  "sha256": "9e9d808fcf47c5067a4a53bd58f3f4fe31d926279b68900129a0a7f0ae47de84",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
+ "uob-visa-signature:facts.min_income_sgd": {
+  "sha256": "8dc1f27f296bb4c456a0f7572bf0ce8bbb89aeeaa63db023befe8aa6b45e2df2",
+  "url": "https://www.uob.com.sg/personal/cards/rewards/visa-signature-card.page"
+ },
+ "uob-visa-signature:facts.overseas_processed_sgd_fee_pct": {
+  "sha256": "3a1fe87f30496f3d11627be5e8b163bef89f258b2b51313c2b3c2b1bf6beb610",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf"
+ },
+ "uob-visa-signature:facts.overseas_sgd_transactions_earn": {
+  "sha256": "3b8c94940f11db37359877d6b54c9ed1a887314053670e7b03a582305bd9b114",
+  "url": "https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/credit-cards/travel-cards/uob-visa-signature-card/terms-and-conditions-governing-uob-visa-signature-card.pdf"
  }
 }
