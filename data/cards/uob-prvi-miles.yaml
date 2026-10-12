@@ -15,7 +15,7 @@ facts:
     source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
     quote: 'Minimum Income: Singaporeans/PR: S$30,000 p.a. (55 years old and below)'
     source_type: issuer
-    last_verified: 2026-10-05
+    last_verified: 2026-10-12
   fees:
     annual_fee_sgd:
       value: 261.6
@@ -23,13 +23,13 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: Fees Principal card S$261.60 ^ yearly First year card fee waiver
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     first_year_waiver:
       value: waived
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: Fees Principal card S$261.60 ^ yearly First year card fee waiver
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     spend_based_waiver:
       value: null
       null_reason: No spend-based waiver stated on the product page.
@@ -39,7 +39,7 @@ facts:
       source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
       quote: An administrative fee of 3.25% on the amount converted will be charged on non-SGD transactions
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
   earn:
   - category: local
     rate:
@@ -48,7 +48,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: Earn 1.4 miles per S$1 local spend
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -62,7 +62,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: 2.4 miles per S$1 1 on all other overseas spend
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -76,7 +76,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: 3 miles per S$1 spend 1 in Malaysia, Indonesia, Thailand and Vietnam
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -93,7 +93,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: 'Up to 8 miles per S$1 spend on Agoda bookings : Valid for bookings till 15 August 2027 (date inclusive) and stay till 15 November 2027 (date inclusive). Cardmembers will earn up to UNI$20 for every S$5 overseas currency spent (akin to 8 miles per S$1 spend) on bookings via the dedicated PRVI Miles Agoda website.'
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No promotion cap stated on the product page; check the promotion T&C.
@@ -110,7 +110,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: Valid for bookings made till 31 March 2027. Cardmembers will earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent) on flight, hotel and/or other eligible products/services bookings made via the dedicated PRVI Miles Expedia
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No promotion cap stated on the product page; check the promotion T&C.
@@ -127,7 +127,7 @@ facts:
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
       quote: Eligible flight bookings will earn up to UNI$7.5 for every S$5 spent (akin to 3 miles per S$1 spent), and eligible hotel and other eligible products/services bookings will each earn up to UNI$20 for every S$5 spent (akin to 8 miles per S$1 spent).
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: null
       null_reason: No promotion cap stated on the product page; check the promotion T&C.
@@ -142,7 +142,7 @@ facts:
     source_url: https://www.uob.com.sg/web-resources/personal/pdf/personal/cards/common/cards/gen-info-cards.pdf
     quote: SGD transactions (including refunds, reversals and chargebacks) made using Visa or Mastercard and processed outside of Singapore will be subject to an international processing fee of 1% of transaction amount.
     source_type: issuer
-    last_verified: 2026-10-05
+    last_verified: 2026-10-12
   exclusions:
   - category: excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)
     value: no_rewards
@@ -178,7 +178,7 @@ facts:
     source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
     quote: 'all transactions which are classified under the following Merchant Category Codes: MCC 4829 4900 5199 5960 5965 5993 6012 6050 6051 6211 6300 6513 6529 6530 6534 6540 7349 7511 7523 7995 8062 8211 8220 8241 8244 8249 8299 8398'
     source_type: issuer
-    last_verified: 2026-10-05
+    last_verified: 2026-10-12
     note: Quoted from the UOB PRVI Miles T&C; the list continues beyond 8398 in the PDF. Applies to UNI$ cards per that T&C; confirm the card-specific T&C for other UOB cards.
   conversion:
     ratio:
@@ -186,7 +186,7 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf
       quote: 'current conversion rate: UNI$1 = 2 miles'
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     fee_sgd:
       value: 27
       unit: sgd_per_conversion
@@ -194,6 +194,6 @@ facts:
       source_url: https://www.uob.com.sg/assets/pdfs/personal/cards/rewardsplus_tnc.pdf
       quote: Each transfer by the Eligible Person to his/her designated airline's frequent flyer programme is subject to a S$27 conversion fee
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
 pending_changes: []
 notes: []

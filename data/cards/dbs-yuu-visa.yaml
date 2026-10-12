@@ -40,7 +40,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
       quote: Total administrative fee 3.25%, on top of the prevailing foreign exchange rate determined by respective card associations
       source_type: issuer
-      last_verified: 2026-10-07
+      last_verified: 2026-10-12
   earn:
   - category: yuu_participating_merchants
     rate:
@@ -58,7 +58,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Total Bonus Rewards is capped at 28,800 yuu Points (worth up to S$144 cash rebates or 8,000 miles) per calendar month.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     min_spend:
       value: 800
       unit: sgd_per_calendar_month
@@ -66,7 +66,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Minimum S$800 worth of Eligible Spend charged and posted to your Card, and ii. Transact at 4 Participating Merchants.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
   - category: non_yuu_merchants
     rate:
       value: 0.25
@@ -75,13 +75,13 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: Base Rewards 1 yuu Point (0.5% cash rebates) 0.5 yuu Point (0.25% cash rebates) 0.5 yuu Point (0.25% cash rebates)
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     cap:
       value: none
       source_url: https://www.dbs.com.sg/iwov-resources/media/pdf/cards/promotions/dbs-yuu-cards/dbs-yuu-card-promotion-tncs.pdf
       quote: There is no minimum spend required, and no cap to the Base Rewards.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-12
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
@@ -93,7 +93,7 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
     quote: All card transactions processed outside Singapore but charged in Singapore dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 1% by Visa or MasterCard, which shall be payable by you and debited from your Card account.
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-10-12
   overseas_processed_sgd_fee_pct_debit_card_section:
     value: 2.8
     unit: pct
@@ -102,7 +102,7 @@ facts:
     source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
     quote: All transactions processed outside of Singapore but charged in Singapore Dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 2.8% on the total transaction amount, which includes a 1% fee by Visa/Mastercard or 0.6% fee by UnionPay
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-10-12
   exclusions:
   - value: null
     null_reason: yuu programme exclusions sit in the yuu T&C appendix; not extracted yet.
