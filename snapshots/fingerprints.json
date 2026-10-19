@@ -96,11 +96,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.earn[local].rate": {
-  "sha256": "7f41e9aaac52efebe5c9703bc7a11cc821c1a29ca40a2f1c698dc2d7b9455a16",
+  "sha256": "2481c0bfa78763360480b3082df5e9fc9bf75e62ea9a49fd92bd6574aacd75a0",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.earn[overseas_fcy].rate": {
-  "sha256": "102a6e5fb530ea4610cd3558842a4bde10539106730b87614dd73eb04bf70c0c",
+  "sha256": "8d5c30b7348825fc4b492c9ccc0749867f31526275a80facc838fd2c9069caa6",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.exclusions[Citi rewards exclusion list (insurance, education, quasi-cash, utilities etc.)]": {
@@ -108,11 +108,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
  },
  "citi-premiermiles:facts.fees.annual_fee_sgd": {
-  "sha256": "9b2e628141efdf5ddcffd797053bf75a896603e549e7bbe820d33565a270493d",
+  "sha256": "76fd3312391e31d4bd694a68c1366dafbc8649122ea89e31895fb3c3a4803634",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.first_year_waiver": {
-  "sha256": "4bccfbec89bd1829d1531000c64ae498c47446d2adebad4d40718558010d5a39",
+  "sha256": "6817c51c0e0874a52d54834b726ba7e9f3b1af0bfea550d52d0fbd1a07be7446",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.fx_fee_pct": {
@@ -120,11 +120,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card/pdf/information-sheet.pdf"
  },
  "citi-premiermiles:facts.fees.spend_based_waiver": {
-  "sha256": "c2d89ba87a6dccda0a1e2283a47009be601bdbe4b95cc2a8b897283c0aefca2f",
+  "sha256": "3cffa76c055d2453d3259cb83628bf52b426abe16787f041cd770bfa2672682d",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.min_income_sgd": {
-  "sha256": "b68dc0240a2e9e252a0980d24112cec053daf39b40bfe888617c6b25f974f20f",
+  "sha256": "b18d8a7956f161ffd7020137cd5c40f1919affcfe1ce07d20b3271fce75ec05d",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-rewards:facts.conversion.fee_sgd": {
@@ -312,7 +312,7 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page"
  },
  "dbs-vantage:facts.conversion.fee_sgd": {
-  "sha256": "e9cfde6dc3269a7a7c08a1f76d917717ab5a355095ba75b11a7f847d374f9474",
+  "sha256": "e5eb565a00a44ff29dad011f2b9b08f71eb94c3f20f6e38831f238cad1a5a922",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.earn[local].rate": {
@@ -344,7 +344,7 @@
   "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf"
  },
  "dbs-vantage:facts.fees.annual_fee_sgd": {
-  "sha256": "02ca261758e5eacaac1454a848fdb5444c3f0523dd56214e07afd95c5975369c",
+  "sha256": "f9bc15e3a8dd6ba472046f2955abb5f6464396f0cdaaeb5bba1f2c361d56976e",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.fees.first_year_waiver": {
@@ -360,7 +360,7 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.min_income_sgd": {
-  "sha256": "5db524a5613b2e0ff360003164959ebeb8ae5788fa1bc0850eb668004a4d400e",
+  "sha256": "99771c723080eb6072102f9546bc4ccd2686a95fdc8fe9af77d35544ccc79ffc",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.overseas_processed_sgd_fee_pct": {
@@ -484,7 +484,7 @@
   "url": "https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards"
  },
  "dbs-yuu-visa:facts.fees.first_year_waiver": {
-  "sha256": "384c6e86ac6cb3d828d60a4eedd98f15dfb8519213c6108ba86011b8e68d8bae",
+  "sha256": "4490f2b881b7b7aa2e800bc4a43959ddb38e6d553c0cea559c1e63041c92461c",
   "url": "https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards"
  },
  "dbs-yuu-visa:facts.fees.fx_fee_pct": {
@@ -492,7 +492,7 @@
   "url": "https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf"
  },
  "dbs-yuu-visa:facts.min_income_sgd": {
-  "sha256": "06457f8cf6ec65d43eb9a16e1cdd2b6eff8843201cdfc570d16d381543e125c6",
+  "sha256": "fd024e7baf17ffc83c377230e455184cca7b38d82a4e952dab60f1810b56f076",
   "url": "https://www.dbs.com.sg/personal/cards/credit-cards/dbs-yuu-cards"
  },
  "dbs-yuu-visa:facts.overseas_processed_sgd_fee_pct": {
@@ -724,23 +724,23 @@
   "url": "https://www.ocbc.com/personal-banking/cards/rewards-card"
  },
  "sc-journey:facts.earn[local].cap": {
-  "sha256": "4dab7a29bcf054314949683a23f889ad113e7efb7b7b72191444c7134a74bcb7",
+  "sha256": "71ce9565139e42637fc591b9a6232f8aa6fb484598fefd5173de71542052fb34",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[local].rate": {
-  "sha256": "4dab7a29bcf054314949683a23f889ad113e7efb7b7b72191444c7134a74bcb7",
+  "sha256": "71ce9565139e42637fc591b9a6232f8aa6fb484598fefd5173de71542052fb34",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[overseas_fcy].cap": {
-  "sha256": "5fdbc8a074210613ba0221649d63581806b73fa79e69667a82049c314a862af4",
+  "sha256": "e0ab51f70f200d1b11b5c85bf56918774e3dda23d6d5da73e65b505cafe41cdb",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[overseas_fcy].rate": {
-  "sha256": "5fdbc8a074210613ba0221649d63581806b73fa79e69667a82049c314a862af4",
+  "sha256": "e0ab51f70f200d1b11b5c85bf56918774e3dda23d6d5da73e65b505cafe41cdb",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[transport_food_delivery_online_selected].rate": {
-  "sha256": "a52ca0720b15641f36707d1c58196e07ee38c6701b78a233d2dfcea13c0bdccc",
+  "sha256": "d3bff7d9142b813d5d1b2775c2e86bb2418c633aac1abe5b398e0880f29c6741",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.fees.fx_fee_pct": {

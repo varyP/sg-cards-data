@@ -14,7 +14,7 @@ facts:
     source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
     quote: Minimum income S$120,000 p.a.
     source_type: issuer
-    last_verified: 2026-10-05
+    last_verified: 2026-10-19
   fees:
     annual_fee_sgd:
       value: 599.5
@@ -22,7 +22,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
       quote: 'Annual fee Principal Card: S$599.50 Supplementary Card: Free'
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-19
     first_year_waiver:
       value: not_waived
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
@@ -43,7 +43,7 @@ facts:
       source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
       quote: Total administrative fee 3.25%, on top of the prevailing foreign exchange rate determined by respective card associations
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-19
   earn:
   - category: local
     rate:
@@ -82,7 +82,7 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/dbs-agreement-2019.pdf
     quote: All card transactions processed outside Singapore but charged in Singapore dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 1% by Visa or MasterCard, which shall be payable by you and debited from your Card account.
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   overseas_processed_sgd_fee_pct_debit_card_section:
     value: 2.8
     unit: pct
@@ -91,7 +91,7 @@ facts:
     source_url: https://www.dbs.com.sg/i-bank/cards/cards-rates-fees.page
     quote: All transactions processed outside of Singapore but charged in Singapore Dollar (i.e. without any currency conversion) (including refunds and reversals) will be subject to an administrative fee of 2.8% on the total transaction amount, which includes a 1% fee by Visa/Mastercard or 0.6% fee by UnionPay
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   exclusions:
   - category: insurance
     value: no_rewards
@@ -102,7 +102,7 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
     quote: 6300 Insurance Sales, Underwriting, and Premiums 6381 Insurance Premiums 6399 Insurance, Not Elsewhere Classified
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   - category: tolls, money transfer, utilities, cash
     value: no_rewards
     mccs:
@@ -113,7 +113,7 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
     quote: Table 1 MCC Description 4784 Toll and Bridge Fees 4829 Money Transfer 4900 Utilities - Electric, Gas, Water, Sanitary 6010 Financial Institutions - Manual Cash Disbursements
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   - category: education
     value: no_rewards
     mccs:
@@ -122,7 +122,7 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
     quote: 8211 Elementary and Secondary Schools 8220 Colleges, Universities, Professional Schools, and Junior Colleges
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   - category: hospitals
     value: no_rewards
     mccs:
@@ -130,14 +130,14 @@ facts:
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
     quote: 8062 Hospitals
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   - category: bill payments, AXS/SAM, fees
     value: no_rewards
     mccs: []
     source_url: https://www.dbs.com.sg/iwov-resources/pdf/cards/rewards_programme_tnc.pdf
     quote: AXS payments, SAM online bill payments, bill payments via internet banking, and all fees charged by DBS
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
   conversion:
     ratio:
       value: null
@@ -148,7 +148,7 @@ facts:
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
       quote: An administrative fee of S$27.25 (inclusive of GST) applies to each miles conversion and will be charged to DBS Credit Card.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-10-19
 pending_changes:
 - field: facts.earn[local].rate
   old_value: 1.5
@@ -159,12 +159,12 @@ pending_changes:
   source_url: https://www.dbs.com.sg/personal/cards/cards-news-announcements.page
   quote: 'Updates to DBS Vantage Card: From 2 Nov 2026, the local earn rate will be adjusted to 1.4 miles for every S$1 spent (or 1.4% cashback).'
   source_type: issuer
-  last_verified: 2026-10-05
+  last_verified: 2026-10-19
   announced_date_source:
     source_url: https://milelion.com/2026/09/29/dbs-vantage-card-cuts-local-earn-rates-to-1-4-mpd-adds-free-limo-rides-and-annual-fee-waiver/
     quote: DBS has announced some upcoming changes to the DBS Vantage Card, which will take effect from 2 November 2026.
     source_type: third_party
-    last_verified: 2026-10-12
+    last_verified: 2026-10-19
     note: Issuer notice is undated; 2026-09-29 is the date MileLion and Mainly Miles both reported it (two independent Tier 2 signals).
 notes:
 - MileLion (2026-09-29) also reports airport limo rides for DBS Treasures customers and an annual fee waiver for 'AI status' holders. Not found on the issuer page fetched 2026-10-03, so not recorded as fact.
