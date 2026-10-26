@@ -20,13 +20,13 @@ facts:
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: Annual fee charges None!
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-26
     first_year_waiver:
       value: not_applicable
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: Annual fee charges None!
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-26
     spend_based_waiver:
       value: null
       null_reason: Not applicable.
@@ -38,7 +38,7 @@ facts:
       source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
       quote: converted from US dollars into Singapore dollars at the foreign exchange rate provided by Visa with no fee from Trust
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-26
   earn:
   - category: stockback_mode_local_and_foreign
     rate:
@@ -116,14 +116,14 @@ facts:
     source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
     quote: Minimum monthly spend refers to required Eligible Spend in a calendar month to earn Bonus cashback on your preferred category.
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-26
   overseas_processed_sgd_treatment:
     value: treated_as_foreign_currency
     note: So they earn the Foreign Eligible Spend rate of the chosen mode. Trust charges no FX fee (see fees.fx_fee_pct).
     source_url: https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/
     quote: Please remember that some transactions may be processed overseas even if displayed in Singapore dollars. We will consider these transactions as using your Trust Freedom credit card in a foreign currency.
     source_type: issuer
-    last_verified: 2026-10-12
+    last_verified: 2026-10-26
   exclusions:
   - value: null
     null_reason: Ineligible transactions listed in Trust FAQs/Product Terms; not extracted.
@@ -135,7 +135,7 @@ facts:
       source_url: https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/
       quote: 1 Trust mile = 1 KrisFlyer mile
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-26
     fee_sgd:
       value: 27.25
       unit: sgd_per_conversion
@@ -143,7 +143,7 @@ facts:
       source_url: https://trustbank.sg/legal/trust-miles-redemption-terms-and-conditions/
       quote: Conversion fee per transfer $27.25 (inclusive of GST)
       source_type: issuer
-      last_verified: 2026-10-12
+      last_verified: 2026-10-26
 pending_changes:
 - field: facts.earn[stockback_mode_local_and_foreign].rate
   old_value: 3

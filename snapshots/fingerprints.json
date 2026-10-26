@@ -96,11 +96,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.earn[local].rate": {
-  "sha256": "7f41e9aaac52efebe5c9703bc7a11cc821c1a29ca40a2f1c698dc2d7b9455a16",
+  "sha256": "2481c0bfa78763360480b3082df5e9fc9bf75e62ea9a49fd92bd6574aacd75a0",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.earn[overseas_fcy].rate": {
-  "sha256": "102a6e5fb530ea4610cd3558842a4bde10539106730b87614dd73eb04bf70c0c",
+  "sha256": "8d5c30b7348825fc4b492c9ccc0749867f31526275a80facc838fd2c9069caa6",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.exclusions[Citi rewards exclusion list (insurance, education, quasi-cash, utilities etc.)]": {
@@ -108,11 +108,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf"
  },
  "citi-premiermiles:facts.fees.annual_fee_sgd": {
-  "sha256": "9b2e628141efdf5ddcffd797053bf75a896603e549e7bbe820d33565a270493d",
+  "sha256": "76fd3312391e31d4bd694a68c1366dafbc8649122ea89e31895fb3c3a4803634",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.first_year_waiver": {
-  "sha256": "4bccfbec89bd1829d1531000c64ae498c47446d2adebad4d40718558010d5a39",
+  "sha256": "6817c51c0e0874a52d54834b726ba7e9f3b1af0bfea550d52d0fbd1a07be7446",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.fees.fx_fee_pct": {
@@ -120,11 +120,11 @@
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card/pdf/information-sheet.pdf"
  },
  "citi-premiermiles:facts.fees.spend_based_waiver": {
-  "sha256": "c2d89ba87a6dccda0a1e2283a47009be601bdbe4b95cc2a8b897283c0aefca2f",
+  "sha256": "3cffa76c055d2453d3259cb83628bf52b426abe16787f041cd770bfa2672682d",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-premiermiles:facts.min_income_sgd": {
-  "sha256": "b68dc0240a2e9e252a0980d24112cec053daf39b40bfe888617c6b25f974f20f",
+  "sha256": "b18d8a7956f161ffd7020137cd5c40f1919affcfe1ce07d20b3271fce75ec05d",
   "url": "https://www.citibank.com.sg/credit-cards/travel/premiermiles-card"
  },
  "citi-rewards:facts.conversion.fee_sgd": {
@@ -724,23 +724,23 @@
   "url": "https://www.ocbc.com/personal-banking/cards/rewards-card"
  },
  "sc-journey:facts.earn[local].cap": {
-  "sha256": "4dab7a29bcf054314949683a23f889ad113e7efb7b7b72191444c7134a74bcb7",
+  "sha256": "175ab614ee1cd49c3f450d0e79f9324f26b7a3aeb75fa4dc51580d6b1d536f65",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[local].rate": {
-  "sha256": "4dab7a29bcf054314949683a23f889ad113e7efb7b7b72191444c7134a74bcb7",
+  "sha256": "175ab614ee1cd49c3f450d0e79f9324f26b7a3aeb75fa4dc51580d6b1d536f65",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[overseas_fcy].cap": {
-  "sha256": "5fdbc8a074210613ba0221649d63581806b73fa79e69667a82049c314a862af4",
+  "sha256": "4709137256ec97de5724c94ee2c3c0efc0843035d0ddd58ea424644e192397bf",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[overseas_fcy].rate": {
-  "sha256": "5fdbc8a074210613ba0221649d63581806b73fa79e69667a82049c314a862af4",
+  "sha256": "4709137256ec97de5724c94ee2c3c0efc0843035d0ddd58ea424644e192397bf",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.earn[transport_food_delivery_online_selected].rate": {
-  "sha256": "a52ca0720b15641f36707d1c58196e07ee38c6701b78a233d2dfcea13c0bdccc",
+  "sha256": "176f5ee2dd3b634844387ef002003112e2cc0990e998bc5def7b02741ea195ad",
   "url": "https://www.sc.com/sg/credit-cards/journey-credit-card/"
  },
  "sc-journey:facts.fees.fx_fee_pct": {
@@ -756,7 +756,7 @@
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
  },
  "sc-smart:facts.earn[bonus_merchants_tier_800].cap": {
-  "sha256": "f2aa90a137eb92a2d3b4e058a18dac58fc16ab7ccfbd189e72725a04427b7182",
+  "sha256": "2d47f1414e4fe9e8689823a41006e40a5c26e7fbf5a85922ea4500778c0544ba",
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
  },
  "sc-smart:facts.earn[bonus_merchants_tier_800].min_spend": {
@@ -900,7 +900,7 @@
   "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
  },
  "uob-ladys-solitaire:facts.exclusions[excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)]": {
-  "sha256": "cdb649d0a32cc448a85736867d8446398544dd66b216fea7016f2411df13eac1",
+  "sha256": "051a2a4766e39c12f0091665c3f0f7364bcba06326474b06cc1da60c8b419b81",
   "url": "https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf"
  },
  "uob-ladys-solitaire:facts.fees.annual_fee_sgd": {
@@ -976,7 +976,7 @@
   "url": "https://www.uob.com.sg/assets/pdfs/ladys-cards-tcs.pdf"
  },
  "uob-ladys:facts.exclusions[excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)]": {
-  "sha256": "cdb649d0a32cc448a85736867d8446398544dd66b216fea7016f2411df13eac1",
+  "sha256": "051a2a4766e39c12f0091665c3f0f7364bcba06326474b06cc1da60c8b419b81",
   "url": "https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf"
  },
  "uob-ladys:facts.fees.annual_fee_sgd": {
@@ -1076,7 +1076,7 @@
   "url": "https://www.uob.com.sg/personal/cards/rewards/preferred-visa-card.page"
  },
  "uob-preferred-visa:facts.exclusions[excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)]": {
-  "sha256": "cdb649d0a32cc448a85736867d8446398544dd66b216fea7016f2411df13eac1",
+  "sha256": "051a2a4766e39c12f0091665c3f0f7364bcba06326474b06cc1da60c8b419b81",
   "url": "https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf"
  },
  "uob-preferred-visa:facts.fees.annual_fee_sgd": {
@@ -1132,7 +1132,7 @@
   "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
  },
  "uob-prvi-miles:facts.exclusions[excluded MCC list (insurance 6300, utilities 4900, money transfer 4829, education 82xx, hospitals 8062, etc.)]": {
-  "sha256": "cdb649d0a32cc448a85736867d8446398544dd66b216fea7016f2411df13eac1",
+  "sha256": "051a2a4766e39c12f0091665c3f0f7364bcba06326474b06cc1da60c8b419b81",
   "url": "https://www.uob.com.sg/assets/pdfs/terms-and-conditions-governing-uob-prvi-miles-card.pdf"
  },
  "uob-prvi-miles:facts.fees.annual_fee_sgd": {
