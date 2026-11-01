@@ -18,23 +18,23 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     first_year_waiver:
       value: waived_3_years
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Principal Card: S$196.20* (inclusive of GST), waived for first 3 years'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     spend_based_waiver:
       value: 12000
       unit: sgd_spend_per_year
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: Subsequent annual fee will be automatically waived with a minimum spend of S$12,000 yearly
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     fx_fee_pct:
       value: 3.25
       unit: pct_up_to
@@ -43,7 +43,7 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
       quote: the Bank shall charge the Cardmember the converted amount and the administrative fee of 2.25% of the said amount (or such fee as the Bank may determine from time to time) for all Cards. In addition, all Card Transactions in foreign currency will be subject to a charge of up to 1% on the converted Singapore dollar amount by the respective card associations.
       source_type: issuer
-      last_verified: 2026-10-07
+      last_verified: 2026-11-01
   overseas_processed_sgd_fee_pct:
     value: 1
     unit: pct_up_to
@@ -52,7 +52,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/bank-charges/cc/credit-cards.page
     quote: All card transactions in Singapore dollars but processed overseas will be subject to an administrative fee of up to 1%.
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-11-01
   earn:
   - category: five_chosen_categories_tier2
     rate:
@@ -61,8 +61,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     cap:
       value: 30
       unit: sgd_cashback_per_category
@@ -70,8 +70,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     min_spend:
       value: 1600
       unit: sgd_per_month
@@ -79,8 +79,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 2: Up to 8% cashback with a minimum spend of S$1,600 per month (capped at S$30 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
   - category: five_chosen_categories_tier1
     rate:
       value: 6
@@ -88,8 +88,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     cap:
       value: 20
       unit: sgd_cashback_per_category
@@ -97,8 +97,8 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     min_spend:
       value: 800
       unit: sgd_per_month
@@ -106,17 +106,17 @@ facts:
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
       quote: 'Tier 1: Up to 6% cashback with a minimum spend of S$800 per month (capped at S$20 per category)'
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
   - category: other
     rate:
       value: 0.22
       unit: pct_cashback
       source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
-      quote: 'Base cashback: 0.22% cashback on all other spend'
+      quote: 0.22% cashback on all other spend
       source_type: issuer
-      last_verified: 2026-10-07
-      note: Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
+      last_verified: 2026-11-01
+      note: 'Re-read by agent via WebFetch on 2026-11-01 (earlier: manual read by reviewer on 2026-10-07); Maybank blocks scripted fetches.'
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -133,7 +133,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: 5960, 6381, 6399 | Insurance Related
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-11-01
     note: Rendered as a table; '|' is a cell separator. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches. Horizon Visa Signature / Platinum Visa / Visa Infinite are exceptions.
   - category: money transfer, utilities
     value: no_rewards
@@ -143,7 +143,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-11-01
     note: Rows '4829 | Money Transfer' and '4900 | Utilities' re-read in the same table. Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.
   - category: cash disbursement, quasi-cash and top-ups (all personal Maybank cards from 1 Dec 2025)
     value: no_rewards
@@ -158,7 +158,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: 6010, 6011, 6050, 6529, 6530, 6534, 7511 | Cash Disbursement/Quasi-cash/Top-ups
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-11-01
     note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
   - category: cleaning, maintenance and janitorial services (all personal Maybank cards from 1 Dec 2025)
     value: no_rewards
@@ -167,7 +167,7 @@ facts:
     source_url: https://www.maybank2u.com.sg/en/personal/cards/credit/maybank-family-and-friends-mastercard.page
     quote: 7349 | Cleaning, Maintenance & Janitorial Services
     source_type: issuer
-    last_verified: 2026-10-07
+    last_verified: 2026-11-01
     note: 'Row of Table 1 under the framing statement: ''From 1 December 2025, all transactions under the following Merchant Category Codes ("MCC") listed in Table 1, as well as transactions matching the transaction descriptions listed in Table 2, will no longer be eligible to earn TREATS Points or Cashback on all personal Maybank Credit and Debit Cards.'' Manual read by reviewer on 2026-10-07; Maybank blocks automated fetches.'
   conversion:
     ratio:

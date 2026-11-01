@@ -79,6 +79,20 @@ facts:
     quote: a Qualifying Charge made at an online retail merchant, excluding mobile wallet and travel-related transactions*
     source_type: issuer
     last_verified: 2026-10-26
+  - category: insurance, brokers, rentals, schools, cigar stores
+    value: no_rewards
+    mccs:
+    - '6211'
+    - '6300'
+    - '6513'
+    - '8211'
+    - '8220'
+    - '5993'
+    source_url: https://www.citibank.com.sg/credit-cards/pdf/rewards-exclusion-list.pdf
+    quote: MCC 6211 MCC 6300 MCC 6513 MCC 8211 MCC 8220 MCC 5993
+    source_type: issuer
+    last_verified: 2026-11-01
+    note: 'Citi-wide rewards exclusion list (''Updated November 2024. With effect from 16 December 2024.''), which names ''Citi Rewards Card'' among the cards it covers. The PDF lays the MCCs out in a column, so the quote is the MCC column as extracted, same as citi-cash-back; MCC 6300 is ''Insurance Sales, Underwriting and Premiums''.'
   conversion:
     ratio:
       value: null
