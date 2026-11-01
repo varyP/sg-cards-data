@@ -36,7 +36,7 @@ facts:
       source_url: https://www.hsbc.com.sg/content/dam/hsbc/sg/documents/credit-cards/application-form.pdf
       quote: Up to 3.25% of the transaction amount
       source_type: issuer
-      last_verified: 2026-10-03
+      last_verified: 2026-11-01
   earn:
   - category: dining_shopping_entertainment
     rate:
