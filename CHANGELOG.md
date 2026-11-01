@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-01: OCBC 365 changes now in effect (data)
+- Applied the three pending changes that took effect 2026-11-01 and emptied `pending_changes` for ocbc-365:
+  dining rate 5% -> 6%, dining cap S$80 (S$800 tier) / S$160 (S$1,600 tier) -> single S$160 per month
+  with the single S$800 minimum, and the combined groceries/utilities/streaming/EV row (3%) -> groceries 6%
+  plus telco/utilities/streaming/EV charging 0.25% base rate (split into two earn rows).
+- Quotes now come from the issuer page as it reads on 2026-11-01; `last_verified` 2026-11-01 on the changed
+  facts. Fingerprints refreshed for those facts only. Land transport (new 6% row on the page) is not added here.
 ## 2026-10-09: rules 2026-10-09.1 (bot rules, owner merge)
 - Memory: closed-card facts now expire. A "Closed <card>, <month year>" fact is removed once 13 months
   have passed since the closure month, checked at the start of every conversation alongside the "Until"

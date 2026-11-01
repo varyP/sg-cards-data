@@ -592,23 +592,27 @@
   "url": "https://www.hsbc.com.sg/credit-cards/products/travelone/"
  },
  "ocbc-365:facts.earn[dining].cap": {
-  "sha256": "e16429613bbbdc9175f08b698a172dc7ef8342c37098622d13035f75e1a2b4b5",
+  "sha256": "89c921ca70b585129193179dc3207c376bb9ab919f20bb6a4bfe8dd50f5282ef",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
  "ocbc-365:facts.earn[dining].min_spend": {
-  "sha256": "495369313fc83b81ba3524dcfd278a195b706f20357412e01f0bfab901cd152e",
+  "sha256": "89c921ca70b585129193179dc3207c376bb9ab919f20bb6a4bfe8dd50f5282ef",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
  "ocbc-365:facts.earn[dining].rate": {
-  "sha256": "dc6ad74dd72c93c029926224749d282bb391646fa0f465de3ce1a457ae7a1608",
+  "sha256": "ba6ff73acf39e7f07599638e6eb7e7efb5a21a86162194174f99f04c8b39bf03",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
  "ocbc-365:facts.earn[fuel].rate": {
   "sha256": "69bffffd960823946b3d1613bae929d9c4aa368aa5c9e3fd6ff183c7a88cdaa6",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
- "ocbc-365:facts.earn[groceries_utilities_streaming_ev].rate": {
-  "sha256": "000ce3cea526372b3eccca35ed3d2f92f776b468a4213b9b965289797c09be32",
+ "ocbc-365:facts.earn[groceries].rate": {
+  "sha256": "ba6ff73acf39e7f07599638e6eb7e7efb5a21a86162194174f99f04c8b39bf03",
+  "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
+ },
+ "ocbc-365:facts.earn[utilities_streaming_ev_telco].rate": {
+  "sha256": "7c7db42ff0ffd7fde3c74570c668db9c907222f85eb23288fce2199747adf40a",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
  "ocbc-365:facts.exclusions[OCBC general rewards exclusion MCCs (insurance 6300, utilities 4900, money transfer 4829, etc.)]": {
@@ -633,18 +637,6 @@
  },
  "ocbc-365:facts.min_income_sgd": {
   "sha256": "4eacd3e6370b39e0df69dc2be611708600f904fae9ef199f083b68d7d6013c81",
-  "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
- },
- "ocbc-365:pending_changes[0]": {
-  "sha256": "c03fbfc2ec3cef3b03fd43ff7c3702daeb0f016083f1468a278b6cc7d15a065c",
-  "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
- },
- "ocbc-365:pending_changes[1]": {
-  "sha256": "e9815a7a8d8caf0a332162c7fe9463f33032bf7f6d56ede5229aa4a40480c11c",
-  "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
- },
- "ocbc-365:pending_changes[2]": {
-  "sha256": "dac3d9dbf6fad7cec20a0186f423f15860edafea5527b32a0b0db0e8abed26cd",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
  "ocbc-90n-visa:facts.conversion.fee_sgd": {
