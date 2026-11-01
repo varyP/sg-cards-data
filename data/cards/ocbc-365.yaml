@@ -48,38 +48,70 @@ facts:
   earn:
   - category: dining
     rate:
-      value: 5
+      value: 6
       unit: pct_cashback
-      note: Becomes 6% from 2026-11-01, see pending_changes.
+      note: Applies from 2026-11-01 with the single S$800 minimum monthly spend; 0.25% base rate if the minimum is not met. Was 5% until 2026-10-31.
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-      quote: 5% cashback on dining at café, restaurants and food delivery
+      quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-01
     cap:
       value: 160
       unit: sgd_cashback
       period: calendar_month
-      note: S$80 cap at S$800 spend, S$160 at S$1,600.
+      note: Single S$160 monthly cap from 2026-11-01, no category caps. Was S$80 (S$800 tier) / S$160 (S$1,600 tier) until 2026-10-31.
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-      quote: Spend Tiers Minimum Spend Cashback Cap Tier 1 S$800 S$80 Tier 2 S$1,600 S$160
+      quote: If you spend at least S$800 in a calendar month, you can earn up to S$160 cashback per month.
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-01
     min_spend:
       value: 800
       unit: sgd_per_calendar_month
       period: calendar_month
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-      quote: To enjoy the above cashback, you need to spend a minimum of S$800 based on posted transactions in a calendar month.
+      quote: If you spend at least S$800 in a calendar month, you can earn up to S$160 cashback per month.
       source_type: issuer
-      last_verified: 2026-10-26
-  - category: groceries_utilities_streaming_ev
+      last_verified: 2026-11-01
+  - category: groceries
     rate:
-      value: 3
+      value: 6
       unit: pct_cashback
+      note: Applies from 2026-11-01 with the single S$800 minimum monthly spend; 0.25% base rate if the minimum is not met. Was 3% until 2026-10-31.
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-      quote: 3% cashback on groceries, utilities, streaming and EV charging
+      quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-01
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: land_transport
+    rate:
+      value: 6
+      unit: pct_cashback
+      note: Applies from 2026-11-01 with the single S$800 minimum monthly spend; 0.25% base rate if the minimum is not met. New 6% category from 2026-11-01.
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
+      source_type: issuer
+      last_verified: 2026-11-01
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: utilities_streaming_ev_telco
+    rate:
+      value: 0.25
+      unit: pct_cashback
+      derived: true
+      note: Base rate from 2026-11-01 for telco, utilities, streaming and EV charging. Was 3% (utilities, streaming, EV charging) until 2026-10-31. 0.25% is the Base Cashback rate T&C Clause 2B awards on these transactions; the quote is that clause's scope wording.
+      source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf
+      quote: All Card Transactions (excluding Card Transactions under the categories listed at Clause 2A) if the Minimum Spend Requirement is met.
+      source_type: issuer
+      last_verified: 2026-11-01
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -133,36 +165,6 @@ facts:
     fee_sgd:
       value: null
       null_reason: 'Not applicable or not extracted: cashback card / no points conversion step identified.'
-pending_changes:
-- field: facts.earn[dining].rate
-  old_value: 5
-  new_value: 6
-  unit: pct_cashback
-  announced_date: null
-  effective_date: 2026-11-01
-  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-  quote: Cashback on eligible Dining, Groceries and Land Transport transactions will increase to 6%.
-  source_type: issuer
-  last_verified: 2026-10-26
-- field: facts.earn[groceries_utilities_streaming_ev].rate
-  old_value: 3
-  new_value: 6 (groceries) / 0.25 (utilities, streaming, EV, telco)
-  unit: pct_cashback
-  announced_date: null
-  effective_date: 2026-11-01
-  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-  quote: Cashback on Telco, Utilities, Streaming and EV Charging transactions will change to the base cashback rate of 0.25%.
-  source_type: issuer
-  last_verified: 2026-10-26
-- field: facts.earn[dining].cap
-  old_value: S$80 (S$800 tier) / S$160 (S$1,600 tier)
-  new_value: 160
-  unit: sgd_cashback_per_month
-  announced_date: null
-  effective_date: 2026-11-01
-  source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-  quote: Cashback programme will be simplified to a single S$800 minimum spend requirement and S$160 monthly cashback cap.
-  source_type: issuer
-  last_verified: 2026-10-26
+pending_changes: []
 notes:
 - 'New T&C effective 1 Nov 2026: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf'
