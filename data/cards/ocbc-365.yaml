@@ -87,13 +87,29 @@ facts:
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: land_transport
+    rate:
+      value: 6
+      unit: pct_cashback
+      note: Applies from 2026-11-01 with the single S$800 minimum monthly spend; 0.25% base rate if the minimum is not met. New 6% category from 2026-11-01.
+      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
+      quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
+      source_type: issuer
+      last_verified: 2026-11-01
+    cap:
+      value: null
+      null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
+    min_spend:
+      value: null
+      null_reason: No minimum-spend condition extracted with a quote; check T&C.
   - category: utilities_streaming_ev_telco
     rate:
       value: 0.25
       unit: pct_cashback
-      note: Base rate from 2026-11-01 for telco, utilities, streaming and EV charging. Was 3% (utilities, streaming, EV charging) until 2026-10-31.
-      source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
-      quote: Telco 0.25% (base rate) Utilities EV Charging Streaming
+      derived: true
+      note: Base rate from 2026-11-01 for telco, utilities, streaming and EV charging. Was 3% (utilities, streaming, EV charging) until 2026-10-31. 0.25% is the Base Cashback rate T&C Clause 2B awards on these transactions; the quote is that clause's scope wording.
+      source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf
+      quote: All Card Transactions (excluding Card Transactions under the categories listed at Clause 2A) if the Minimum Spend Requirement is met.
       source_type: issuer
       last_verified: 2026-11-01
     cap:

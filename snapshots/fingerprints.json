@@ -611,9 +611,13 @@
   "sha256": "ba6ff73acf39e7f07599638e6eb7e7efb5a21a86162194174f99f04c8b39bf03",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
  },
- "ocbc-365:facts.earn[utilities_streaming_ev_telco].rate": {
-  "sha256": "7c7db42ff0ffd7fde3c74570c668db9c907222f85eb23288fce2199747adf40a",
+ "ocbc-365:facts.earn[land_transport].rate": {
+  "sha256": "ba6ff73acf39e7f07599638e6eb7e7efb5a21a86162194174f99f04c8b39bf03",
   "url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card"
+ },
+ "ocbc-365:facts.earn[utilities_streaming_ev_telco].rate": {
+  "sha256": "4a882d5878dec791a3561e13e34582c4a61a838f82c6ceaa88a37ccdfbafcad4",
+  "url": "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf"
  },
  "ocbc-365:facts.exclusions[OCBC general rewards exclusion MCCs (insurance 6300, utilities 4900, money transfer 4829, etc.)]": {
   "sha256": "cc02f98b51e5d1779f89f3d59558e94e5c834e0bbdffcb46395fda94b5a0483b",
