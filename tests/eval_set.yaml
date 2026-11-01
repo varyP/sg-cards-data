@@ -301,20 +301,20 @@ cases:
     source_url: https://www.americanexpress.com/sg/credit-cards/true-cashback-card/
   # ---------------------------------------------------------------- pending changes
   - id: P1
-    category: pending_change
+    category: earn
     card: ocbc-365
     question: "OCBC 365 dining cashback?"
-    as_of: 2026-10-03
-    expected: "5% today; from 1 Nov 2026 6% with a single S$800 min spend and S$160/month cap. Warn about the change."
-    must_include: ["5", "6", "1 Nov 2026|2026-11-01"]
+    as_of: 2026-11-01
+    expected: "6% cashback on dining, with a single S$800 minimum monthly spend and S$160 cashback cap per month."
+    must_include: ["6", "800", "160"]
     source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
   - id: P2
-    category: pending_change
+    category: earn
     card: ocbc-365
     question: "Should I use OCBC 365 for my utilities bill?"
-    as_of: 2026-10-03
-    expected: "3% today, but from 1 Nov 2026 utilities, streaming, EV charging and telco drop to 0.25%."
-    must_include: ["0.25", "1 Nov 2026|2026-11-01"]
+    as_of: 2026-11-01
+    expected: "0.25% base rate on utilities, streaming, EV charging and telco (was 3% until 31 Oct 2026)."
+    must_include: ["0.25"]
     source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf
   - id: P3
     category: pending_change
