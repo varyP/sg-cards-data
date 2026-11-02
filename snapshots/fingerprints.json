@@ -316,11 +316,11 @@
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.earn[local].rate": {
-  "sha256": "d0c93b83e826ff45467410c21023f66cf6c7348be507ab8b9c5070910b68eced",
+  "sha256": "6b16f53930d10aaf642106561ed8981395ff80f300ae16ed7dbbfeda88a0ae72",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.earn[overseas_fcy].rate": {
-  "sha256": "46edce81f2c73f037d898fc139eef60c0a0ca2ec9fe31023d7f93c5fdaf4b3d9",
+  "sha256": "6b16f53930d10aaf642106561ed8981395ff80f300ae16ed7dbbfeda88a0ae72",
   "url": "https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card"
  },
  "dbs-vantage:facts.exclusions[bill payments, AXS/SAM, fees]": {

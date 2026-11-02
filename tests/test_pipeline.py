@@ -96,7 +96,7 @@ class TestValidatorRejects(unittest.TestCase):
 
     def test_expired_pending_change_fails(self):
         def m(doc):
-            pc = copy.deepcopy(load_yaml(ROOT / "data/cards/dbs-vantage.yaml")["pending_changes"][0])
+            pc = copy.deepcopy(load_yaml(ROOT / "data/cards/trust-freedom.yaml")["pending_changes"][0])
             pc["effective_date"] = "2026-01-01"
             doc["pending_changes"] = [pc]
         rc, _ = run_validate(self._mutated(m))
