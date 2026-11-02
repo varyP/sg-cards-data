@@ -49,7 +49,7 @@ facts:
     rate:
       value: 1.4
       unit: mpd
-      note: Or 1.4% cashback per DBS's 2 Nov 2026 notice (user switches monthly). Was 1.5 mpd / 1.5% until 2026-11-01.
+      note: Or 1.4% cashback per DBS's notice, effective 2 Nov 2026 (user switches monthly). Was 1.5 mpd / 1.5% until 2026-11-01.
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
       quote: Earn 1.4 miles for every S$1 spent locally and 2.2 miles for every S$1 spent in foreign currency.
       source_type: issuer
