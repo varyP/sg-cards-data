@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-02: DBS Vantage local earn change now in effect (data)
+- Applied the pending change that took effect 2026-11-02 and emptied `pending_changes` for dbs-vantage:
+  local earn 1.5 -> 1.4 mpd (1.4% cashback). Fixes the red `validate` on main.
+- The issuer page was redesigned; local and overseas (2.2 mpd, unchanged) rates now quote its new
+  "Accelerated Rewards" line, `last_verified` 2026-11-02, fingerprints refreshed for those two facts only.
+- `test_expired_pending_change_fails` now borrows its sample entry from trust-freedom (dbs-vantage has none left).
+- Not touched here: the two fee-waiver quotes no longer appear on the redesigned page (follow-up).
 ## 2026-11-01: OCBC 365 changes now in effect (data)
 - Applied the three pending changes that took effect 2026-11-01 and emptied `pending_changes` for ocbc-365:
   dining rate 5% -> 6%, dining cap S$80 (S$800 tier) / S$160 (S$1,600 tier) -> single S$160 per month

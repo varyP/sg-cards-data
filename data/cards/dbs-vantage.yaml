@@ -47,13 +47,13 @@ facts:
   earn:
   - category: local
     rate:
-      value: 1.5
+      value: 1.4
       unit: mpd
-      note: Or 1.5% cashback (user switches monthly). Drops to 1.4 on 2026-11-02, see pending_changes.
+      note: Or 1.4% cashback per DBS's notice, effective 2 Nov 2026 (user switches monthly). Was 1.5 mpd / 1.5% until 2026-11-01.
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
-      quote: Local spend (in SGD) 1.5 miles for every S$1 spent, or 1.5% cashback
+      quote: Earn 1.4 miles for every S$1 spent locally and 2.2 miles for every S$1 spent in foreign currency.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-11-02
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -65,9 +65,9 @@ facts:
       value: 2.2
       unit: mpd
       source_url: https://www.dbs.com.sg/i-bank/cards/credit-cards/dbs-vantage-visa-infinite-card
-      quote: Overseas spend 2.2 miles for every S$1 equivalent spent, or 2.2% cashback
+      quote: Earn 1.4 miles for every S$1 spent locally and 2.2 miles for every S$1 spent in foreign currency.
       source_type: issuer
-      last_verified: 2026-10-05
+      last_verified: 2026-11-02
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -149,23 +149,7 @@ facts:
       quote: An administrative fee of S$27.25 (inclusive of GST) applies to each miles conversion and will be charged to DBS Credit Card.
       source_type: issuer
       last_verified: 2026-10-05
-pending_changes:
-- field: facts.earn[local].rate
-  old_value: 1.5
-  new_value: 1.4
-  unit: mpd
-  announced_date: 2026-09-29
-  effective_date: 2026-11-02
-  source_url: https://www.dbs.com.sg/personal/cards/cards-news-announcements.page
-  quote: 'Updates to DBS Vantage Card: From 2 Nov 2026, the local earn rate will be adjusted to 1.4 miles for every S$1 spent (or 1.4% cashback).'
-  source_type: issuer
-  last_verified: 2026-10-26
-  announced_date_source:
-    source_url: https://milelion.com/2026/09/29/dbs-vantage-card-cuts-local-earn-rates-to-1-4-mpd-adds-free-limo-rides-and-annual-fee-waiver/
-    quote: DBS has announced some upcoming changes to the DBS Vantage Card, which will take effect from 2 November 2026.
-    source_type: third_party
-    last_verified: 2026-10-26
-    note: Issuer notice is undated; 2026-09-29 is the date MileLion and Mainly Miles both reported it (two independent Tier 2 signals).
+pending_changes: []
 notes:
 - MileLion (2026-09-29) also reports airport limo rides for DBS Treasures customers and an annual fee waiver for 'AI status' holders. Not found on the issuer page fetched 2026-10-03, so not recorded as fact.
 - 'DBS overseas-processed SGD fee: two figures on DBS documents. 1% is in the DBS Credit Card Agreement clause 9.3 (PDF ''Last updated: 30 June 2026'') and in the ''DBS Credit Card Charges'' section of the Rates & Fees page. 2.8% is in the ''DBS Debit Card - Fees and Charges'' section of the same page, which is stamped ''As at 30 December 2020''. The newer credit-card document says 1%, so 1% is used for this credit card; the 2.8% is recorded separately as the debit-card figure.'
