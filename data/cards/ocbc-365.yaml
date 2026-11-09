@@ -14,7 +14,7 @@ facts:
     source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
     quote: Singaporeans and Singapore PRs aged 21 to 55, with an annual income of at least S$30,000
     source_type: issuer
-    last_verified: 2026-10-26
+    last_verified: 2026-11-09
   fees:
     annual_fee_sgd:
       value: 196.2
@@ -22,20 +22,20 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Principal card S$196.20 (including GST), waived for the first two years
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-09
     first_year_waiver:
       value: waived_2_years
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Principal card S$196.20 (including GST), waived for the first two years
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-09
     spend_based_waiver:
       value: 10000
       unit: sgd_spend_per_year
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Minimum spending required to have your Annual Service Fee automatically waived S$10,000 in one year, starting from the month in which your OCBC 365 Credit Card was issued
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-09
     fx_fee_pct:
       value: 3.25
       unit: pct_of_foreign_amount
@@ -44,7 +44,7 @@ facts:
       source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/cards-fee-charge.pdf
       quote: all foreign currency transactions are subjected to a currency conversion charge imposed by the respective card associations (1%) and a bank administrative fee (2.25%) of the foreign transaction amount.
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-09
   earn:
   - category: dining
     rate:
@@ -54,7 +54,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
     cap:
       value: 160
       unit: sgd_cashback
@@ -63,7 +63,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: If you spend at least S$800 in a calendar month, you can earn up to S$160 cashback per month.
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
     min_spend:
       value: 800
       unit: sgd_per_calendar_month
@@ -71,7 +71,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: If you spend at least S$800 in a calendar month, you can earn up to S$160 cashback per month.
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
   - category: groceries
     rate:
       value: 6
@@ -80,7 +80,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -95,7 +95,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: Enjoy 6% cashback on dining, groceries, land transport and petrol
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -111,7 +111,7 @@ facts:
       source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-365-cc-cashback-programme-wef1nov26.pdf
       quote: All Card Transactions (excluding Card Transactions under the categories listed at Clause 2A) if the Minimum Spend Requirement is met.
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-09
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -125,7 +125,7 @@ facts:
       source_url: https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card
       quote: 6% cashback on fuel
       source_type: issuer
-      last_verified: 2026-10-26
+      last_verified: 2026-11-09
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -156,7 +156,7 @@ facts:
     source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/ocbc-cards-rewards-transaction-exclusion-list.pdf
     quote: MCC 4784 4829 4900 5047 5199 5960 5993 6010 6012 6051 6211 6300 6513 6540 7349 7523 7995
     source_type: issuer
-    last_verified: 2026-10-26
+    last_verified: 2026-11-09
     note: The PDF marks some MCCs as 'Remain eligible for' specific cards (e.g. OCBC 365 for some bill MCCs). Read the row before telling a user a spend is excluded.
   conversion:
     ratio:
