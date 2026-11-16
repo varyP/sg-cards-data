@@ -656,7 +656,7 @@
   "url": "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/ocbc-90degree-n-card-faqs.pdf"
  },
  "ocbc-90n-visa:facts.earn[local].cap": {
-  "sha256": "b31ac297bfee3ad6abfb070a638a1dd786535ecfd4e2942327a9173c8dc2c3e3",
+  "sha256": "29064aba2caf6a23737203997177048a13a6e4ee2ccedc82f996636c93f488b5",
   "url": "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-ocbc-90n-card-programme.pdf"
  },
  "ocbc-90n-visa:facts.earn[local].rate": {
@@ -664,7 +664,7 @@
   "url": "https://www.ocbc.com/personal-banking/cards/90-degrees-travel-credit-card.page"
  },
  "ocbc-90n-visa:facts.earn[overseas_fcy].cap": {
-  "sha256": "b31ac297bfee3ad6abfb070a638a1dd786535ecfd4e2942327a9173c8dc2c3e3",
+  "sha256": "29064aba2caf6a23737203997177048a13a6e4ee2ccedc82f996636c93f488b5",
   "url": "https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-ocbc-90n-card-programme.pdf"
  },
  "ocbc-90n-visa:facts.earn[overseas_fcy].rate": {
