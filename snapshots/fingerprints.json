@@ -784,7 +784,7 @@
   "url": "https://www.sc.com/sg/credit-cards/smart-credit-card/"
  },
  "trust-freedom:facts.bonus_cashback_min_spend_period": {
-  "sha256": "5199d0674870c5fade82bc7803a6545c0cb23ac57d172eb0daf29ff092c54f4e",
+  "sha256": "e58a04040c3ab900f1c92114b2193f2c003b18c632e280a49d91395dc88bae37",
   "url": "https://trustbank.sg/legal/trust-freedom-credit-card-key-facts-sheet/"
  },
  "trust-freedom:facts.conversion.fee_sgd": {
@@ -1120,7 +1120,7 @@
   "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
  },
  "uob-prvi-miles:facts.earn[local].rate": {
-  "sha256": "0b2ac8c401d81a51613c7ce9f20a4084dc8e0dd30dd048ce2d33665ae93c2f5d",
+  "sha256": "f92f9da0c3a8c2dd8fb56fabfb0241eaaa2841f3b21c7f57cd8d6da94477e6f9",
   "url": "https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page"
  },
  "uob-prvi-miles:facts.earn[overseas_fcy].rate": {
