@@ -86,32 +86,32 @@ facts:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
   - category: overseas_dining_shopping_promo
-    description: In-person overseas dining and shopping in foreign currency, registered cardmembers (promotion)
+    description: Overseas dining and shopping in person in foreign currency, registered cardmembers (promotion)
     rate:
       value: 5
       unit: mpd
       effective_to: 2026-12-31
-      note: '''Up to'' total rate (base + bonus). Promotion Period 18 Nov to 31 Dec 2026; registration required (UOB PRVI Miles website or Rewards+ in UOB TMRW). Bonus is 2 mpd on in-person dining/shopping in IDR/MYR/THB/VND (3 + 2 = 5) and 2.6 mpd in other foreign currencies (2.4 + 2.6 = 5). Bonus credited as UNI$.'
-      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: UOB PRVI Miles Cardmembers who successfully register for the Promotion via the UOB PRVI Miles website or Rewards+ in UOB TMRW during the Promotion Period and incur a minimum aggregate spend of S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions during the Promotion Period shall be eligible to earn up to 5 miles per S$1 spend (equivalent to UNI$12.5 per S$5 spend) on eligible overseas dining and shopping transactions charged to their UOB PRVI Miles Card during the Promotion Period.
+      note: '''Up to'' total rate (base + bonus). Promotion Period 18 Nov to 31 Dec 2026; registration required (UOB PRVI Miles website or Rewards+ in UOB TMRW). Bonus applies only to in person transactions in the T&C''s listed dining/shopping MCCs: bonus is 2 mpd on in person dining/shopping in IDR/MYR/THB/VND (3 + 2 = 5) and 2.6 mpd in other foreign currencies (2.4 + 2.6 = 5). Bonus credited as UNI$.'
+      source_url: https://www.uob.com.sg/assets/web-resources/personal/pdf/cards/travel/prvi-miles-card/prvi-miles-card-fx-tnc-cmpg.pdf
+      quote: If you successfully charge a total of at least S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions to your Card during the Promotion Period, you shall be eligible to earn up to UNI$12.50 per S$5 spend on the total value of your Eligible Overseas Transactions and/or Eligible Regional Transactions (equivalent to 5 miles per S$1 spend1) charged to your Card during the Promotion Period.
       source_type: issuer
-      last_verified: 2026-11-24
+      last_verified: 2026-11-25
     cap:
       value: 4000
       unit: bonus_uni_dollars
-      note: Whole Promotion Period cap on bonus UNI$ (equivalent to 8,000 bonus miles at UNI$1 = 2 miles).
-      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: The maximum bonus UNI$ that may be awarded under this Promotion is capped at UNI$4,000 per Cardmember for the entire Promotion Period.
+      note: Whole Promotion Period cap on the combined Bonus Regional Award and Bonus Overseas Award (equivalent to 8,000 bonus miles at UNI$1 = 2 miles). Bonus applies only to in person transactions in the T&C's listed dining/shopping MCCs.
+      source_url: https://www.uob.com.sg/assets/web-resources/personal/pdf/cards/travel/prvi-miles-card/prvi-miles-card-fx-tnc-cmpg.pdf
+      quote: The maximum Bonus Regional Award and Bonus Overseas Award that you may earn for the entire duration of the Promotion Period is capped at UNI$4,000.
       source_type: issuer
-      last_verified: 2026-11-24
+      last_verified: 2026-11-25
     min_spend:
       value: 1500
       unit: sgd_aggregate_promotion_period
       note: Aggregate Eligible Overseas and/or Eligible Regional Transactions across the whole Promotion Period (18 Nov to 31 Dec 2026), not per month.
-      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: incur a minimum aggregate spend of S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions during the Promotion Period
+      source_url: https://www.uob.com.sg/assets/web-resources/personal/pdf/cards/travel/prvi-miles-card/prvi-miles-card-fx-tnc-cmpg.pdf
+      quote: If you successfully charge a total of at least S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions to your Card during the Promotion Period
       source_type: issuer
-      last_verified: 2026-11-24
+      last_verified: 2026-11-25
   - category: agoda_portal_hotels_fcy
     description: Hotel bookings via the dedicated PRVI Miles Agoda site (promotion)
     rate:
