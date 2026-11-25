@@ -60,9 +60,10 @@ facts:
       value: 2.4
       unit: mpd
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: 2.4 miles per S$1 1 on all other overseas spend
+      note: Base rate from footnote 1 (ii); the benefits copy now leads with the 18 Nov to 31 Dec 2026 promo (see overseas_dining_shopping_promo).
+      quote: (ii) UNI$6 for every S$5 spent (equivalent to 2.4 miles for every S$1 spend) on transactions in other foreign currencies where the payment gateway is outside of Singapore
       source_type: issuer
-      last_verified: 2026-11-16
+      last_verified: 2026-11-24
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
@@ -74,15 +75,43 @@ facts:
       value: 3
       unit: mpd
       source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
-      quote: 3 miles per S$1 spend 1 in Malaysia, Indonesia, Thailand and Vietnam
+      note: Base rate from footnote 1 (i); the benefits copy now leads with the 18 Nov to 31 Dec 2026 promo (see overseas_dining_shopping_promo).
+      quote: (i) UNI$7.5 for every S$5 spent (equivalent to 3 miles for every S$1 spend) in regional foreign currencies being Indonesian Rupiah (IDR), Malaysian Ringgit (MYR), Thai Baht (THB) and Vietnamese Dong (VMD)
       source_type: issuer
-      last_verified: 2026-11-16
+      last_verified: 2026-11-24
     cap:
       value: null
       null_reason: No cap statement extracted with a quote yet; do not assume uncapped.
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
+  - category: overseas_dining_shopping_promo
+    description: In-person overseas dining and shopping in foreign currency, registered cardmembers (promotion)
+    rate:
+      value: 5
+      unit: mpd
+      effective_to: 2026-12-31
+      note: '''Up to'' total rate (base + bonus). Promotion Period 18 Nov to 31 Dec 2026; registration required (UOB PRVI Miles website or Rewards+ in UOB TMRW). Bonus is 2 mpd on in-person dining/shopping in IDR/MYR/THB/VND (3 + 2 = 5) and 2.6 mpd in other foreign currencies (2.4 + 2.6 = 5). Bonus credited as UNI$.'
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: UOB PRVI Miles Cardmembers who successfully register for the Promotion via the UOB PRVI Miles website or Rewards+ in UOB TMRW during the Promotion Period and incur a minimum aggregate spend of S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions during the Promotion Period shall be eligible to earn up to 5 miles per S$1 spend (equivalent to UNI$12.5 per S$5 spend) on eligible overseas dining and shopping transactions charged to their UOB PRVI Miles Card during the Promotion Period.
+      source_type: issuer
+      last_verified: 2026-11-24
+    cap:
+      value: 4000
+      unit: bonus_uni_dollars
+      note: Whole Promotion Period cap on bonus UNI$ (equivalent to 8,000 bonus miles at UNI$1 = 2 miles).
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: The maximum bonus UNI$ that may be awarded under this Promotion is capped at UNI$4,000 per Cardmember for the entire Promotion Period.
+      source_type: issuer
+      last_verified: 2026-11-24
+    min_spend:
+      value: 1500
+      unit: sgd_aggregate_promotion_period
+      note: Aggregate Eligible Overseas and/or Eligible Regional Transactions across the whole Promotion Period (18 Nov to 31 Dec 2026), not per month.
+      source_url: https://www.uob.com.sg/personal/cards/travel/prvi-miles-card.page
+      quote: incur a minimum aggregate spend of S$1,500 in Eligible Overseas Transactions and/or Eligible Regional Transactions during the Promotion Period
+      source_type: issuer
+      last_verified: 2026-11-24
   - category: agoda_portal_hotels_fcy
     description: Hotel bookings via the dedicated PRVI Miles Agoda site (promotion)
     rate:
