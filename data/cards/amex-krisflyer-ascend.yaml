@@ -36,18 +36,19 @@ facts:
   earn:
   - category: local_and_overseas_other
     rate:
-      value: 1.2
+      value: 1.5
       unit: mpd
+      note: Was 1.2 mpd (quote verified 2026-11-01). Issuer page checked 2026-11-25 shows 1.5 mpd; the page does not state an effective date.
       source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
-      quote: Earn 1.2 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
+      quote: Earn 1.5 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-25
     cap:
       value: none
       source_url: https://www.americanexpress.com/sg/credit-cards/singapore-airlines-krisflyer-ascend-credit-card/
-      quote: Earn 1.2 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
+      quote: Earn 1.5 KrisFlyer miles for every S$1 spent on all other eligible purchases, with no cap.
       source_type: issuer
-      last_verified: 2026-11-01
+      last_verified: 2026-11-25
     min_spend:
       value: null
       null_reason: No minimum-spend condition extracted with a quote; check T&C.
