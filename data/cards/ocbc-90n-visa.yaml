@@ -90,11 +90,11 @@ facts:
     - '5993'
     - '6010'
     - '6012'
-    source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/tncs-governing-ocbc-90n-card-programme.pdf
-    quote: 'transactions made with the following Merchant Category Codes ("MCC") will not earn 90°N Miles: MCC Description 4784 4829 4900 5047 5199 5960 5993 6010 6012'
+    source_url: https://www.ocbc.com/iwov-resources/sg/ocbc/personal/pdf/cards/ocbc-cards-rewards-transaction-exclusion-list.pdf
+    quote: 'any transactions made under the Merchant Category Codes ("MCCs") set out in the table below, unless otherwise stated. MCC 4784 4829 4900 5047 5199 5960 5993 6010 6012'
     source_type: issuer
-    last_verified: 2026-11-09
-    note: List continues (6051, 6211, 6300, 6513, 6540, 7349, 7523, 7995, 8062, 8211, ...) in the PDF.
+    last_verified: 2026-11-26
+    note: 'MCC table moved from the programme T&C to the OCBC Cards Rewards Transaction Exclusion List (programme T&C clause 1(d) points to that list). List continues (6051, 6211, 6300, 6513, 6540, 7349, 7523, 7995, 8062, 8211, ...) in the exclusion list. The 4900 and 5047 carve-outs there cover only OCBC 365/debit and Premier debit cards, so both remain excluded for 90°N.'
   conversion:
     ratio:
       value: 1 90°N Mile = 1 KrisFlyer mile
